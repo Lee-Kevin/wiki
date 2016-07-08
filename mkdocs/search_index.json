@@ -1,0 +1,1124 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Seeed Product Document\n\uf0c1\n\n\n\n\n\n\nIntroduction\n\uf0c1\n\n\nWellcome to Seeed Product Document, here you will get the user manual of all the product that provide by SeeedStudio.\n\n\nThe products include:\n\n\n\n\n\n\nPlatform\n\n\n\n\nArduino\n\n\nRaspberry Pi\n\n\nLinkIt\n\n\nLaunchPad\n\n\nBeagleBone\n\n\nIntel Edison\n\n\nmbed\n\n\nRePhone\n\n\nWio\n\n\n\n\n\n\n\n\nGrove\n\n\n\n\nSensor\n\n\nActuator\n\n\nDisplay\n\n\nCommunication\n\n\n\n\n\n\n\n\nShield\n\n\n\n\nRobot", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#seeed-product-document", 
+            "text": "", 
+            "title": "Seeed Product Document"
+        }, 
+        {
+            "location": "/#introduction", 
+            "text": "Wellcome to Seeed Product Document, here you will get the user manual of all the product that provide by SeeedStudio.  The products include:    Platform   Arduino  Raspberry Pi  LinkIt  LaunchPad  BeagleBone  Intel Edison  mbed  RePhone  Wio     Grove   Sensor  Actuator  Display  Communication     Shield   Robot", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/", 
+            "text": "Seeeduino V4.2\n\uf0c1\n\n\n\n\nIntroduction\n\uf0c1\n\n\nSeeeduino v4.2 is an Open Source, Arduino-compatible ATmega328 MCU development board. We think Seeeduino v4.2 is one of the best Arduino derivatives/compatibles available. Seeeduino v4.2 is feature rich, much more stable, easy-to-use and even good looking.\n\n\nSeeeduino v4.2 is based the Arduino UNO bootloader, an ATmega16U2 as a UART-to-USB converter (basically work like an FTDI USB2UART chip). The board comes with an additional set of through-hole pads for all pins. These pads are aligned to 0.1\n grid. This makes it easy to solder additional pin-headers to plug into breadboard or create your own attachment/shield with 0.1\n dot-matrix general purpose PCBs.\n\n\nYou can program the board via a micro-USB cable. Also, you can power the board via a DC Jack input (7 to 15V DC) is acceptable. There is a switch to choose the system\ns supply voltage either 3.3V or 5V, which is very useful if you want to set the system to 3.3V to interact with low voltage sensors.\n\n\nFinally, the three on-board Grove interfaces can make your board connect to Grove modules easily. Want to make something awesome, maybe just a Seeeduino v4.2 and some Groves is enough.\n\n\n\n\nFeatures\n\uf0c1\n\n\n\n\nATmega328 microcontroller\n\n\nArduino UNO bootloader\n\n\n14 Digital I/O Pins (6 PWM outputs)\n\n\n6 Analog Inputs\n\n\nISP Header\n\n\nArduino UNO-R3 Shield Compatible\n\n\nMicro USB programming and power supply\n\n\n3 on-board Grove connectors\n\n\n3.3/5V system operation power switch\n\n\nAdditional pads aligned to 0.1\n grid\n\n\n\n\nSpecification\n\uf0c1\n\n\n\n\n\n\n\n\nItem\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nDC Jack Input\n\n\n7-12V\n\n\n\n\n\n\nDC Output Current\n\n\n\n\n\n\n\n\n5V Pin\n\n\nWith Micro USB    500mA Max\n\n\n\n\n\n\n5V Pin\n\n\nWith DC Jack Power    2000mA Max\n\n\n\n\n\n\n3V3 Pin\n\n\n500mA Max\n\n\n\n\n\n\nDC Current per I/O Pin\n\n\n40mA\n\n\n\n\n\n\nOther specifications\n\n\n\n\n\n\n\n\nFlash Memory\n\n\n32 KB\n\n\n\n\n\n\nRAM\n\n\n2 KB\n\n\n\n\n\n\nEEPROM\n\n\n1 KB\n\n\n\n\n\n\nClock Speed\n\n\n16 MHz\n\n\n\n\n\n\nDimension\n\n\n68.6mm x 53.4mm\n\n\n\n\n\n\nWeight\n\n\n26g\n\n\n\n\n\n\n\n\nHardware Overview\n\uf0c1\n\n\nThe images below shows an overview of Seeeduino v4.2 hardware features. The pin-out and alternate functions of various pins of Seeeduino v4.2 are shown in the pin-out diagram. This could be used as a quick reference.\n\n\n\n\n\n\nLED-D13\n\nAn LED is connected to D13 pin of the board. This can be used as an on-board LED indicator for programs/sketches.\n\n\nUSB Input\n\nUSB Port is used to connect the board to your PC for programming and for powering up. Micro USB is the ubiquitous version of USB, found in most Android phones, and other devices. You probably have dozens of these cables laying around your house.\n\n\nRX/TX Indicator\n\nThe TX and RX LED indicators are connected to Txd and Rxd of USB-to-UART chip. They work automatically, they let you know when the board is sending or receiving data respectively.\n\n\nSystem Power Switch\n\nSlide switch is used to change the logic level and operating voltage of the board to either 5V or 3.3V. Nowadays, many new and great sensors are being developed to work only with 3.3V, with other *duino boards you would need to place a logic level converter between the board and these sensor(s). With the Seeeduino V4.2 board all you have to do is slide the switch!\n\n\nDC Input\n\nThe DC power jack allows your Seeeduino board to be powered from a wall adapter so that you can supply more power to your project if needed. For example when using DC motors or other high power devices. The DC input can be 7V-15V.\n\n\nReset\n\nThis button is conveniently placed on the side to allow you to reset the Seeeduino board even when a shield is placed on top. This is not the case in other -duino boards where the button is placed on top making it hard to access.\n\n\nPower Pins \n Analog Pins\n\nJust like the extra Digital header pads, these extra connections are something we have personally come to realize people need in their projects, especially the power connections if you want to power more than one sensor/device without the use of a breadboard.\n\n\nGrove Connectors\n\nSeeedStudio has a variety of sensors/devices that can make use of this I2C or UART connection. In addition, we sell independent Grove connectors to help you make our own sensor connections. The I2C Grove connector is also connected to analog pin A4 and A5 for SDA and SCL respectively if you would like to use those pins instead. The UART Grove connector is connected to digital pins 0 and 1 for RX and TX respectively.\n\n\nICSP\n\nThis is the ICSP connection for the ATmega328P, it is located in the standard ICSP/SPI position for Arduino Uno, Due, Mega, and Leonardo compatible hardware (e.g. shields) that may use this connector. The SPI pins in this port: MISO, SCK, and MOSI, are also connected to digital pins 12, 13, and 11 respectively just like those of the Arduino Uno.\n\n\nUSB 2 Uart\n\nPinout of USB-2-Uart. These pads can be used to interact with other UART devices by putting the on-board ATmega328 in reset mode. This makes Seeeduino V4.2 to be used a USB2UART utility board.\n\n\nAdditional 0.1\n Grid aligned header Pads\n\nSometimes it is very convenient to connect a sensor/device to your board directly instead of going through a breadboard, or perhaps you want to solder the sensor directly to the board once you\nve completed your project, or maybe you want to monitor the output of the pins while they\nre been used by other devices. In any cases we have added these extra pads to help you along the way. These pads are aligned in 0.1\n grid and can conveniently work with general purpose dot-matrix PCBs .\n\n\n\n\nNote\n: Take gentle care in handling micro USB socket, or you might break the socket off.\n\n\nGetting Started\n\uf0c1\n\n\nThe general steps in using Seeeduino v4.2 are\n\n\n\n\nDownload Arduino IDE software (for your platform)\n\n\nInstall Drivers based on OS platform\n\n\nCompile and run your first sketch\n\n\n\n\nLet us see how to get started in detail based on OS platform.\n\n\nGetting Started on Windows\n\uf0c1\n\n\nThis part is based on the \nGetting Started with Arduino on Windows\n, click to view the original page.\n\n\nGet a Micro-USB cable\n\uf0c1\n\n\nYou need a Micro-USB cable first, the data cable of an Android Phone will do fine.\nIf you can\nt find one, you can buy one \nhere\n.\n\n\nDownload the Arduino Software (IDE)\n\uf0c1\n\n\nGet the latest version from the \ndownload page\n. When the download finishes, unzip the downloaded file.\n\n\nConnect the board\n\uf0c1\n\n\nThe Seeeduino V4.2 automatically draw power from either the USB connection to the computer or an external power supply.\nConnect the Arduino board to your computer using the USB cable. The green power LED (labelled \nPWR\n) should go on.\n\n\nInstall the drivers\n\uf0c1\n\n\nInstalling drivers for the Seeeduino V4.2 with \nWindows 7\n, \nVista\n, or \nXP\n\uf0c1\n\n\n\n\nPlug in your board and wait for Windows to begin its driver installation process. After a few moments, the process will fail, despite best efforts.\n\n\nClick on the Start Menu, and open up the Control Panel.\n\n\nWhile in the Control Panel, navigate to System and Security. Next, click on System. Once the System window is up, open the Device Manager.\n\n\nLook under Ports (COM \n LPT). You should see an open port named \nSeeeduino v4\n. If there is no COM \n LPT section, look under \nOther Devices\n for \nUnknown Device\n.\n\n\nRight click on the \nSeeeduino v4\n port and choose the \nUpdate Driver Software\n option.\n\n\nNext, choose the \nBrowse my computer for Driver software\n option.\n\n\nDownload Driver for Seeeuino V4.2, and unzip to your PC.\n\n\nFinally, navigate to and select the driver file named \nSeeeduinoV4.inf\n\n\nWindows will finish up the driver installation from there.\n\n\n\n\nInstalling drivers for the Seeeduino V4.2 with Windows 8/8.1\n\uf0c1\n\n\nFirstly, you should disable the digital signature verification of your system. Follow the steps listed below:\nYou should save these files which you are editing before installing driver in Window 8\uff0cbecause there will several power off/on during the operation.\n- Press \u201cWindows Key\u201d +\u201dR\u201d\n- Enter shutdown.exe /r /o /f /t 00\n- Click the \nOK\n button.\n- System will restart to a \nChoose an option\n screen\n- Select \nTroubleshoot\n from \nChoose an option\n screen\n- Select \nAdvanced options\n from \nTroubleshoot\n screen\n- Select \nWindows Startup Settings\n from \nAdvanced options\n screen\n- Click \nRestart\n button\n- System will restart to \nAdvanced Boot Options\n screen\n- Select \nDisable Driver Signature Enforcement\n\n- Once the system starts, you can install the Seeeduino driver.\n- And the rest of the steps are same as Win7.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLaunch the Arduino application\n\uf0c1\n\n\nDouble-click the Arduino application (arduino.exe) you have previously downloaded. (Note: if the Arduino Software loads in a different language, you can change it in the preferences dialog. See the \nArduino Software (IDE) page\n for details.)\n\n\nOpen the Blink example\n\uf0c1\n\n\nOpen the LED blink example sketch: \nFile \n Examples \n01.Basics \n Blink\n.\n\n\n\n\nSelect your board\n\uf0c1\n\n\nYou\nll need to select the entry in the \nTools \n Board\n menu that corresponds to your Arduino.\nSelecting an \nArduino Uno\n:\n\n\n\n\nSelect your serial port\n\uf0c1\n\n\nSelect the serial device of the Arduino board from the Tools | Serial Port menu. This is likely to be COM3 or higher (\nCOM1\n and \nCOM2\n are usually reserved for hardware serial ports). To find out, you can disconnect your Arduino board and re-open the menu; the entry that disappears should be the Arduino board. Reconnect the board and select that serial port.\n\n\nUpload the program\n\uf0c1\n\n\nNow, simply click the \nUpload\n button in the environment. Wait a few seconds - you should see the RX and TX LED indicators on the board flashing. If the upload is successful, the message \nDone uploading.\n will appear in the status bar.\n\n\n\n\nA few seconds after the upload finishes, you should see the pin 13 (L) LED on the board start to blink (in orange). If it does, congratulations! You\nve gotten Arduino up-and-running. If you have problems, please see the troubleshooting suggestions.\n\n\n\n\nGetting Started on Mac OS X\n\uf0c1\n\n\nThis part is base on the \nGetting Started w/ Arduino on Mac OS X\n, click to view the original page.\n\n\nDownload the Arduino environment\n\uf0c1\n\n\nGet the latest version from the \ndownload page\n. When the download is finished, double-click the *.zip file. This will expand the Arduino application.\n\n\nInstall the Software\n\uf0c1\n\n\nCopy the Arduino application into the Applications folder (or elsewhere on your computer).\n\n\nConnect the board\n\uf0c1\n\n\nThe Seeeduino V4.2 automatically draw power from either the USB connection to the computer or an external power supply. Connect the Arduino board to your computer using the USB cable. The green power LED (labelled PWR) should go on.\n\n\nLaunch the Arduino application\n\uf0c1\n\n\nDouble-click the Arduino application.\n\n\nNote\n: if the Arduino software loads in the wrong language, you can change it in the preferences dialog. See the \nenvironment page\n for details.\n\n\nOpen the blink example\n\uf0c1\n\n\nOpen the LED blink example sketch: \nFile \n Examples \n 01.Basics \n Blink\n.\n\n\n\n\nSelect your board\n\uf0c1\n\n\nYou\nll need to select the entry in the Tools \n Board menu that corresponds to your Arduino.\n\n\n\n\nSelect your Serial Port\n\uf0c1\n\n\nSelect the serial device of the Arduino board from the Tools \n Serial Port menu. On the Mac, this should be something with /dev/tty.USBmodem (for the Uno or Mega 2560) or /dev/tty.USBserial (for older boards) in it.\n\n\n\n\nSelecting an Uno\n\n\nUpload the program\n\uf0c1\n\n\nNow, simply click the \nUpload\n button in the environment. Wait a few seconds - you should see the RX and TX LED indicators on the board flashing. If the upload is successful, the message \nDone uploading.\n will appear in the status bar.\n\n\n\n\nA few seconds after the upload finishes, you should see the pin 13 (L) LED on the board start to blink (in orange). If it does, congratulations! You\nve gotten Arduino up-and-running. If you have problems, please see the troubleshooting suggestions.\n\n\nGetting Started on Linux\n\uf0c1\n\n\nFor using on Linux, please go to \nInstalling Arduino on Linux\n\n\nResources/References\n\uf0c1\n\n\nResources\n\n- \nSchematic and PCB files Seeeduino V4.2 in EAGLE format\n\n- \nSchematic of Seeeduino V4.2 in PDF\n\n- \nATMEGA328P-MU Summary\n\n- \nATMEGA16U2 Summary\n\n- \nOther Version of Seeeduino\n\n- \nDriver for Seeeduino V4.2\n\n\nReferences\n\n- \nGetting Started with Arduino\n\n- \nArduino Language Reference\n\n- \nDownload the Arduino Software(IDE)\n\n- \nArduino FAQ\n\n- \nArduino Introduction\n\n- \nWikipedia page for Arduino", 
+            "title": "Seeeduino V4.2"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#seeeduino-v42", 
+            "text": "", 
+            "title": "Seeeduino V4.2"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#introduction", 
+            "text": "Seeeduino v4.2 is an Open Source, Arduino-compatible ATmega328 MCU development board. We think Seeeduino v4.2 is one of the best Arduino derivatives/compatibles available. Seeeduino v4.2 is feature rich, much more stable, easy-to-use and even good looking.  Seeeduino v4.2 is based the Arduino UNO bootloader, an ATmega16U2 as a UART-to-USB converter (basically work like an FTDI USB2UART chip). The board comes with an additional set of through-hole pads for all pins. These pads are aligned to 0.1  grid. This makes it easy to solder additional pin-headers to plug into breadboard or create your own attachment/shield with 0.1  dot-matrix general purpose PCBs.  You can program the board via a micro-USB cable. Also, you can power the board via a DC Jack input (7 to 15V DC) is acceptable. There is a switch to choose the system s supply voltage either 3.3V or 5V, which is very useful if you want to set the system to 3.3V to interact with low voltage sensors.  Finally, the three on-board Grove interfaces can make your board connect to Grove modules easily. Want to make something awesome, maybe just a Seeeduino v4.2 and some Groves is enough.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#features", 
+            "text": "ATmega328 microcontroller  Arduino UNO bootloader  14 Digital I/O Pins (6 PWM outputs)  6 Analog Inputs  ISP Header  Arduino UNO-R3 Shield Compatible  Micro USB programming and power supply  3 on-board Grove connectors  3.3/5V system operation power switch  Additional pads aligned to 0.1  grid", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#specification", 
+            "text": "Item  Value      DC Jack Input  7-12V    DC Output Current     5V Pin  With Micro USB    500mA Max    5V Pin  With DC Jack Power    2000mA Max    3V3 Pin  500mA Max    DC Current per I/O Pin  40mA    Other specifications     Flash Memory  32 KB    RAM  2 KB    EEPROM  1 KB    Clock Speed  16 MHz    Dimension  68.6mm x 53.4mm    Weight  26g", 
+            "title": "Specification"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#hardware-overview", 
+            "text": "The images below shows an overview of Seeeduino v4.2 hardware features. The pin-out and alternate functions of various pins of Seeeduino v4.2 are shown in the pin-out diagram. This could be used as a quick reference.    LED-D13 \nAn LED is connected to D13 pin of the board. This can be used as an on-board LED indicator for programs/sketches.  USB Input \nUSB Port is used to connect the board to your PC for programming and for powering up. Micro USB is the ubiquitous version of USB, found in most Android phones, and other devices. You probably have dozens of these cables laying around your house.  RX/TX Indicator \nThe TX and RX LED indicators are connected to Txd and Rxd of USB-to-UART chip. They work automatically, they let you know when the board is sending or receiving data respectively.  System Power Switch \nSlide switch is used to change the logic level and operating voltage of the board to either 5V or 3.3V. Nowadays, many new and great sensors are being developed to work only with 3.3V, with other *duino boards you would need to place a logic level converter between the board and these sensor(s). With the Seeeduino V4.2 board all you have to do is slide the switch!  DC Input \nThe DC power jack allows your Seeeduino board to be powered from a wall adapter so that you can supply more power to your project if needed. For example when using DC motors or other high power devices. The DC input can be 7V-15V.  Reset \nThis button is conveniently placed on the side to allow you to reset the Seeeduino board even when a shield is placed on top. This is not the case in other -duino boards where the button is placed on top making it hard to access.  Power Pins   Analog Pins \nJust like the extra Digital header pads, these extra connections are something we have personally come to realize people need in their projects, especially the power connections if you want to power more than one sensor/device without the use of a breadboard.  Grove Connectors \nSeeedStudio has a variety of sensors/devices that can make use of this I2C or UART connection. In addition, we sell independent Grove connectors to help you make our own sensor connections. The I2C Grove connector is also connected to analog pin A4 and A5 for SDA and SCL respectively if you would like to use those pins instead. The UART Grove connector is connected to digital pins 0 and 1 for RX and TX respectively.  ICSP \nThis is the ICSP connection for the ATmega328P, it is located in the standard ICSP/SPI position for Arduino Uno, Due, Mega, and Leonardo compatible hardware (e.g. shields) that may use this connector. The SPI pins in this port: MISO, SCK, and MOSI, are also connected to digital pins 12, 13, and 11 respectively just like those of the Arduino Uno.  USB 2 Uart \nPinout of USB-2-Uart. These pads can be used to interact with other UART devices by putting the on-board ATmega328 in reset mode. This makes Seeeduino V4.2 to be used a USB2UART utility board.  Additional 0.1  Grid aligned header Pads \nSometimes it is very convenient to connect a sensor/device to your board directly instead of going through a breadboard, or perhaps you want to solder the sensor directly to the board once you ve completed your project, or maybe you want to monitor the output of the pins while they re been used by other devices. In any cases we have added these extra pads to help you along the way. These pads are aligned in 0.1  grid and can conveniently work with general purpose dot-matrix PCBs .   Note : Take gentle care in handling micro USB socket, or you might break the socket off.", 
+            "title": "Hardware Overview"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#getting-started", 
+            "text": "The general steps in using Seeeduino v4.2 are   Download Arduino IDE software (for your platform)  Install Drivers based on OS platform  Compile and run your first sketch   Let us see how to get started in detail based on OS platform.", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#getting-started-on-windows", 
+            "text": "This part is based on the  Getting Started with Arduino on Windows , click to view the original page.", 
+            "title": "Getting Started on Windows"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#get-a-micro-usb-cable", 
+            "text": "You need a Micro-USB cable first, the data cable of an Android Phone will do fine.\nIf you can t find one, you can buy one  here .", 
+            "title": "Get a Micro-USB cable"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#download-the-arduino-software-ide", 
+            "text": "Get the latest version from the  download page . When the download finishes, unzip the downloaded file.", 
+            "title": "Download the Arduino Software (IDE)"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#connect-the-board", 
+            "text": "The Seeeduino V4.2 automatically draw power from either the USB connection to the computer or an external power supply.\nConnect the Arduino board to your computer using the USB cable. The green power LED (labelled  PWR ) should go on.", 
+            "title": "Connect the board"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#install-the-drivers", 
+            "text": "", 
+            "title": "Install the drivers"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#installing-drivers-for-the-seeeduino-v42-with-windows-7-vista-or-xp", 
+            "text": "Plug in your board and wait for Windows to begin its driver installation process. After a few moments, the process will fail, despite best efforts.  Click on the Start Menu, and open up the Control Panel.  While in the Control Panel, navigate to System and Security. Next, click on System. Once the System window is up, open the Device Manager.  Look under Ports (COM   LPT). You should see an open port named  Seeeduino v4 . If there is no COM   LPT section, look under  Other Devices  for  Unknown Device .  Right click on the  Seeeduino v4  port and choose the  Update Driver Software  option.  Next, choose the  Browse my computer for Driver software  option.  Download Driver for Seeeuino V4.2, and unzip to your PC.  Finally, navigate to and select the driver file named  SeeeduinoV4.inf  Windows will finish up the driver installation from there.", 
+            "title": "Installing drivers for the Seeeduino V4.2 with Windows 7, Vista, or XP"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#installing-drivers-for-the-seeeduino-v42-with-windows-881", 
+            "text": "Firstly, you should disable the digital signature verification of your system. Follow the steps listed below:\nYou should save these files which you are editing before installing driver in Window 8\uff0cbecause there will several power off/on during the operation.\n- Press \u201cWindows Key\u201d +\u201dR\u201d\n- Enter shutdown.exe /r /o /f /t 00\n- Click the  OK  button.\n- System will restart to a  Choose an option  screen\n- Select  Troubleshoot  from  Choose an option  screen\n- Select  Advanced options  from  Troubleshoot  screen\n- Select  Windows Startup Settings  from  Advanced options  screen\n- Click  Restart  button\n- System will restart to  Advanced Boot Options  screen\n- Select  Disable Driver Signature Enforcement \n- Once the system starts, you can install the Seeeduino driver.\n- And the rest of the steps are same as Win7.", 
+            "title": "Installing drivers for the Seeeduino V4.2 with Windows 8/8.1"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#launch-the-arduino-application", 
+            "text": "Double-click the Arduino application (arduino.exe) you have previously downloaded. (Note: if the Arduino Software loads in a different language, you can change it in the preferences dialog. See the  Arduino Software (IDE) page  for details.)", 
+            "title": "Launch the Arduino application"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#open-the-blink-example", 
+            "text": "Open the LED blink example sketch:  File   Examples  01.Basics   Blink .", 
+            "title": "Open the Blink example"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#select-your-board", 
+            "text": "You ll need to select the entry in the  Tools   Board  menu that corresponds to your Arduino.\nSelecting an  Arduino Uno :", 
+            "title": "Select your board"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#select-your-serial-port", 
+            "text": "Select the serial device of the Arduino board from the Tools | Serial Port menu. This is likely to be COM3 or higher ( COM1  and  COM2  are usually reserved for hardware serial ports). To find out, you can disconnect your Arduino board and re-open the menu; the entry that disappears should be the Arduino board. Reconnect the board and select that serial port.", 
+            "title": "Select your serial port"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#upload-the-program", 
+            "text": "Now, simply click the  Upload  button in the environment. Wait a few seconds - you should see the RX and TX LED indicators on the board flashing. If the upload is successful, the message  Done uploading.  will appear in the status bar.   A few seconds after the upload finishes, you should see the pin 13 (L) LED on the board start to blink (in orange). If it does, congratulations! You ve gotten Arduino up-and-running. If you have problems, please see the troubleshooting suggestions.", 
+            "title": "Upload the program"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#getting-started-on-mac-os-x", 
+            "text": "This part is base on the  Getting Started w/ Arduino on Mac OS X , click to view the original page.", 
+            "title": "Getting Started on Mac OS X"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#download-the-arduino-environment", 
+            "text": "Get the latest version from the  download page . When the download is finished, double-click the *.zip file. This will expand the Arduino application.", 
+            "title": "Download the Arduino environment"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#install-the-software", 
+            "text": "Copy the Arduino application into the Applications folder (or elsewhere on your computer).", 
+            "title": "Install the Software"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#connect-the-board_1", 
+            "text": "The Seeeduino V4.2 automatically draw power from either the USB connection to the computer or an external power supply. Connect the Arduino board to your computer using the USB cable. The green power LED (labelled PWR) should go on.", 
+            "title": "Connect the board"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#launch-the-arduino-application_1", 
+            "text": "Double-click the Arduino application.  Note : if the Arduino software loads in the wrong language, you can change it in the preferences dialog. See the  environment page  for details.", 
+            "title": "Launch the Arduino application"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#open-the-blink-example_1", 
+            "text": "Open the LED blink example sketch:  File   Examples   01.Basics   Blink .", 
+            "title": "Open the blink example"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#select-your-board_1", 
+            "text": "You ll need to select the entry in the Tools   Board menu that corresponds to your Arduino.", 
+            "title": "Select your board"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#select-your-serial-port_1", 
+            "text": "Select the serial device of the Arduino board from the Tools   Serial Port menu. On the Mac, this should be something with /dev/tty.USBmodem (for the Uno or Mega 2560) or /dev/tty.USBserial (for older boards) in it.   Selecting an Uno", 
+            "title": "Select your Serial Port"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#upload-the-program_1", 
+            "text": "Now, simply click the  Upload  button in the environment. Wait a few seconds - you should see the RX and TX LED indicators on the board flashing. If the upload is successful, the message  Done uploading.  will appear in the status bar.   A few seconds after the upload finishes, you should see the pin 13 (L) LED on the board start to blink (in orange). If it does, congratulations! You ve gotten Arduino up-and-running. If you have problems, please see the troubleshooting suggestions.", 
+            "title": "Upload the program"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#getting-started-on-linux", 
+            "text": "For using on Linux, please go to  Installing Arduino on Linux", 
+            "title": "Getting Started on Linux"
+        }, 
+        {
+            "location": "/Platform/Arduino/SeeeduinoV4.2/#resourcesreferences", 
+            "text": "Resources \n-  Schematic and PCB files Seeeduino V4.2 in EAGLE format \n-  Schematic of Seeeduino V4.2 in PDF \n-  ATMEGA328P-MU Summary \n-  ATMEGA16U2 Summary \n-  Other Version of Seeeduino \n-  Driver for Seeeduino V4.2  References \n-  Getting Started with Arduino \n-  Arduino Language Reference \n-  Download the Arduino Software(IDE) \n-  Arduino FAQ \n-  Arduino Introduction \n-  Wikipedia page for Arduino", 
+            "title": "Resources/References"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/", 
+            "text": "CAN-BUS Shield\n\uf0c1\n\n\n\n\nIntroduction\n\uf0c1\n\n\n\n\nCAN-BUS\n is a common industrial bus because of its long travel distance, medium communication speed and high reliability. It is commonly found on modern machine tools and as an automotive diagnostic bus. \n\n\nThis CAN-BUS Shield adopts \nMCP2515\n CAN Bus controller with SPI interface and \nMCP2551\n CAN transceiver to give your Arduino/Seeeduino CAN-BUS capibility. With an \nOBD-II\n converter cable added on and the OBD-II library imported, you are ready to build an onboard diagnostic device or data logger.\n\n\n\n\nFeatures\n\uf0c1\n\n\n\n\nImplements CAN V2.0B at up to \n1 Mb/s\n\n\nSPI Interface up to \n10 MHz\n\n\nStandard (\n11 bit\n) and extended (\n29 bit\n) data and remote frames\n\n\nTwo receive buffers with prioritized message storage\n\n\nIndustrial standard DB-9 connector\n\n\nLED indicators\n\n\n\n\nHardware Overview\n\uf0c1\n\n\n\n\n\n\nDB9 Interface\n - to connect to OBDII Interface via a DBG-OBD Cable.\n\n\nV_OBD\n - If get power from OBDII Interface(from DB9)\n\n\nLed Indicator\n:\n\n\nPWR\n: power\n\n\nTX\n: blink when the data is sending\n\n\nRX\n: blink when there\ns data coming\n\n\nINT\n: data interrupt\n\n\n\n\n\n\nTerminal\n - CAN_H and CAN_L\n\n\nArduino UNO pin out\n\n\nSerial Grove connector\n\n\nI2C Grove connector\n\n\nICSP pins\n\n\nIC\n - MCP2551, a high-speed can transceiver (\ndatasheet\n)\n\n\nIC\n - MCP2515, stand-alone CAN controller wth SPI interface (\ndatasheet\n)\n\n\n\n\n\n\nWarning\n\n\nWhen you use more than two CAN Bus Shield in one net, you should think about the impedance.\nYou can just cut P1 in the PCB with a knife, or just remove R3 on the PCB.\n\n\n\n\nPin map\n\uf0c1\n\n\n\n\n\n\nNote\n\n\nThe pin FREE is available for the others usage. \n\n\n\n\nDB9\nOBDii Interface\n\uf0c1\n\n\n\n\nCS pin\n\uf0c1\n\n\nSPI_CS pin of V1.2 is fefault to \nD9\n. If you want to change it to \nD10\n. Take a look at the back of the PCBA, you will find a pad named CS. You can cut the wire that at the left of the pad with a box cutter, and the solder the right 2 pads. \n\n\n\n\nWarning\n\n\nBe careful when you are going to change CS pin, it\ns easy to hear yourself or the PCBA.\n\n\n\n\n\n\nSPI pins\n\uf0c1\n\n\nThe SPI pins(SCK, MISO, MOSI) is default to the ICSP pins. But for some Boards, maybe the SPI pins is at D11~D13, if so you need to change something in the PCBA. Take a look that the back of the PCBA, there\nre there pads, MOSI, MISO and SCK, they are default to A. You can change them to B if needed.\n\n\n\n\nNote\n\n\nFor Arduino UNO, Arduino Mega, Arduino Leonardo and any others AVR based Arduino boards, default is working. \n\n\n\n\n\n\nWarning\n\n\nBe careful when you are going to change SPI pins, it\ns easy to hear yourself or the PCBA.\n\n\n\n\nGetting Started\n\uf0c1\n\n\nHere\ns a simple demo to show you how CAN-BUS Shield works. In this demo we need 2 piece of CAN-BUS Shield as well as Arduino/Seeeduino.\n\n\n\n\nNote\n\n\nThis demo is built under \nArduino IDE version 1.6.9\n.\n\n\n\n\nSTEP1: What do we need\n\uf0c1\n\n\n\n\n\n\n\n\nName\n\n\nFunction\n\n\nQty\n\n\nLink\n\n\n\n\n\n\n\n\n\n\nCAN-BUS Shield\n\n\nCAN Bus communication\n\n\n2\n\n\nlink\n\n\n\n\n\n\nSeeeduino V4.2\n\n\nController\n\n\n2\n\n\nlink\n\n\n\n\n\n\nJumper Wire\n\n\nconnection\n\n\n2\n\n\nlink\n\n\n\n\n\n\n\n\nSTEP2: Hardware Connection\n\uf0c1\n\n\nInsert each CAN-BUS Shield to Seeeduino V4.2, and connect the 2 CAN-BUS Shield togeter via 2 jumper wires. Shown as below images. \n\n\n\n\n\n\nNote\n\n\nCAN_H to CAN_H, CAN_L to CAN_L\n\n\n\n\nSTEP3: Software\n\uf0c1\n\n\nClick on the below button to download the library.\n\n\n\n\nInstall the library to your Arduino IDE when it is downloaded. \n\n\nOf of the node(a node means Seeeduino + CAN_BUS Shield) act as master, the other act as slaver. The master will send data to slaver constantly. \n\n\n\n\nNote\n\n\nEach node can act at master before the code is uploaded. \n\n\n\n\nOpen the \nsend\n example (\nFile \n Examples \n CAN_BUS_Shield-master \n send\n) and upload to the \nmaster\n. \n\n\nOpen the \nreceive_check\n example (\nFile \n Examples \n CAN_BUS_Shield-master \n receive_check\n) and upload to the \nslaver\n.\n\n\nSTEP4: View Result\n\uf0c1\n\n\nOpen the Serial Monitor of Arduino IDE(\nslaver\n), you will get the data sent from the master. \n\n\n\n\nAPIs\n\uf0c1\n\n\n1. Set the Baudrate\n\uf0c1\n\n\nThis function is used to initialize the baudrate of the CAN Bus system.\n\n\nThe available baudrates are listed as follws:\n\n\n#define CAN_5KBPS    1\n#define CAN_10KBPS   2\n#define CAN_20KBPS   3\n#define CAN_25KBPS   4 \n#define CAN_31K25BPS 5\n#define CAN_33KBPS   6\n#define CAN_40KBPS   7\n#define CAN_50KBPS   8\n#define CAN_80KBPS   9\n#define CAN_83K3BPS  10\n#define CAN_95KBPS   11\n#define CAN_100KBPS  12\n#define CAN_125KBPS  13\n#define CAN_200KBPS  14\n#define CAN_250KBPS  15\n#define CAN_500KBPS  16\n#define CAN_666kbps  17\n#define CAN_1000KBPS 18\n\n\n\n2. Set Receive Mask and Filter\n\uf0c1\n\n\nThere are \n2\n receive mask registers and \n5\n filter registers on the controller chip that guarantee you get data from the target device. They are useful especially in a large network consisting of numerous nodes.\n\n\nWe provide two functions for you to utilize these mask and filter registers. They are:\n\n\nMask:\n\n\ninit_Mask(unsigned char num, unsigned char ext, unsigned char ulData);\n\n\n\nFilter:\n\n\ninit_Filt(unsigned char num, unsigned char ext, unsigned char ulData);\n\n\n\n\n\nnum\n represents which register to use. You can fill 0 or 1 for mask and 0 to 5 for filter.\n\n\next\n represents the status of the frame. 0 means it\ns a mask or filter for a standard frame. 1 means it\ns for a extended frame.\n\n\nulData\n represents the content of the mask of filter.\n\n\n\n\n3. Check Receive\n\uf0c1\n\n\nThe MCP2515 can operate in either a polled mode, where the software checks for a received frame, or using additional pins to signal that a frame has been received or transmit completed. \n\n\nUse the following function to poll for received frames.\n\n\nINT8U MCP_CAN::checkReceive(void);\n\n\n\nThe function will return 1 if a frame arrives, and 0 if nothing arrives.\n\n\n4. Get CAN ID\n\uf0c1\n\n\nWhen some data arrive, you can use the following function to get the CAN ID of the \nsend\n node.\n\n\nINT32U MCP_CAN::getCanId(void)\n\n\n\n5. Send Data\n\uf0c1\n\n\nCAN.sendMsgBuf(INT8U id, INT8U ext, INT8U len, data_buf);\n\n\n\nIt is a function to send data onto the bus. In which:\n\n\n\n\nid\n represents where the data come from.\n\n\next\n represents the status of the frame. \n0\n means standard frame. \n1\n means extended frame.\n\n\nlen\n represents the length of this frame.\n\n\ndata_buf\n is the content of this message.\n\n\n\n\nFor example, In the \nsend\n example, we have:\n\n\nunsigned char stmp[8] = {0, 1, 2, 3, 4, 5, 6, 7};\nCAN.sendMsgBuf(0x00, 0, 8, stmp); //send out the message 'stmp' to the bus and tell other devices this is a standard frame from 0x00.\n\n\n\n6. Receive Data\n\uf0c1\n\n\nThe following function is used to receive data on the \nreceive\n node:\n\n\nCAN.readMsgBuf(unsigned char len, unsigned char buf);\n\n\n\nIn conditions that masks and filters have been set. This function can only get frames that meet the requirements of masks and filters.\n\n\n\n\nlen\n represents the data length.\n\n\nbuf\n is where you store the data.\n\n\n\n\nGenerate a New BaudRate\n\uf0c1\n\n\nWe had provided many frequently-used baud rate, as below:\n\n\n#define CAN_5KBPS    1\n#define CAN_10KBPS   2\n#define CAN_20KBPS   3\n#define CAN_25KBPS   4 \n#define CAN_31K25BPS 5\n#define CAN_33KBPS   6\n#define CAN_40KBPS   7\n#define CAN_50KBPS   8\n#define CAN_80KBPS   9\n#define CAN_83K3BPS  10\n#define CAN_95KBPS   11\n#define CAN_100KBPS  12\n#define CAN_125KBPS  13\n#define CAN_200KBPS  14\n#define CAN_250KBPS  15\n#define CAN_500KBPS  16\n#define CAN_666kbps  17\n#define CAN_1000KBPS 18\n\n\n\nYet you may still can\nt find the rate you want. Here we provide a software to help you to calculate the baud rate you need.\n\n\nClick \nhere\n to download the software, it\ns in Chinese, but never mind, it\ns easy to use. \n\n\n\n\n\n\nNote\n\n\nThis software support Windows system only. If you can\nt open it, please free to contact loovee@seeed.cc for help. \n\n\n\n\nOpen the software, what you need to do is set the baud rate you want, and do some simple setting, then click \ncalculate\n.\n\n\nThen you will get some data, cfg1, cfg2 and cfg3.\n\n\nYou need to add some code to the library.\n\n\nOpen \nmcp_can_dfs.h\n, you need to add some code at about line 272:\n\n\n#define MCP_16MHz_xxxkBPS_CFG1 (cfg1)    // xxx is the baud rate you need\n#define MCP_16MHz_xxxkBPS_CFG2 (cfg2)\n#define MCP_16MHz_xxxkBPS_CFG3 (cfg2)\n\n\n\nThen let\ns go to about line 390, add some code:\n\n\n#define CAN_xxxKBPS NUM       // xxx is the baudrate you need, and NUM is a number, you need to get a different from the other rates.\n\n\n\nOpen \nmcp_can.cpp\n, goto the function \nmcp2515_configRate\n(at about line 190), then add some code:\n\n\ncase (CAN_xxxKBPS):\n    cfg1 = MCP_16MHz_xxxkBPS_CFG1;\n    cfg2 = MCP_16MHz_xxxkBPS_CFG2;\n    cfg3 = MCP_16MHz_xxxkBPS_CFG3;\n    break;\n\n\n\nThen you can use the baud rate you need. And please give me a pull request at github when you use a new rate, so I can add it to the library to help the other guys.\n\n\nProjects\n\uf0c1\n\n\nIf you want to make some awesome projects with CAN-BUS shield, here\ns some projects for reference.\n\n\nVolkswagen CAN BUS Gaming\n\uf0c1\n\n\n\n\nEver wanted to play a car/truck simulator with a real dashboard on your PC? Me too! I\nm trying to control a VW Polo 6R dashboard via CAN Bus with an Arduino Uno and a Seeed CAN Bus Shield. Inspired by Silas Parker. Thanks to Sepp and Is0-Mick for their great support!\n\n\n\n\nHack your vehicle CAN-BUS\n\uf0c1\n\n\n\n\nModern Vehicles all come equipped with a CAN-BUS Controller Area Network, Instead of having a million wires running back and forth from various devices in your car to the battery, its making use of a more clever system.\n\n\nAll electronic functions are connected to the TIPM, (Totally integrated Power Module), such as solenoids/relays to lock the doors or mini motors to wind the windows ect ect.\n\n\nFrom each node (IE Switch pod that controls your windows or electric door locks) it broadcasts a message across the CAN. When the TIPM detects a valid message it will react accordingly like, lock the doors , switch on lights and so on.\n\n\n\n\nResources\n\uf0c1\n\n\n\n\n\u3010PDF\u3011\nCAN-BUS Shield V1.2 Schmatics\n\n\n\u3010Eagle\u3011\nSchematic of CAN-BUS Shield V1.2\n \n\n\n\u3010Library\u3011\nArduino Library for CAN-BUS Shield\n\n\n\u3010Datasheet\u3011\nMCP2515 datasheet\n\n\n\u3010Datasheet\u3011\nMCP2551 datasheet\n\n\n\u3010Demo\u3011\nAn OBD Demo\n\n\n\u3010\nTool\u3011\nMCP2515 Baud Rate Tool\n\n\n\n\nIs this page helpful\n\uf0c1", 
+            "title": "CAN-BUS Shield"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#can-bus-shield", 
+            "text": "", 
+            "title": "CAN-BUS Shield"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#introduction", 
+            "text": "CAN-BUS  is a common industrial bus because of its long travel distance, medium communication speed and high reliability. It is commonly found on modern machine tools and as an automotive diagnostic bus.   This CAN-BUS Shield adopts  MCP2515  CAN Bus controller with SPI interface and  MCP2551  CAN transceiver to give your Arduino/Seeeduino CAN-BUS capibility. With an  OBD-II  converter cable added on and the OBD-II library imported, you are ready to build an onboard diagnostic device or data logger.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#features", 
+            "text": "Implements CAN V2.0B at up to  1 Mb/s  SPI Interface up to  10 MHz  Standard ( 11 bit ) and extended ( 29 bit ) data and remote frames  Two receive buffers with prioritized message storage  Industrial standard DB-9 connector  LED indicators", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#hardware-overview", 
+            "text": "DB9 Interface  - to connect to OBDII Interface via a DBG-OBD Cable.  V_OBD  - If get power from OBDII Interface(from DB9)  Led Indicator :  PWR : power  TX : blink when the data is sending  RX : blink when there s data coming  INT : data interrupt    Terminal  - CAN_H and CAN_L  Arduino UNO pin out  Serial Grove connector  I2C Grove connector  ICSP pins  IC  - MCP2551, a high-speed can transceiver ( datasheet )  IC  - MCP2515, stand-alone CAN controller wth SPI interface ( datasheet )    Warning  When you use more than two CAN Bus Shield in one net, you should think about the impedance.\nYou can just cut P1 in the PCB with a knife, or just remove R3 on the PCB.", 
+            "title": "Hardware Overview"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#pin-map", 
+            "text": "Note  The pin FREE is available for the others usage.", 
+            "title": "Pin map"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#db9obdii-interface", 
+            "text": "", 
+            "title": "DB9&amp;OBDii Interface"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#cs-pin", 
+            "text": "SPI_CS pin of V1.2 is fefault to  D9 . If you want to change it to  D10 . Take a look at the back of the PCBA, you will find a pad named CS. You can cut the wire that at the left of the pad with a box cutter, and the solder the right 2 pads.    Warning  Be careful when you are going to change CS pin, it s easy to hear yourself or the PCBA.", 
+            "title": "CS pin"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#spi-pins", 
+            "text": "The SPI pins(SCK, MISO, MOSI) is default to the ICSP pins. But for some Boards, maybe the SPI pins is at D11~D13, if so you need to change something in the PCBA. Take a look that the back of the PCBA, there re there pads, MOSI, MISO and SCK, they are default to A. You can change them to B if needed.   Note  For Arduino UNO, Arduino Mega, Arduino Leonardo and any others AVR based Arduino boards, default is working.     Warning  Be careful when you are going to change SPI pins, it s easy to hear yourself or the PCBA.", 
+            "title": "SPI pins"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#getting-started", 
+            "text": "Here s a simple demo to show you how CAN-BUS Shield works. In this demo we need 2 piece of CAN-BUS Shield as well as Arduino/Seeeduino.   Note  This demo is built under  Arduino IDE version 1.6.9 .", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#step1-what-do-we-need", 
+            "text": "Name  Function  Qty  Link      CAN-BUS Shield  CAN Bus communication  2  link    Seeeduino V4.2  Controller  2  link    Jumper Wire  connection  2  link", 
+            "title": "STEP1: What do we need"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#step2-hardware-connection", 
+            "text": "Insert each CAN-BUS Shield to Seeeduino V4.2, and connect the 2 CAN-BUS Shield togeter via 2 jumper wires. Shown as below images.     Note  CAN_H to CAN_H, CAN_L to CAN_L", 
+            "title": "STEP2: Hardware Connection"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#step3-software", 
+            "text": "Click on the below button to download the library.   Install the library to your Arduino IDE when it is downloaded.   Of of the node(a node means Seeeduino + CAN_BUS Shield) act as master, the other act as slaver. The master will send data to slaver constantly.    Note  Each node can act at master before the code is uploaded.    Open the  send  example ( File   Examples   CAN_BUS_Shield-master   send ) and upload to the  master .   Open the  receive_check  example ( File   Examples   CAN_BUS_Shield-master   receive_check ) and upload to the  slaver .", 
+            "title": "STEP3: Software"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#step4-view-result", 
+            "text": "Open the Serial Monitor of Arduino IDE( slaver ), you will get the data sent from the master.", 
+            "title": "STEP4: View Result"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#apis", 
+            "text": "", 
+            "title": "APIs"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#1-set-the-baudrate", 
+            "text": "This function is used to initialize the baudrate of the CAN Bus system.  The available baudrates are listed as follws:  #define CAN_5KBPS    1\n#define CAN_10KBPS   2\n#define CAN_20KBPS   3\n#define CAN_25KBPS   4 \n#define CAN_31K25BPS 5\n#define CAN_33KBPS   6\n#define CAN_40KBPS   7\n#define CAN_50KBPS   8\n#define CAN_80KBPS   9\n#define CAN_83K3BPS  10\n#define CAN_95KBPS   11\n#define CAN_100KBPS  12\n#define CAN_125KBPS  13\n#define CAN_200KBPS  14\n#define CAN_250KBPS  15\n#define CAN_500KBPS  16\n#define CAN_666kbps  17\n#define CAN_1000KBPS 18", 
+            "title": "1. Set the Baudrate"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#2-set-receive-mask-and-filter", 
+            "text": "There are  2  receive mask registers and  5  filter registers on the controller chip that guarantee you get data from the target device. They are useful especially in a large network consisting of numerous nodes.  We provide two functions for you to utilize these mask and filter registers. They are:  Mask:  init_Mask(unsigned char num, unsigned char ext, unsigned char ulData);  Filter:  init_Filt(unsigned char num, unsigned char ext, unsigned char ulData);   num  represents which register to use. You can fill 0 or 1 for mask and 0 to 5 for filter.  ext  represents the status of the frame. 0 means it s a mask or filter for a standard frame. 1 means it s for a extended frame.  ulData  represents the content of the mask of filter.", 
+            "title": "2. Set Receive Mask and Filter"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#3-check-receive", 
+            "text": "The MCP2515 can operate in either a polled mode, where the software checks for a received frame, or using additional pins to signal that a frame has been received or transmit completed.   Use the following function to poll for received frames.  INT8U MCP_CAN::checkReceive(void);  The function will return 1 if a frame arrives, and 0 if nothing arrives.", 
+            "title": "3. Check Receive"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#4-get-can-id", 
+            "text": "When some data arrive, you can use the following function to get the CAN ID of the  send  node.  INT32U MCP_CAN::getCanId(void)", 
+            "title": "4. Get CAN ID"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#5-send-data", 
+            "text": "CAN.sendMsgBuf(INT8U id, INT8U ext, INT8U len, data_buf);  It is a function to send data onto the bus. In which:   id  represents where the data come from.  ext  represents the status of the frame.  0  means standard frame.  1  means extended frame.  len  represents the length of this frame.  data_buf  is the content of this message.   For example, In the  send  example, we have:  unsigned char stmp[8] = {0, 1, 2, 3, 4, 5, 6, 7};\nCAN.sendMsgBuf(0x00, 0, 8, stmp); //send out the message 'stmp' to the bus and tell other devices this is a standard frame from 0x00.", 
+            "title": "5. Send Data"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#6-receive-data", 
+            "text": "The following function is used to receive data on the  receive  node:  CAN.readMsgBuf(unsigned char len, unsigned char buf);  In conditions that masks and filters have been set. This function can only get frames that meet the requirements of masks and filters.   len  represents the data length.  buf  is where you store the data.", 
+            "title": "6. Receive Data"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#generate-a-new-baudrate", 
+            "text": "We had provided many frequently-used baud rate, as below:  #define CAN_5KBPS    1\n#define CAN_10KBPS   2\n#define CAN_20KBPS   3\n#define CAN_25KBPS   4 \n#define CAN_31K25BPS 5\n#define CAN_33KBPS   6\n#define CAN_40KBPS   7\n#define CAN_50KBPS   8\n#define CAN_80KBPS   9\n#define CAN_83K3BPS  10\n#define CAN_95KBPS   11\n#define CAN_100KBPS  12\n#define CAN_125KBPS  13\n#define CAN_200KBPS  14\n#define CAN_250KBPS  15\n#define CAN_500KBPS  16\n#define CAN_666kbps  17\n#define CAN_1000KBPS 18  Yet you may still can t find the rate you want. Here we provide a software to help you to calculate the baud rate you need.  Click  here  to download the software, it s in Chinese, but never mind, it s easy to use.     Note  This software support Windows system only. If you can t open it, please free to contact loovee@seeed.cc for help.    Open the software, what you need to do is set the baud rate you want, and do some simple setting, then click  calculate .  Then you will get some data, cfg1, cfg2 and cfg3.  You need to add some code to the library.  Open  mcp_can_dfs.h , you need to add some code at about line 272:  #define MCP_16MHz_xxxkBPS_CFG1 (cfg1)    // xxx is the baud rate you need\n#define MCP_16MHz_xxxkBPS_CFG2 (cfg2)\n#define MCP_16MHz_xxxkBPS_CFG3 (cfg2)  Then let s go to about line 390, add some code:  #define CAN_xxxKBPS NUM       // xxx is the baudrate you need, and NUM is a number, you need to get a different from the other rates.  Open  mcp_can.cpp , goto the function  mcp2515_configRate (at about line 190), then add some code:  case (CAN_xxxKBPS):\n    cfg1 = MCP_16MHz_xxxkBPS_CFG1;\n    cfg2 = MCP_16MHz_xxxkBPS_CFG2;\n    cfg3 = MCP_16MHz_xxxkBPS_CFG3;\n    break;  Then you can use the baud rate you need. And please give me a pull request at github when you use a new rate, so I can add it to the library to help the other guys.", 
+            "title": "Generate a New BaudRate"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#projects", 
+            "text": "If you want to make some awesome projects with CAN-BUS shield, here s some projects for reference.", 
+            "title": "Projects"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#volkswagen-can-bus-gaming", 
+            "text": "Ever wanted to play a car/truck simulator with a real dashboard on your PC? Me too! I m trying to control a VW Polo 6R dashboard via CAN Bus with an Arduino Uno and a Seeed CAN Bus Shield. Inspired by Silas Parker. Thanks to Sepp and Is0-Mick for their great support!", 
+            "title": "Volkswagen CAN BUS Gaming"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#hack-your-vehicle-can-bus", 
+            "text": "Modern Vehicles all come equipped with a CAN-BUS Controller Area Network, Instead of having a million wires running back and forth from various devices in your car to the battery, its making use of a more clever system.  All electronic functions are connected to the TIPM, (Totally integrated Power Module), such as solenoids/relays to lock the doors or mini motors to wind the windows ect ect.  From each node (IE Switch pod that controls your windows or electric door locks) it broadcasts a message across the CAN. When the TIPM detects a valid message it will react accordingly like, lock the doors , switch on lights and so on.", 
+            "title": "Hack your vehicle CAN-BUS"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#resources", 
+            "text": "\u3010PDF\u3011 CAN-BUS Shield V1.2 Schmatics  \u3010Eagle\u3011 Schematic of CAN-BUS Shield V1.2    \u3010Library\u3011 Arduino Library for CAN-BUS Shield  \u3010Datasheet\u3011 MCP2515 datasheet  \u3010Datasheet\u3011 MCP2551 datasheet  \u3010Demo\u3011 An OBD Demo  \u3010 Tool\u3011 MCP2515 Baud Rate Tool", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/Platform/Arduino/CAN_BUS_Shield/#is-this-page-helpful", 
+            "text": "", 
+            "title": "Is this page helpful"
+        }, 
+        {
+            "location": "/Platform/RaspberryPi/RaspberryPi/", 
+            "text": "Raspberry Pi\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "Raspberry Pi"
+        }, 
+        {
+            "location": "/Platform/RaspberryPi/RaspberryPi/#raspberry-pi", 
+            "text": "// to be continued", 
+            "title": "Raspberry Pi"
+        }, 
+        {
+            "location": "/Platform/Edison/Edison/", 
+            "text": "Intel Edison\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "Intel Edison"
+        }, 
+        {
+            "location": "/Platform/Edison/Edison/#intel-edison", 
+            "text": "// to be continued", 
+            "title": "Intel Edison"
+        }, 
+        {
+            "location": "/Platform/LaunchPad/LaunchPad/", 
+            "text": "TI LaunchPad\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "TI LaunchPad"
+        }, 
+        {
+            "location": "/Platform/LaunchPad/LaunchPad/#ti-launchpad", 
+            "text": "// to be continued", 
+            "title": "TI LaunchPad"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/", 
+            "text": "Introduction\n\uf0c1\n\n\nLooking for a new platform for your new IoT/wearables devices? Introducing LinkIt One: an all-in-one prototyping board. Integrating GSM, GPRS, Wi-Fi, GPS, Bluetooth features into a basic Arduino board.\n\n\n\n\nThe LinkIt ONE development board is an open source, high performance board for prototyping Wearables and IoT devices. It\ns based on the world\u2019s leading SoC for Wearables, MediaTek Aster (MT2502) combined with high performance Wi-Fi (MT5931) and GPS (MT3332) chipsets to provide you with access to all the features of MediaTek LinkIt. It also provides similar pin-out features to Arduino boards, making it easy for you to connect to various sensors, peripherals, and Arduino shields.\n\n\nLinkIt ONE is a co-design product by Seeed Studio and MediaTek. It brings together the parties\u2019 knowledge in open hardware and industry leading reference designs for Wearables and IoT devices to create this powerful development board.\n\n\nSpecifications\n\uf0c1\n\n\n\n\nChipset:MT2502A(Aster, ARM7 EJ-STM)\n\n\nClock Speed: 260MHz\n\n\nDimensions: 3.3x2.1 inches\n\n\nFlash: 16MB\n\n\nRAM: 4MB\n\n\nDC Current Per I/O Pin:1mA\n\n\nAnalog Pins: 3\n\n\nDigital Output:3.3V\n\n\nAnalog Input: 5V\n\n\nUART: Software Serial(Serial) and Hardware Serial(Serial1, D0\nD1)\n\n\nSD Card: Up to 32G(Class 10)\n\n\nPositioning: GPS(MT3332)\n\n\nGSM: 850/900/1800/1900 MHz\n\n\nGPRS: Class 12\n\n\nWi-Fi: 802.11 b/g/n\n\n\nBluetooth: BR/EDR/BLE(Dual Mode)\n\n\n\n\nPinout Diagram\n\uf0c1\n\n\n\n\nSwitch\n\uf0c1\n\n\nThere are 3 switches on LinkIt ONE, which are used to control function and working mode.\n\n\n\n\n\n\nProgram Mode\n\n\nMS\uff1aThe program will not run in this mode, when you connect LinkIt ONE to your PC, you will find a 10M size u-disk, you can put some file to it, and read it out via the code.\n\n\nUart\uff1aWhen you want to program the board, you should set this switch to Uart.\n\n\nPower Switch\n\n\nBAT\uff1aPower with Li Battery. When you want to charge the battery, you should set to BAT and connect LinkIt ONE to PC as well.\n\n\nUSB\uff1aPower with USB, when there\ns no battery insert and you want to program the board, you should set to USB.\n\n\nSD/SPI Switch\n\n\nSPI\uff1aWhen you want to use the extern SPI pins(D10 - D13), set to SPI\n\n\nSD\uff1aIf you had inserted a TF card and want to read it via code, you should set to SD. When you set to SD, D10-D13 will not available any more\n\n\n\n\nQuick Start Guide\n\uf0c1\n\n\nStart with \nMediaTek LinkIt Developer\ns Guide\n (requires registration)\n\n\n\n\nIf you had ever used an Arduino, LinkIt ONE will be the easy for you. The same IDE, the same pinout. The difference is LinkIt ONE is uses a much more powerful SoC designed for wearable application.\n\n\nNote: LinkIt ONE IDE supports Windows only. Mac and Linux will be supported in the near future.\n\n\nDownload LinkIt ONE IDE\n\uf0c1\n\n\nNote: If you are using OSX, please refer to here: \nLinkIt SDK for OSX\n\nFirst of all, you should make your Arduino work with LinkIt ONE, there are 2 steps to finish it.\n\n\nDownload Arduino IDE\n\uf0c1\n\n\nPlease choose the version 1.5.7 or later, upper than 1.6.0 is no support yet. If you had installed an Arduino IDE(1.5.x), then just go to step 2.\n\n\nInstall LinkIt SDK.\n\uf0c1\n\n\nWhen you finished downloading the \nSDK\n, copy it to the Arduino IDE folder, double click to install it.\n\n\nOn the MTK Offical website, there is 1.1.09 BETA version\uff0cwhich is only suitable for Arduino IDE 1.5.7(and older version). Additionally we have the following file \nsupports Windows and OS X\n. \n\n\nWhat\ns more, we add an experimental Board Manager support as for Arduino IDE 1.6.4, json repo website is as follow:\nAdditional Boards Manager URLs\n Currently it supports Windows, OS X. \n\n\nInstall Driver\n\uf0c1\n\n\nYou should \nclose the digital signature\n when you are unsing Win8 or Win8.1.\nWhen first insert LinkIt ONE to your PC, you will find two COM ports that need to be installed driver:\n\n\n\n\nThe driver path: \n..\\LinkIt_ONE_IDE\\drivers\\mtk\n\n\nAfter installed driver, you can find 2 ports:\n\n\n\n\n\n\nMTK USB Debug Port used for uploading code\n\n\nMTK USB Modem Port used for printing message, such as Serial.println()\n\n\n\n\nUploading Code\n\uf0c1\n\n\nHere we will show you a Blink in LinkIt ONE.\nFirst open LinkIt ONE IDE, then Click \nFile -\n Examples -\n Basics -\n Blink\n to open Blink.\nThen Boards choose LinkIt ONE, Port choose the number of MTK USB Debug Port.\nMake sure the switch is on the right side before click the Upload button:\n\n\n\n\nFirmware Update\n\uf0c1\n\n\ne will update the firmware of LinkIt ONE every once in a while. When there\ns new version, you can update your LinkIt ONE to the latest.\nIn the path: \n\\LinkIt_ONE_IDE\\hardware\\tools\\mtk\n. You will find a FirmwareUpdater.exe application, double click to open it:\n\n\n\n\nBefore you start updating the firmware, make sure the switch is on the right side:\n\n\n\n\nClick the button and then insert you LinkIt ONE to PC, and wait about 1 minutes, the updating is success.\n\n\n\n\nAntenna\n\uf0c1\n\n\nYou can find 3 antennas with LinkIt ONE, they are used for:\n- GSM/GPRS\n- Wi-Fi/BT\n- GPS\nWhen you use this modules, you should connect to right antenna\n\n\n\n\nNote: When you try to pull the antenna, please DO NOT use brute force, try to use the force perpendicular to the direction of the board, otherwise you might damage the antenna pad.\n\n\nCompatible Groves and Shields for LinkIt ONE\n\uf0c1\n\n\nWe supply hundreds of Groves and Shields, include sensors, actuators, displays and other modules.\nYou can achieve your idea whit those Groves and Shields easily.\nIt\ns a pity that LinkIt ONE can\nt support all of them.\nWe had tested all the Groves and Shields with LinkIt ONE, after that we made a compatible list,\nwhich can show you if one Grove or Shield is supported by LinkIt ONE.\nClick \nhere\n to download the list.\n\n\nTutorial of Sidekick Basic Kit for LinkIt ONE\n\uf0c1\n\n\nThe Sidekick Basic Kit for LinkIt ONE is designed to be used with your LinkIt ONE board. This kit will help you quickly get alone well with the platform of LinkIt. It includes many of the most popular accessories for DIY projects : like Breadboard, Jumper wires, Color LEDs, Resistors, Buzzer, etc. All of these coming with its own handy box are easy transport and minimal clutter. It includes a fully guide that will familiarize you with a wide range of electronic components while you create small, simple, and easy-to-assemble circuits. There are 10 different courses outlined that will offer a best way for beginner to be familiar with LinkIt ONE.\n\n\n\n\nGithub Repo for Sidekick Basic Kit for LinkIt ONE\n\n\nResources\n\uf0c1\n\n\n\n\nLinkIt ONE Eagle File\n\n\nSidekick Base Kit for LinkIt ONE\n\n\nMediaTek_LinkIt_SDK_for_Ardunio\n\n\nLinkIt_ONE_Hardware_Reference_Design_v1_0\n\n\n\u3010pdf\u3011LinkIt ONE_Pinout Diagram_v1.0\n\n\n\u3010PDF\u3011MediaTek_LinkIt_Developers_Guide_v1_0\n\n\n\u3010pdf\u3011MediaTek_MT2502A_SOC_Data_Sheet_v1_0\n\n\n\u3010pdf\u3011MediaTek_MT5931_Wi-Fi_Data_Sheet_v1_0\n\n\n\u3010pdf\u3011MediaTek_MT3332_GPS_Data_Sheet_v1_0\n\n\n\n\nRelated Projects\n\uf0c1\n\n\nIf you want to make some awesome projects by LinkIt ONE, here\ns some projects for reference.\n\n\nLinkIt ONE IoT Demo\n\uf0c1\n\n\nThis is an IoT demo make by LinkIt ONE and Grove.\n\n\n\n\nWith this demo, we can:\n\n\n\n\nDisplay household temperautre, humidity, luminosity, volume control data collection on OLED screen\n\n\nCloud service, data uploaded to Cloud platform Xively, real-time monitoring\n\n\nData retention for reviewing how data changes over time\n\n\nRemote control Household Appliances by sending a message\n\n\nTable Lamp, 3D Printing, controlled by your phone\n\n\n\n\nPringles Can antenna with a LinkIt ONE\n\uf0c1\n\n\nMake a focused antenna with a pringles can.\n\n\n\n\nMore Awesome Projects by LinkIt ONE\n\n\nShare Your Awesome Projects with Us\n\uf0c1\n\n\nBorn with the spirit of making and sharing, that is what we believe makes a maker.\nAnd only because of this , the open source community can be as prosperous as it is today.\nIt does not matter what you are and what you have made, hacker, maker, artist and engineers,\nas long as you start sharing your works with others,\nyou are being part of the open source community and you are making your contributions .\nNow share you awesome projects on with us on Recipe, and win a chance to become the Core User of Seeed.\n\n\n\n\nCore Users, are those who show high interests and significant contributions in Seeed products.\n\n\nWe cooperate with our Core Users in the development of our new product, which in another word, the Core Users will have the chance to experience any new products of Seeed before its official launch, and in return we expect valuable feedback from them to help us improving the product performance and user experience.\n\n\nAlso, join the Core User Group, engage with other Core Users of Seeed and make friends with like-minded people, could be a wonder experience for you.\n\n\nAnd most importantly, in most of cases, if our Core Users have any good ideas for making things, we\nll offer hardware pieces, PCBA services as well as technical support, to help them achieve their projects.\n\n\n\n\nGet more information about Core User please email to: \nrecipe@seeed.cc\n\n\nContact Us\n\uf0c1\n\n\nIf you have any problem or suggestion about LinkIt ONE, please feel free to contact us.\nThere is \nforum for LinkIt ONE\n\n\nYou can find if there\ns an answer here first.\nWhat\ns more, share your projects or ideas that made by LinkIt ONE here is also welcome, and maybe you can get some useful suggestion about your idea here.", 
+            "title": "LinkIt ONE"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#introduction", 
+            "text": "Looking for a new platform for your new IoT/wearables devices? Introducing LinkIt One: an all-in-one prototyping board. Integrating GSM, GPRS, Wi-Fi, GPS, Bluetooth features into a basic Arduino board.   The LinkIt ONE development board is an open source, high performance board for prototyping Wearables and IoT devices. It s based on the world\u2019s leading SoC for Wearables, MediaTek Aster (MT2502) combined with high performance Wi-Fi (MT5931) and GPS (MT3332) chipsets to provide you with access to all the features of MediaTek LinkIt. It also provides similar pin-out features to Arduino boards, making it easy for you to connect to various sensors, peripherals, and Arduino shields.  LinkIt ONE is a co-design product by Seeed Studio and MediaTek. It brings together the parties\u2019 knowledge in open hardware and industry leading reference designs for Wearables and IoT devices to create this powerful development board.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#specifications", 
+            "text": "Chipset:MT2502A(Aster, ARM7 EJ-STM)  Clock Speed: 260MHz  Dimensions: 3.3x2.1 inches  Flash: 16MB  RAM: 4MB  DC Current Per I/O Pin:1mA  Analog Pins: 3  Digital Output:3.3V  Analog Input: 5V  UART: Software Serial(Serial) and Hardware Serial(Serial1, D0 D1)  SD Card: Up to 32G(Class 10)  Positioning: GPS(MT3332)  GSM: 850/900/1800/1900 MHz  GPRS: Class 12  Wi-Fi: 802.11 b/g/n  Bluetooth: BR/EDR/BLE(Dual Mode)", 
+            "title": "Specifications"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#pinout-diagram", 
+            "text": "", 
+            "title": "Pinout Diagram"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#switch", 
+            "text": "There are 3 switches on LinkIt ONE, which are used to control function and working mode.    Program Mode  MS\uff1aThe program will not run in this mode, when you connect LinkIt ONE to your PC, you will find a 10M size u-disk, you can put some file to it, and read it out via the code.  Uart\uff1aWhen you want to program the board, you should set this switch to Uart.  Power Switch  BAT\uff1aPower with Li Battery. When you want to charge the battery, you should set to BAT and connect LinkIt ONE to PC as well.  USB\uff1aPower with USB, when there s no battery insert and you want to program the board, you should set to USB.  SD/SPI Switch  SPI\uff1aWhen you want to use the extern SPI pins(D10 - D13), set to SPI  SD\uff1aIf you had inserted a TF card and want to read it via code, you should set to SD. When you set to SD, D10-D13 will not available any more", 
+            "title": "Switch"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#quick-start-guide", 
+            "text": "Start with  MediaTek LinkIt Developer s Guide  (requires registration)   If you had ever used an Arduino, LinkIt ONE will be the easy for you. The same IDE, the same pinout. The difference is LinkIt ONE is uses a much more powerful SoC designed for wearable application.  Note: LinkIt ONE IDE supports Windows only. Mac and Linux will be supported in the near future.", 
+            "title": "Quick Start Guide"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#download-linkit-one-ide", 
+            "text": "Note: If you are using OSX, please refer to here:  LinkIt SDK for OSX \nFirst of all, you should make your Arduino work with LinkIt ONE, there are 2 steps to finish it.", 
+            "title": "Download LinkIt ONE IDE"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#download-arduino-ide", 
+            "text": "Please choose the version 1.5.7 or later, upper than 1.6.0 is no support yet. If you had installed an Arduino IDE(1.5.x), then just go to step 2.", 
+            "title": "Download Arduino IDE"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#install-linkit-sdk", 
+            "text": "When you finished downloading the  SDK , copy it to the Arduino IDE folder, double click to install it.  On the MTK Offical website, there is 1.1.09 BETA version\uff0cwhich is only suitable for Arduino IDE 1.5.7(and older version). Additionally we have the following file  supports Windows and OS X .   What s more, we add an experimental Board Manager support as for Arduino IDE 1.6.4, json repo website is as follow: Additional Boards Manager URLs  Currently it supports Windows, OS X.", 
+            "title": "Install LinkIt SDK."
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#install-driver", 
+            "text": "You should  close the digital signature  when you are unsing Win8 or Win8.1.\nWhen first insert LinkIt ONE to your PC, you will find two COM ports that need to be installed driver:   The driver path:  ..\\LinkIt_ONE_IDE\\drivers\\mtk  After installed driver, you can find 2 ports:    MTK USB Debug Port used for uploading code  MTK USB Modem Port used for printing message, such as Serial.println()", 
+            "title": "Install Driver"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#uploading-code", 
+            "text": "Here we will show you a Blink in LinkIt ONE.\nFirst open LinkIt ONE IDE, then Click  File -  Examples -  Basics -  Blink  to open Blink.\nThen Boards choose LinkIt ONE, Port choose the number of MTK USB Debug Port.\nMake sure the switch is on the right side before click the Upload button:", 
+            "title": "Uploading Code"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#firmware-update", 
+            "text": "e will update the firmware of LinkIt ONE every once in a while. When there s new version, you can update your LinkIt ONE to the latest.\nIn the path:  \\LinkIt_ONE_IDE\\hardware\\tools\\mtk . You will find a FirmwareUpdater.exe application, double click to open it:   Before you start updating the firmware, make sure the switch is on the right side:   Click the button and then insert you LinkIt ONE to PC, and wait about 1 minutes, the updating is success.", 
+            "title": "Firmware Update"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#antenna", 
+            "text": "You can find 3 antennas with LinkIt ONE, they are used for:\n- GSM/GPRS\n- Wi-Fi/BT\n- GPS\nWhen you use this modules, you should connect to right antenna   Note: When you try to pull the antenna, please DO NOT use brute force, try to use the force perpendicular to the direction of the board, otherwise you might damage the antenna pad.", 
+            "title": "Antenna"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#compatible-groves-and-shields-for-linkit-one", 
+            "text": "We supply hundreds of Groves and Shields, include sensors, actuators, displays and other modules.\nYou can achieve your idea whit those Groves and Shields easily.\nIt s a pity that LinkIt ONE can t support all of them.\nWe had tested all the Groves and Shields with LinkIt ONE, after that we made a compatible list,\nwhich can show you if one Grove or Shield is supported by LinkIt ONE.\nClick  here  to download the list.", 
+            "title": "Compatible Groves and Shields for LinkIt ONE"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#tutorial-of-sidekick-basic-kit-for-linkit-one", 
+            "text": "The Sidekick Basic Kit for LinkIt ONE is designed to be used with your LinkIt ONE board. This kit will help you quickly get alone well with the platform of LinkIt. It includes many of the most popular accessories for DIY projects : like Breadboard, Jumper wires, Color LEDs, Resistors, Buzzer, etc. All of these coming with its own handy box are easy transport and minimal clutter. It includes a fully guide that will familiarize you with a wide range of electronic components while you create small, simple, and easy-to-assemble circuits. There are 10 different courses outlined that will offer a best way for beginner to be familiar with LinkIt ONE.   Github Repo for Sidekick Basic Kit for LinkIt ONE", 
+            "title": "Tutorial of Sidekick Basic Kit for LinkIt ONE"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#resources", 
+            "text": "LinkIt ONE Eagle File  Sidekick Base Kit for LinkIt ONE  MediaTek_LinkIt_SDK_for_Ardunio  LinkIt_ONE_Hardware_Reference_Design_v1_0  \u3010pdf\u3011LinkIt ONE_Pinout Diagram_v1.0  \u3010PDF\u3011MediaTek_LinkIt_Developers_Guide_v1_0  \u3010pdf\u3011MediaTek_MT2502A_SOC_Data_Sheet_v1_0  \u3010pdf\u3011MediaTek_MT5931_Wi-Fi_Data_Sheet_v1_0  \u3010pdf\u3011MediaTek_MT3332_GPS_Data_Sheet_v1_0", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#related-projects", 
+            "text": "If you want to make some awesome projects by LinkIt ONE, here s some projects for reference.", 
+            "title": "Related Projects"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#linkit-one-iot-demo", 
+            "text": "This is an IoT demo make by LinkIt ONE and Grove.   With this demo, we can:   Display household temperautre, humidity, luminosity, volume control data collection on OLED screen  Cloud service, data uploaded to Cloud platform Xively, real-time monitoring  Data retention for reviewing how data changes over time  Remote control Household Appliances by sending a message  Table Lamp, 3D Printing, controlled by your phone", 
+            "title": "LinkIt ONE IoT Demo"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#pringles-can-antenna-with-a-linkit-one", 
+            "text": "Make a focused antenna with a pringles can.   More Awesome Projects by LinkIt ONE", 
+            "title": "Pringles Can antenna with a LinkIt ONE"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#share-your-awesome-projects-with-us", 
+            "text": "Born with the spirit of making and sharing, that is what we believe makes a maker.\nAnd only because of this , the open source community can be as prosperous as it is today.\nIt does not matter what you are and what you have made, hacker, maker, artist and engineers,\nas long as you start sharing your works with others,\nyou are being part of the open source community and you are making your contributions .\nNow share you awesome projects on with us on Recipe, and win a chance to become the Core User of Seeed.   Core Users, are those who show high interests and significant contributions in Seeed products.  We cooperate with our Core Users in the development of our new product, which in another word, the Core Users will have the chance to experience any new products of Seeed before its official launch, and in return we expect valuable feedback from them to help us improving the product performance and user experience.  Also, join the Core User Group, engage with other Core Users of Seeed and make friends with like-minded people, could be a wonder experience for you.  And most importantly, in most of cases, if our Core Users have any good ideas for making things, we ll offer hardware pieces, PCBA services as well as technical support, to help them achieve their projects.   Get more information about Core User please email to:  recipe@seeed.cc", 
+            "title": "Share Your Awesome Projects with Us"
+        }, 
+        {
+            "location": "/Platform/LinkIt/LinkIt_ONE/#contact-us", 
+            "text": "If you have any problem or suggestion about LinkIt ONE, please feel free to contact us.\nThere is  forum for LinkIt ONE  You can find if there s an answer here first.\nWhat s more, share your projects or ideas that made by LinkIt ONE here is also welcome, and maybe you can get some useful suggestion about your idea here.", 
+            "title": "Contact Us"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/", 
+            "text": "Breakout for LinkIt Smart 7688 v2.0\n\uf0c1\n\n\n\n\nIntroduction\n\uf0c1\n\n\nBreakout for LinkIt Smart 7688 v2.0\n is a Grove port integrated expansion board for LinkItTM Smart 7688 development board. This breakout board will save a lot of work and makes prototyping easier through simplified wiring. It will assist a beginner to get started fast. It supports serial buses like I2C, UART. It comes with USB, Ethernet, and 3.5mm Audio ports.\n\n\n\n\nVersion Tracker\n\uf0c1\n\n\n\n\n\n\n\n\nProduct reversion\n\n\nRelease date\n\n\nSupport status\n\n\nNotes\n\n\n\n\n\n\n\n\n\n\nVersion 1.0\n\n\nNovember 2015\n\n\nSupported\n\n\nNone\n\n\n\n\n\n\nVersion 2.0\n\n\nApril 2016\n\n\nSupported\n\n\nRefer to New Features\n\n\n\n\n\n\n\n\nNew features:\n\uf0c1\n\n\n\n\nSupport recording functionality\n\n\nFor 3.5 mm phone connector (audio jack), it supports the protocol OMTP and CTIA. You can use either protocol by switching a switch. About how to switch protocol, we will describe it later.\nGet One Now Banner.png\n\n\n\n\n\n\nFeatures\n\uf0c1\n\n\n\n\nGrove interface makes wiring easier and allows expansions with Grove modules.\n\n\nUSB host\n\n\nAudio Output\n\n\nEthernet port\n\n\nCost-effective\n\n\n\n\nApplication ideas\n\uf0c1\n\n\n\n\nIoT/Gateway Device.\n\n\nRobotics\n\n\nSmart multimedia devices\n\n\nTeaching and learning\n\n\n\n\nSpecification\n\uf0c1\n\n\n\n\n\n\n\n\nInput voltage\n\n\n5.0V(With USB Power port)\n\n\n\n\n\n\n\n\n\n\nOperating voltage\n\n\n3.3V\n\n\n\n\n\n\nDebug port\n\n\n1(Quantity)\n\n\n\n\n\n\nEthernet port\n\n\n1(Quantity)\n\n\n\n\n\n\nUSB type-A\n\n\n1(Quantity)\n\n\n\n\n\n\nHeadset port\n\n\n1(Quantity)\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nDebug pins, Ethernet pins and USB type-A host pins connect with MT7688, other pins connect with ATmega32U4.\n\n\n\n\nHardware Overview\n\uf0c1\n\n\n\n\nGrove interface\n\uf0c1\n\n\nConnect rich \nGrove\n interfaced functional modules. With this kind of ports, you never need jumper wire or soldering work, and you can make more powerful applications with those functional modules.\n\n\nTo switch phone connector protocol between OMTP and CTIA\n\n\n\n\nIn preceded figure, you can notice that there are six pins and two jumper caps on bottom-right corner. These pins are used to switch phone connector protocol. As you set tiny jumper(both) to left-four pin, protocol OMTP is used. As you set tiny jumper(both) to right-four pin (as preceded figure shows), protocol CTIA is used. As following figures show:\nBreakout for LinkIt Smart 7688 v2.0 CTIA OMTP Switch Manner.JPG\nNote that to use the recording functionality, you need to update on-board firmware to Breakout for LinkIt Smart 7688 firmware(above version v0.9.2).\n\n\n\n\n\n\nNote\n\n\nWe recommend you use external storage device, because the Write/Read speed of on-board flash memory is limited.\n\n\n\n\nParts list\n\uf0c1\n\n\n\n\n\n\n\n\nParts name\n\n\nQuantity\n\n\n\n\n\n\n\n\n\n\nBreakout for LinkIt Smart 7688 v2.0\n\n\n1PCS\n\n\n\n\n\n\n\n\nGet started\n\uf0c1\n\n\nMaterial required\n\uf0c1\n\n\n\n\nLinkIt Smart 7688 \u00d7 1\n\n\nUSB cable (type A to micro type-B) \u00d7 2\n\n\nUSB to Serial adapter \u00d7 1\n\n\nJumper wires \u00d7 3\n\n\nStereo (with 3.5 mm audio cable) \u00d7 1\n\n\nUSB flash driver (with audio file of MP3 format inside) \u00d7 1\n\n\n\n\nPlay music\n\uf0c1\n\n\nStep1:\n Refer \nhere\n to connect your LinkIt Smart 7688 to Internet.\n\n\n\n\nNote\n\n\nYou can plug jumper wires to MT7688 UART2 port instead soldering them to Pin 8, Pin 9 and Pin GND.\n\n\n\n\n\n\nNote\n\n\nIn rare cases, you might not connect to Internet successfully, reboot the embedded OS.\n\n\n\n\nStep2:\n Open a console with USB to Serial adapter.\n\n\nStep3:\n Connect all parts like follows:\n\n\n\n\n\n\nNote\n\n\nThis is a figure of Breakout for LinkIt Smart 7688(v1.0).\n\n\n\n\nStep4:\n Enter folder of USB by type \ncd /Media/USB-A1\n in console.\n\n\nStep5:\n Play music with utility \nMadplay\n(installed on OpenWRT) by typing \nmadplay filename.mp3\n into console.\n\n\nStep6:\n Now you will hear the music.\n\n\nResources\n\uf0c1\n\n\n\n\nSchematic files\n\n\nLinkIt smart 7688\n\n\nOpenWrt\n\n\nLink to buy a LinkIt Smart 7688", 
+            "title": "Breakout for LinkIt Smart 7688 V2.0"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#breakout-for-linkit-smart-7688-v20", 
+            "text": "", 
+            "title": "Breakout for LinkIt Smart 7688 v2.0"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#introduction", 
+            "text": "Breakout for LinkIt Smart 7688 v2.0  is a Grove port integrated expansion board for LinkItTM Smart 7688 development board. This breakout board will save a lot of work and makes prototyping easier through simplified wiring. It will assist a beginner to get started fast. It supports serial buses like I2C, UART. It comes with USB, Ethernet, and 3.5mm Audio ports.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#version-tracker", 
+            "text": "Product reversion  Release date  Support status  Notes      Version 1.0  November 2015  Supported  None    Version 2.0  April 2016  Supported  Refer to New Features", 
+            "title": "Version Tracker"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#new-features", 
+            "text": "Support recording functionality  For 3.5 mm phone connector (audio jack), it supports the protocol OMTP and CTIA. You can use either protocol by switching a switch. About how to switch protocol, we will describe it later.\nGet One Now Banner.png", 
+            "title": "New features:"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#features", 
+            "text": "Grove interface makes wiring easier and allows expansions with Grove modules.  USB host  Audio Output  Ethernet port  Cost-effective", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#application-ideas", 
+            "text": "IoT/Gateway Device.  Robotics  Smart multimedia devices  Teaching and learning", 
+            "title": "Application ideas"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#specification", 
+            "text": "Input voltage  5.0V(With USB Power port)      Operating voltage  3.3V    Debug port  1(Quantity)    Ethernet port  1(Quantity)    USB type-A  1(Quantity)    Headset port  1(Quantity)      Note  Debug pins, Ethernet pins and USB type-A host pins connect with MT7688, other pins connect with ATmega32U4.", 
+            "title": "Specification"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#hardware-overview", 
+            "text": "", 
+            "title": "Hardware Overview"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#grove-interface", 
+            "text": "Connect rich  Grove  interfaced functional modules. With this kind of ports, you never need jumper wire or soldering work, and you can make more powerful applications with those functional modules.  To switch phone connector protocol between OMTP and CTIA   In preceded figure, you can notice that there are six pins and two jumper caps on bottom-right corner. These pins are used to switch phone connector protocol. As you set tiny jumper(both) to left-four pin, protocol OMTP is used. As you set tiny jumper(both) to right-four pin (as preceded figure shows), protocol CTIA is used. As following figures show:\nBreakout for LinkIt Smart 7688 v2.0 CTIA OMTP Switch Manner.JPG\nNote that to use the recording functionality, you need to update on-board firmware to Breakout for LinkIt Smart 7688 firmware(above version v0.9.2).    Note  We recommend you use external storage device, because the Write/Read speed of on-board flash memory is limited.", 
+            "title": "Grove interface"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#parts-list", 
+            "text": "Parts name  Quantity      Breakout for LinkIt Smart 7688 v2.0  1PCS", 
+            "title": "Parts list"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#get-started", 
+            "text": "", 
+            "title": "Get started"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#material-required", 
+            "text": "LinkIt Smart 7688 \u00d7 1  USB cable (type A to micro type-B) \u00d7 2  USB to Serial adapter \u00d7 1  Jumper wires \u00d7 3  Stereo (with 3.5 mm audio cable) \u00d7 1  USB flash driver (with audio file of MP3 format inside) \u00d7 1", 
+            "title": "Material required"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#play-music", 
+            "text": "Step1:  Refer  here  to connect your LinkIt Smart 7688 to Internet.   Note  You can plug jumper wires to MT7688 UART2 port instead soldering them to Pin 8, Pin 9 and Pin GND.    Note  In rare cases, you might not connect to Internet successfully, reboot the embedded OS.   Step2:  Open a console with USB to Serial adapter.  Step3:  Connect all parts like follows:    Note  This is a figure of Breakout for LinkIt Smart 7688(v1.0).   Step4:  Enter folder of USB by type  cd /Media/USB-A1  in console.  Step5:  Play music with utility  Madplay (installed on OpenWRT) by typing  madplay filename.mp3  into console.  Step6:  Now you will hear the music.", 
+            "title": "Play music"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#resources", 
+            "text": "Schematic files  LinkIt smart 7688  OpenWrt  Link to buy a LinkIt Smart 7688", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/Platform/mbed/mbed/", 
+            "text": "mbed\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "mbed"
+        }, 
+        {
+            "location": "/Platform/mbed/mbed/#mbed", 
+            "text": "// to be continued", 
+            "title": "mbed"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/", 
+            "text": "Arch BLE\n\uf0c1\n\n\n\n\nIntroduction\n\uf0c1\n\n\nArch BLE is an mbed enabled development board based Nordic nRF51822. With Arduino form factor and Grove connectors, it is extremely easy to create a bluetooth low energy device.\n\n\n\n\nThe nRF51822 is a powerful multi-protocol single chip solution for ULP wireless applications. It incorporates Nordic\u2019s latest best-in-class performance radio transceiver, an ARM Cortex M0 MCU and 256kB flash + 16kB RAM memory. The nRF51822 supports Bluetooth\u00ae low energy and 2.4 GHz protocol stacks.\n\n\n\n\nFeatures\n\uf0c1\n\n\n\n\nmbed enabled\n\n\nOnline IDE\n\n\nEasy to use C/C++ SDK\n\n\nHandy libraries\n\n\nCMSIS DAP based on LPC11U35\n\n\nDrag-n-drop programming\n\n\nDebug using CMSIS DAP standard\n\n\nUSB virtual serial for communication\n\n\nArduino form factor with Grove connectors\n\n\nNordic nRF51822 Multi-protocol Bluetooth\u00ae 4.0       low energy/2.4GHz RF SoC\n\n\nARM Cortex M0 processor\n\n\n256kB flash/16kB RAM\n\n\nConfigurable I/O mapping for digital I/O\n\n\nUSB Micro B connector\n\n\n\n\nPinout\n\uf0c1\n\n\n\n\nGet Started\n\uf0c1\n\n\n\n\n\n\nClick \nthis link\n to login or signup to mbed\n\n\nImport the mbed_blinky program\n\n\nClick the \nCompile\n icon of the top toolbar to compile the program, then download a compiled hex file.\n\n\nDrag-n-drop the downloaded hex file into the MBED disk\n\n\n\n\nYou can open \nmain.cpp\n to change the program. For example, use the following code to blink the LED every 0.1s\n\n\n#include \"mbed.h\"\n\nDigitalOut led(p30);           // on-board led is connected to p30\n\nint main()\n{\n    while (true) {\n        led = !led;\n        wait(0.1);\n    }\n}\n\n\n\n\n\nNote\n\n\nIf you get a compiling error that \ndevice.h\n is not find, try to update the mbed library to the latest revision in your program.\n\n\n\n\nProject\n\uf0c1\n\n\nHere we share a small demo to show you how Arch BLE work. This demo is consists of the below steps:\n\n\nHardware\n\uf0c1\n\n\nYou need:\n\n\n\n\nArch BLE\n\n\nDigital RGB LED Strip\n\n\nAn Android device with BLE function\n\n\n\n\nConnection\n\uf0c1\n\n\nThere\ns 3pin on the LED Strip, please connect it you Arch BLD as shown below:\n\n\n\n\nMake it Run\n\uf0c1\n\n\n\n\nDownload \nBLE_Color_Pixels_Arch_BLE.hex\n\n\nCopy the hex file to the MBED disk of your Arch BLE\n\n\nDownload \nthe Color Pixels Android app\n\n\n\n\n\n\nIf you want to change the program, click \nthis link\n to import the Color Pixels program to mbed online IDE.\n\n\nIf the BLE device is disconnected frequently, we can improve the stability by changing the BLE parameters - Advertising Duration (main.cpp), Min Interval and Max Interval (nRF51822/projectconfig.h)\n\n\n#define CFG_GAP_CONNECTION_MIN_INTERVAL_MS           20                     /**\n Minimum acceptable connection interval */\n#define CFG_GAP_CONNECTION_MAX_INTERVAL_MS          200                     /**\n Maximum acceptable connection interval */\n\n\n\nUpdate or Restore Firmware\n\uf0c1\n\n\nThe latest firmware version for the Arch BLE is v0203 built at Oct 08 2014. To check your firmware version and built date, open the MBED.HTM file of your MBED disk in a text editor.\n\n\nChangelog:\n\n\n\n\n2014-06-26 first version\n\n\n2014-08-25 support to drag-n-drop hex file generated by gcc toolchain and without softdevice\n\n\n2014-10-08 use USB EJECT INSET instead of reconnecting USB, increase intel hex data line buffer (from 64 bytes to 128 bytes)\n\n\n\n\nKnown issues:\n\n\n\n\nissues when directly downloading the hex file into the MBED disk with the Chrome browser. The reason is the Chrome will create a temporary file to save the downloading data. When using the Chrome, please save your hex file to other place and then copy it to the MBED disk.\n\n\n\n\nFirmware:\n\n\n\n\nfirmware 0241 for Arch BLE\n\n\n\n\nTo flash a new firmware:\n\n\n\n\nHold the Arch BLE\ns button and power on it\n\n\nA CRP DISABLD disk will pop up\n\n\nOn Windows, replace firmware.bin with the above firmware\n\n\nOn Linux/Mac, use command: \ndd if={new_firmware.bin} of={firmware.bin} conv=notrunc\n\n\n\n\nResources\n\uf0c1\n\n\n\n\nSchematic pdf\n\n\nEagle file\n\n\nLPC11U35 Firmware\n\n\nseeed ble color pixels app for android\n\n\nsrc of ble color pixels app", 
+            "title": "Arch BLE"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#arch-ble", 
+            "text": "", 
+            "title": "Arch BLE"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#introduction", 
+            "text": "Arch BLE is an mbed enabled development board based Nordic nRF51822. With Arduino form factor and Grove connectors, it is extremely easy to create a bluetooth low energy device.   The nRF51822 is a powerful multi-protocol single chip solution for ULP wireless applications. It incorporates Nordic\u2019s latest best-in-class performance radio transceiver, an ARM Cortex M0 MCU and 256kB flash + 16kB RAM memory. The nRF51822 supports Bluetooth\u00ae low energy and 2.4 GHz protocol stacks.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#features", 
+            "text": "mbed enabled  Online IDE  Easy to use C/C++ SDK  Handy libraries  CMSIS DAP based on LPC11U35  Drag-n-drop programming  Debug using CMSIS DAP standard  USB virtual serial for communication  Arduino form factor with Grove connectors  Nordic nRF51822 Multi-protocol Bluetooth\u00ae 4.0       low energy/2.4GHz RF SoC  ARM Cortex M0 processor  256kB flash/16kB RAM  Configurable I/O mapping for digital I/O  USB Micro B connector", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#pinout", 
+            "text": "", 
+            "title": "Pinout"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#get-started", 
+            "text": "Click  this link  to login or signup to mbed  Import the mbed_blinky program  Click the  Compile  icon of the top toolbar to compile the program, then download a compiled hex file.  Drag-n-drop the downloaded hex file into the MBED disk   You can open  main.cpp  to change the program. For example, use the following code to blink the LED every 0.1s  #include \"mbed.h\"\n\nDigitalOut led(p30);           // on-board led is connected to p30\n\nint main()\n{\n    while (true) {\n        led = !led;\n        wait(0.1);\n    }\n}   Note  If you get a compiling error that  device.h  is not find, try to update the mbed library to the latest revision in your program.", 
+            "title": "Get Started"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#project", 
+            "text": "Here we share a small demo to show you how Arch BLE work. This demo is consists of the below steps:", 
+            "title": "Project"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#hardware", 
+            "text": "You need:   Arch BLE  Digital RGB LED Strip  An Android device with BLE function", 
+            "title": "Hardware"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#connection", 
+            "text": "There s 3pin on the LED Strip, please connect it you Arch BLD as shown below:", 
+            "title": "Connection"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#make-it-run", 
+            "text": "Download  BLE_Color_Pixels_Arch_BLE.hex  Copy the hex file to the MBED disk of your Arch BLE  Download  the Color Pixels Android app    If you want to change the program, click  this link  to import the Color Pixels program to mbed online IDE.  If the BLE device is disconnected frequently, we can improve the stability by changing the BLE parameters - Advertising Duration (main.cpp), Min Interval and Max Interval (nRF51822/projectconfig.h)  #define CFG_GAP_CONNECTION_MIN_INTERVAL_MS           20                     /**  Minimum acceptable connection interval */\n#define CFG_GAP_CONNECTION_MAX_INTERVAL_MS          200                     /**  Maximum acceptable connection interval */", 
+            "title": "Make it Run"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#update-or-restore-firmware", 
+            "text": "The latest firmware version for the Arch BLE is v0203 built at Oct 08 2014. To check your firmware version and built date, open the MBED.HTM file of your MBED disk in a text editor.  Changelog:   2014-06-26 first version  2014-08-25 support to drag-n-drop hex file generated by gcc toolchain and without softdevice  2014-10-08 use USB EJECT INSET instead of reconnecting USB, increase intel hex data line buffer (from 64 bytes to 128 bytes)   Known issues:   issues when directly downloading the hex file into the MBED disk with the Chrome browser. The reason is the Chrome will create a temporary file to save the downloading data. When using the Chrome, please save your hex file to other place and then copy it to the MBED disk.   Firmware:   firmware 0241 for Arch BLE   To flash a new firmware:   Hold the Arch BLE s button and power on it  A CRP DISABLD disk will pop up  On Windows, replace firmware.bin with the above firmware  On Linux/Mac, use command:  dd if={new_firmware.bin} of={firmware.bin} conv=notrunc", 
+            "title": "Update or Restore Firmware"
+        }, 
+        {
+            "location": "/Platform/mbed/Arch_BLE/#resources", 
+            "text": "Schematic pdf  Eagle file  LPC11U35 Firmware  seeed ble color pixels app for android  src of ble color pixels app", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/Platform/RePhone/RePhone/", 
+            "text": "RePhone\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "RePhone"
+        }, 
+        {
+            "location": "/Platform/RePhone/RePhone/#rephone", 
+            "text": "// to be continued", 
+            "title": "RePhone"
+        }, 
+        {
+            "location": "/Platform/Wio/Wio/", 
+            "text": "Wio IoT\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "Wio"
+        }, 
+        {
+            "location": "/Platform/Wio/Wio/#wio-iot", 
+            "text": "// to be continued", 
+            "title": "Wio IoT"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/", 
+            "text": "Grove - Barometer Sensor (BMP280)\n\uf0c1\n\n\n\n\nIntroduction\n\uf0c1\n\n\nGrove - Barometer Sensor (BMP280) is a breakout board for Bosch BMP280 high-precision and low-power digital barometer. This module can be used to measure temperature and atmospheric pressure accurately. As the atmospheric pressure changes with altitude, it can also measure approximate altitude of a place. It can be connected to a microcontroller with I2C (integrated with Grove socket) or through SPI bus. We have also provided highly abstracted library to make this more product easier to use.\n\n\nThe BMP280 is an upgraded version of BMP180. BMP280 gets dramatic improvements from BMP180. BMP280 comes with a smaller footprint, lower power consumption, lower noise measurements, higher resolutions for pressure and temperature, lower RMS noise, newly added interface SPI, more measuring modes, higher measuring rate and newly added filter against environmental interference. Since the atmosphere pressure reading is affected by altitude and temperature, we have added compensation features in the library. Hence, Grove - Barometer Sensor (BMP280) would be more reliable in providing precise temperature, atmospheric pressure values and approximate altitude data.\n\n\nUsing the sensor is easy. For Seeeduino (compliant with Arduino), just connect this breakout board using Grove cable to I2C Grove connector. Then, use the provided library and example code from GitHub. If you are using an Arduino either use Base Shield v2.0 or simply connect the VCC pin to the 5V voltage pin, GND to ground, SCL to I2C Clock (Analog 5) and SDA to I2C Data (Analog 4).\nTypical applications: Enhancement of GPS navigation, outdoor/indoor navigation, weather forecast, or any other project that requires an accurate atmospheric pressure reading.\n\n\n\n\nVersion Tracker\n\uf0c1\n\n\n\n\n\n\n\n\nProduct version\n\n\nRelease date\n\n\nSupport status\n\n\nNotes\n\n\n\n\n\n\n\n\n\n\nGrove - Barometer Sensor (BMP280) (v1.0, latest version)\n\n\nMay 2016\n\n\nSupported\n\n\nNone\n\n\n\n\n\n\n\n\n\n\nFeatures\n\uf0c1\n\n\n\n\nGet more precise temperature, atmospheric pressure values, and approximate altitude data.\n\n\nGrove compatible and easy to use\n\n\nHighly abstracted library for building projects quicker\n\n\n\n\nSpecifications\n\uf0c1\n\n\n\n\n\n\n\n\nItem\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nInput voltage\n\n\n3.3V or 5V\n\n\n\n\n\n\nI/O voltage\n\n\n3.3V or 5V\n\n\n\n\n\n\nOperating current\n\n\n0.6mA\n\n\n\n\n\n\nOperating temperature\n\n\n-40 - 85 \u2103\n\n\n\n\n\n\nEffective pressure measurement range\n\n\n300 - 1100 hPa (1 hPa= one hundred Pa) with \u00b11.0 hPa accuracy\n\n\n\n\n\n\nTemperature measurement accuracy\n\n\n\u00b11.0\u00b0C\n\n\n\n\n\n\nMeasurement modes\n\n\nPiezo \n Temperature, forced or periodic\n\n\n\n\n\n\nChip\n\n\nBMP280 (\ndatasheet\n)\n\n\n\n\n\n\nPossible sampling rate\n\n\n182 Hz (typical)\n\n\n\n\n\n\nInterface Bus\n\n\nSPI, I2C (use either one of them)\n\n\n\n\n\n\nWeight\n\n\n3g (for breakout board)\n\n\n\n\n\n\nDimensions\n\n\n40 (width) \u00d7 20 (depth) mm\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nWe will show/describe how to select interface bus soon.\n\n\n\n\n\n\nNote\n\n\nThe altitude is calculated by a combination of temperature and atmospheric pressure. No specialized components for altitude.\n\n\n\n\nPlatforms supported (only for battery)\n\uf0c1\n\n\n\n\n\n\n\n\nPlatform\n\n\nSeeeduino/Arduino\n\n\nRasberry Pi\n\n\nBeaglebone\n\n\nLinkIt ONE\n\n\n\n\n\n\n\n\n\n\nSupported status\n\n\nSupported\n\n\nNot supported\n\n\nSupported\n\n\nSupported\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nIf no version number is present for a specific platform, it means this product supports all versions within this platform.\n\n\n\n\nHardware Overview\n\uf0c1\n\n\n\n\n\n\nSPI soldering pads, a voltage monitoring circuit.\n\n\nInterface bus selection pads , to select I2C bus, connect the     two pads by soldering (this is connected by default); to select SPI bus, cut the two pads with a sharp knife or a soldering iron.\n\n\nSlave board address selection pads, to select slave board address to avoid address collision.\nIf you have selected I2C bus, the default address for slave board is 0x77(right-two pads are connected). If you want to use the address 0x76, connect only left two (disconnect right two) by soldering. Tips: you can disconnect pads with just a sharp knife.\nIf you have selected SPI bus, the default address for slave board is 0x77(right-two pads are connected). If you want to use the address 0x76, disconnect all three pads.\n\n\n\n\n\n\nNote\n\n\nDo not touch or shake or let this product in vibration when it works. This will cause interference and will affect the accuracy of data collected.\n\n\n\n\nPackage includes (main parts)\n\uf0c1\n\n\n\n\n\n\n\n\nParts name\n\n\nQuantity\n\n\n\n\n\n\n\n\n\n\nGrove - Barometer Sensor (BMP280)\n\n\n1 piece\n\n\n\n\n\n\nGrove cable\n\n\n1 piece\n\n\n\n\n\n\n\n\nGetting Started\n\uf0c1\n\n\nNow let us run some basic examples with this module.\n\n\nWith Arduino\n\uf0c1\n\n\nThis section shows you how to build a simple project with Arduino platform. Even if you are using a different type of main control board, these instructions and source code are useful.\n\n\nMaterial required\n\uf0c1\n\n\n\n\nGrove - Barometer Sensor (BMP280) \u00d7 1\n\n\nSeeeduino 4.2\n (fully compatible with Arduino) or Arduino UNO (other models are also fine) \u00d7 1\n\n\nGrove - Base Shield\n \u00d7 1 (it is optional if you are using Seeeduino which has two I2C sockets on Seeeduino v4.2)\n\n\nUSB cable (type A to type B, for Arduino) \u00d7 1 or USB cable (Type-A to micro Type-B, for Seeeduino) \u00d7 1\n\n\nGrove cable \u00d7 1\n\n\n\n\nConnections\n\uf0c1\n\n\nConnect all parts as follows: the first picture shows connection with Seeeduino, the second one demonstrates connection with Arduino UNO:\n\n\n\n\n\n\nCoding\n\uf0c1\n\n\nYou can find more demo sketches at https://github.com/Seeed-Studio/Grove_BMP280/tree/master/example/bmp280_example and development library at https://github.com/Seeed-Studio/Grove_BMP280\n1. A typical demo code. You can upload code to main control board with Codebender.\n\n\n\n\n\n\n\nDownload and upload the code. If you do not know how to upload an Arduino sketch, please visit https://www.arduino.cc/en/Guide/Windows for Windows user or https://www.arduino.cc/en/Guide/MacOSX for Mac user. You can see the result as below.\n\n\n\n\nTips:\n if you use Seeeduino, please also select \nBoards\n under \nTools\n as you upload sketches.\n\n\nResources\n\uf0c1\n\n\n\n\nSchematic(Eagle) file\n\n\nBMP280 Datasheet\n\n\nLibrary and example code on GitHub\n\n\nI2C how-to for Arduino\n\n\n\n\nIs this page helpful\n\uf0c1", 
+            "title": "Grove - Barometer Sensor(BMP280)"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#grove-barometer-sensor-bmp280", 
+            "text": "", 
+            "title": "Grove - Barometer Sensor (BMP280)"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#introduction", 
+            "text": "Grove - Barometer Sensor (BMP280) is a breakout board for Bosch BMP280 high-precision and low-power digital barometer. This module can be used to measure temperature and atmospheric pressure accurately. As the atmospheric pressure changes with altitude, it can also measure approximate altitude of a place. It can be connected to a microcontroller with I2C (integrated with Grove socket) or through SPI bus. We have also provided highly abstracted library to make this more product easier to use.  The BMP280 is an upgraded version of BMP180. BMP280 gets dramatic improvements from BMP180. BMP280 comes with a smaller footprint, lower power consumption, lower noise measurements, higher resolutions for pressure and temperature, lower RMS noise, newly added interface SPI, more measuring modes, higher measuring rate and newly added filter against environmental interference. Since the atmosphere pressure reading is affected by altitude and temperature, we have added compensation features in the library. Hence, Grove - Barometer Sensor (BMP280) would be more reliable in providing precise temperature, atmospheric pressure values and approximate altitude data.  Using the sensor is easy. For Seeeduino (compliant with Arduino), just connect this breakout board using Grove cable to I2C Grove connector. Then, use the provided library and example code from GitHub. If you are using an Arduino either use Base Shield v2.0 or simply connect the VCC pin to the 5V voltage pin, GND to ground, SCL to I2C Clock (Analog 5) and SDA to I2C Data (Analog 4).\nTypical applications: Enhancement of GPS navigation, outdoor/indoor navigation, weather forecast, or any other project that requires an accurate atmospheric pressure reading.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#version-tracker", 
+            "text": "Product version  Release date  Support status  Notes      Grove - Barometer Sensor (BMP280) (v1.0, latest version)  May 2016  Supported  None", 
+            "title": "Version Tracker"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#features", 
+            "text": "Get more precise temperature, atmospheric pressure values, and approximate altitude data.  Grove compatible and easy to use  Highly abstracted library for building projects quicker", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#specifications", 
+            "text": "Item  Value      Input voltage  3.3V or 5V    I/O voltage  3.3V or 5V    Operating current  0.6mA    Operating temperature  -40 - 85 \u2103    Effective pressure measurement range  300 - 1100 hPa (1 hPa= one hundred Pa) with \u00b11.0 hPa accuracy    Temperature measurement accuracy  \u00b11.0\u00b0C    Measurement modes  Piezo   Temperature, forced or periodic    Chip  BMP280 ( datasheet )    Possible sampling rate  182 Hz (typical)    Interface Bus  SPI, I2C (use either one of them)    Weight  3g (for breakout board)    Dimensions  40 (width) \u00d7 20 (depth) mm      Note  We will show/describe how to select interface bus soon.    Note  The altitude is calculated by a combination of temperature and atmospheric pressure. No specialized components for altitude.", 
+            "title": "Specifications"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#platforms-supported-only-for-battery", 
+            "text": "Platform  Seeeduino/Arduino  Rasberry Pi  Beaglebone  LinkIt ONE      Supported status  Supported  Not supported  Supported  Supported      Note  If no version number is present for a specific platform, it means this product supports all versions within this platform.", 
+            "title": "Platforms supported (only for battery)"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#hardware-overview", 
+            "text": "SPI soldering pads, a voltage monitoring circuit.  Interface bus selection pads , to select I2C bus, connect the     two pads by soldering (this is connected by default); to select SPI bus, cut the two pads with a sharp knife or a soldering iron.  Slave board address selection pads, to select slave board address to avoid address collision.\nIf you have selected I2C bus, the default address for slave board is 0x77(right-two pads are connected). If you want to use the address 0x76, connect only left two (disconnect right two) by soldering. Tips: you can disconnect pads with just a sharp knife.\nIf you have selected SPI bus, the default address for slave board is 0x77(right-two pads are connected). If you want to use the address 0x76, disconnect all three pads.    Note  Do not touch or shake or let this product in vibration when it works. This will cause interference and will affect the accuracy of data collected.", 
+            "title": "Hardware Overview"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#package-includes-main-parts", 
+            "text": "Parts name  Quantity      Grove - Barometer Sensor (BMP280)  1 piece    Grove cable  1 piece", 
+            "title": "Package includes (main parts)"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#getting-started", 
+            "text": "Now let us run some basic examples with this module.", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#with-arduino", 
+            "text": "This section shows you how to build a simple project with Arduino platform. Even if you are using a different type of main control board, these instructions and source code are useful.", 
+            "title": "With Arduino"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#material-required", 
+            "text": "Grove - Barometer Sensor (BMP280) \u00d7 1  Seeeduino 4.2  (fully compatible with Arduino) or Arduino UNO (other models are also fine) \u00d7 1  Grove - Base Shield  \u00d7 1 (it is optional if you are using Seeeduino which has two I2C sockets on Seeeduino v4.2)  USB cable (type A to type B, for Arduino) \u00d7 1 or USB cable (Type-A to micro Type-B, for Seeeduino) \u00d7 1  Grove cable \u00d7 1", 
+            "title": "Material required"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#connections", 
+            "text": "Connect all parts as follows: the first picture shows connection with Seeeduino, the second one demonstrates connection with Arduino UNO:", 
+            "title": "Connections"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#coding", 
+            "text": "You can find more demo sketches at https://github.com/Seeed-Studio/Grove_BMP280/tree/master/example/bmp280_example and development library at https://github.com/Seeed-Studio/Grove_BMP280\n1. A typical demo code. You can upload code to main control board with Codebender.    Download and upload the code. If you do not know how to upload an Arduino sketch, please visit https://www.arduino.cc/en/Guide/Windows for Windows user or https://www.arduino.cc/en/Guide/MacOSX for Mac user. You can see the result as below.   Tips:  if you use Seeeduino, please also select  Boards  under  Tools  as you upload sketches.", 
+            "title": "Coding"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#resources", 
+            "text": "Schematic(Eagle) file  BMP280 Datasheet  Library and example code on GitHub  I2C how-to for Arduino", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/Grove/Sensor/Grove_Barometer_Sensor_BMP280/#is-this-page-helpful", 
+            "text": "", 
+            "title": "Is this page helpful"
+        }, 
+        {
+            "location": "/Grove/Actuator/Actuator/", 
+            "text": "Actuator\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "Actuator"
+        }, 
+        {
+            "location": "/Grove/Actuator/Actuator/#actuator", 
+            "text": "// to be continued", 
+            "title": "Actuator"
+        }, 
+        {
+            "location": "/Grove/Display/Display/", 
+            "text": "Display\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/Grove/Display/Display/#display", 
+            "text": "// to be continued", 
+            "title": "Display"
+        }, 
+        {
+            "location": "/Grove/Communication/Communication/", 
+            "text": "Communication\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "Communication"
+        }, 
+        {
+            "location": "/Grove/Communication/Communication/#communication", 
+            "text": "// to be continued", 
+            "title": "Communication"
+        }, 
+        {
+            "location": "/IoT/IoT/", 
+            "text": "IoT Test\n\uf0c1\n\n\n// to be continued", 
+            "title": "IoT"
+        }, 
+        {
+            "location": "/IoT/IoT/#iot-test", 
+            "text": "// to be continued", 
+            "title": "IoT Test"
+        }, 
+        {
+            "location": "/IoT/Microsoft_IoT_Grove_Kit/", 
+            "text": "Microsoft IoT Grove Kit\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "Microsoft IoT Grove Kit"
+        }, 
+        {
+            "location": "/IoT/Microsoft_IoT_Grove_Kit/#microsoft-iot-grove-kit", 
+            "text": "// to be continued", 
+            "title": "Microsoft IoT Grove Kit"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/", 
+            "text": "Breakout for LinkIt Smart 7688 v2.0\n\uf0c1\n\n\n\n\nIntroduction\n\uf0c1\n\n\nBreakout for LinkIt Smart 7688 v2.0\n is a Grove port integrated expansion board for LinkItTM Smart 7688 development board. This breakout board will save a lot of work and makes prototyping easier through simplified wiring. It will assist a beginner to get started fast. It supports serial buses like I2C, UART. It comes with USB, Ethernet, and 3.5mm Audio ports.\n\n\n\n\nVersion Tracker\n\uf0c1\n\n\n\n\n\n\n\n\nProduct reversion\n\n\nRelease date\n\n\nSupport status\n\n\nNotes\n\n\n\n\n\n\n\n\n\n\nVersion 1.0\n\n\nNovember 2015\n\n\nSupported\n\n\nNone\n\n\n\n\n\n\nVersion 2.0\n\n\nApril 2016\n\n\nSupported\n\n\nRefer to New Features\n\n\n\n\n\n\n\n\nNew features:\n\uf0c1\n\n\n\n\nSupport recording functionality\n\n\nFor 3.5 mm phone connector (audio jack), it supports the protocol OMTP and CTIA. You can use either protocol by switching a switch. About how to switch protocol, we will describe it later.\nGet One Now Banner.png\n\n\n\n\n\n\nFeatures\n\uf0c1\n\n\n\n\nGrove interface makes wiring easier and allows expansions with Grove modules.\n\n\nUSB host\n\n\nAudio Output\n\n\nEthernet port\n\n\nCost-effective\n\n\n\n\nApplication ideas\n\uf0c1\n\n\n\n\nIoT/Gateway Device.\n\n\nRobotics\n\n\nSmart multimedia devices\n\n\nTeaching and learning\n\n\n\n\nSpecification\n\uf0c1\n\n\n\n\n\n\n\n\nInput voltage\n\n\n5.0V(With USB Power port)\n\n\n\n\n\n\n\n\n\n\nOperating voltage\n\n\n3.3V\n\n\n\n\n\n\nDebug port\n\n\n1(Quantity)\n\n\n\n\n\n\nEthernet port\n\n\n1(Quantity)\n\n\n\n\n\n\nUSB type-A\n\n\n1(Quantity)\n\n\n\n\n\n\nHeadset port\n\n\n1(Quantity)\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nDebug pins, Ethernet pins and USB type-A host pins connect with MT7688, other pins connect with ATmega32U4.\n\n\n\n\nHardware Overview\n\uf0c1\n\n\n\n\nGrove interface\n\uf0c1\n\n\nConnect rich \nGrove\n interfaced functional modules. With this kind of ports, you never need jumper wire or soldering work, and you can make more powerful applications with those functional modules.\n\n\nTo switch phone connector protocol between OMTP and CTIA\n\n\n\n\nIn preceded figure, you can notice that there are six pins and two jumper caps on bottom-right corner. These pins are used to switch phone connector protocol. As you set tiny jumper(both) to left-four pin, protocol OMTP is used. As you set tiny jumper(both) to right-four pin (as preceded figure shows), protocol CTIA is used. As following figures show:\nBreakout for LinkIt Smart 7688 v2.0 CTIA OMTP Switch Manner.JPG\nNote that to use the recording functionality, you need to update on-board firmware to Breakout for LinkIt Smart 7688 firmware(above version v0.9.2).\n\n\n\n\n\n\nNote\n\n\nWe recommend you use external storage device, because the Write/Read speed of on-board flash memory is limited.\n\n\n\n\nParts list\n\uf0c1\n\n\n\n\n\n\n\n\nParts name\n\n\nQuantity\n\n\n\n\n\n\n\n\n\n\nBreakout for LinkIt Smart 7688 v2.0\n\n\n1PCS\n\n\n\n\n\n\n\n\nGet started\n\uf0c1\n\n\nMaterial required\n\uf0c1\n\n\n\n\nLinkIt Smart 7688 \u00d7 1\n\n\nUSB cable (type A to micro type-B) \u00d7 2\n\n\nUSB to Serial adapter \u00d7 1\n\n\nJumper wires \u00d7 3\n\n\nStereo (with 3.5 mm audio cable) \u00d7 1\n\n\nUSB flash driver (with audio file of MP3 format inside) \u00d7 1\n\n\n\n\nPlay music\n\uf0c1\n\n\nStep1:\n Refer \nhere\n to connect your LinkIt Smart 7688 to Internet.\n\n\n\n\nNote\n\n\nYou can plug jumper wires to MT7688 UART2 port instead soldering them to Pin 8, Pin 9 and Pin GND.\n\n\n\n\n\n\nNote\n\n\nIn rare cases, you might not connect to Internet successfully, reboot the embedded OS.\n\n\n\n\nStep2:\n Open a console with USB to Serial adapter.\n\n\nStep3:\n Connect all parts like follows:\n\n\n\n\n\n\nNote\n\n\nThis is a figure of Breakout for LinkIt Smart 7688(v1.0).\n\n\n\n\nStep4:\n Enter folder of USB by type \ncd /Media/USB-A1\n in console.\n\n\nStep5:\n Play music with utility \nMadplay\n(installed on OpenWRT) by typing \nmadplay filename.mp3\n into console.\n\n\nStep6:\n Now you will hear the music.\n\n\nResources\n\uf0c1\n\n\n\n\nSchematic files\n\n\nLinkIt smart 7688\n\n\nOpenWrt\n\n\nLink to buy a LinkIt Smart 7688", 
+            "title": "Breakout for LinkIt Smart 7688 V2.0"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#breakout-for-linkit-smart-7688-v20", 
+            "text": "", 
+            "title": "Breakout for LinkIt Smart 7688 v2.0"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#introduction", 
+            "text": "Breakout for LinkIt Smart 7688 v2.0  is a Grove port integrated expansion board for LinkItTM Smart 7688 development board. This breakout board will save a lot of work and makes prototyping easier through simplified wiring. It will assist a beginner to get started fast. It supports serial buses like I2C, UART. It comes with USB, Ethernet, and 3.5mm Audio ports.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#version-tracker", 
+            "text": "Product reversion  Release date  Support status  Notes      Version 1.0  November 2015  Supported  None    Version 2.0  April 2016  Supported  Refer to New Features", 
+            "title": "Version Tracker"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#new-features", 
+            "text": "Support recording functionality  For 3.5 mm phone connector (audio jack), it supports the protocol OMTP and CTIA. You can use either protocol by switching a switch. About how to switch protocol, we will describe it later.\nGet One Now Banner.png", 
+            "title": "New features:"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#features", 
+            "text": "Grove interface makes wiring easier and allows expansions with Grove modules.  USB host  Audio Output  Ethernet port  Cost-effective", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#application-ideas", 
+            "text": "IoT/Gateway Device.  Robotics  Smart multimedia devices  Teaching and learning", 
+            "title": "Application ideas"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#specification", 
+            "text": "Input voltage  5.0V(With USB Power port)      Operating voltage  3.3V    Debug port  1(Quantity)    Ethernet port  1(Quantity)    USB type-A  1(Quantity)    Headset port  1(Quantity)      Note  Debug pins, Ethernet pins and USB type-A host pins connect with MT7688, other pins connect with ATmega32U4.", 
+            "title": "Specification"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#hardware-overview", 
+            "text": "", 
+            "title": "Hardware Overview"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#grove-interface", 
+            "text": "Connect rich  Grove  interfaced functional modules. With this kind of ports, you never need jumper wire or soldering work, and you can make more powerful applications with those functional modules.  To switch phone connector protocol between OMTP and CTIA   In preceded figure, you can notice that there are six pins and two jumper caps on bottom-right corner. These pins are used to switch phone connector protocol. As you set tiny jumper(both) to left-four pin, protocol OMTP is used. As you set tiny jumper(both) to right-four pin (as preceded figure shows), protocol CTIA is used. As following figures show:\nBreakout for LinkIt Smart 7688 v2.0 CTIA OMTP Switch Manner.JPG\nNote that to use the recording functionality, you need to update on-board firmware to Breakout for LinkIt Smart 7688 firmware(above version v0.9.2).    Note  We recommend you use external storage device, because the Write/Read speed of on-board flash memory is limited.", 
+            "title": "Grove interface"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#parts-list", 
+            "text": "Parts name  Quantity      Breakout for LinkIt Smart 7688 v2.0  1PCS", 
+            "title": "Parts list"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#get-started", 
+            "text": "", 
+            "title": "Get started"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#material-required", 
+            "text": "LinkIt Smart 7688 \u00d7 1  USB cable (type A to micro type-B) \u00d7 2  USB to Serial adapter \u00d7 1  Jumper wires \u00d7 3  Stereo (with 3.5 mm audio cable) \u00d7 1  USB flash driver (with audio file of MP3 format inside) \u00d7 1", 
+            "title": "Material required"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#play-music", 
+            "text": "Step1:  Refer  here  to connect your LinkIt Smart 7688 to Internet.   Note  You can plug jumper wires to MT7688 UART2 port instead soldering them to Pin 8, Pin 9 and Pin GND.    Note  In rare cases, you might not connect to Internet successfully, reboot the embedded OS.   Step2:  Open a console with USB to Serial adapter.  Step3:  Connect all parts like follows:    Note  This is a figure of Breakout for LinkIt Smart 7688(v1.0).   Step4:  Enter folder of USB by type  cd /Media/USB-A1  in console.  Step5:  Play music with utility  Madplay (installed on OpenWRT) by typing  madplay filename.mp3  into console.  Step6:  Now you will hear the music.", 
+            "title": "Play music"
+        }, 
+        {
+            "location": "/Platform/LinkIt/Breakout_for_LinkIt_Smart_7688_v2_0/#resources", 
+            "text": "Schematic files  LinkIt smart 7688  OpenWrt  Link to buy a LinkIt Smart 7688", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/Tutorial/Tutorial/", 
+            "text": "", 
+            "title": "Tutorial"
+        }, 
+        {
+            "location": "/SZ2U/SZ2U/", 
+            "text": "SZ2U\n\uf0c1\n\n\n\n\n// to be continued", 
+            "title": "SZ2U"
+        }, 
+        {
+            "location": "/SZ2U/SZ2U/#sz2u", 
+            "text": "// to be continued", 
+            "title": "SZ2U"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "About Seeedwiki\n\uf0c1\n\n\nGrove wiki about page", 
+            "title": "About"
+        }, 
+        {
+            "location": "/about/#about-seeedwiki", 
+            "text": "Grove wiki about page", 
+            "title": "About Seeedwiki"
+        }, 
+        {
+            "location": "/Tutorial/update_wiki/", 
+            "text": "\u5982\u4f55\u6dfb\u52a0\u4e00\u7bc7\u6587\u6863\n\uf0c1\n\n\n\n\n\u8bf4\u660e\n\uf0c1\n\n\n\u672c\u6587\u6863\u610f\u5728\u8bf4\u660e\u65b0\u6587\u6863\u7cfb\u7edf\u7684\u64cd\u4f5c\u65b9\u5f0f\u3002\u76ee\u524d\u7684\u4e0a\u4f20\u662f\u901a\u8fc7\u624b\u52a8\u7684\u65b9\u5f0f\u7684\uff0c\u5373\u6bcf\u6b21\u66f4\u65b0\u4e0a\u4f20\u6587\u6863\u90fd\u9700\u8981\u624b\u52a8\u7684\u628a\u66f4\u65b0\u540e\u7684\u6587\u4ef6\u4e0a\u4f20\u5230aws s3. \n\n\n\n\nNote\n\n\n\u672c\u6559\u7a0b\u4e3b\u8981\u8bb2\u8ff0\u64cd\u4f5c\u7684\u6b65\u9aa4\uff0c\u5bf9\u539f\u7406\u53ca\u6587\u6863\u7684\u6280\u672f\u70b9\u6ca1\u6709\u6df1\u5165\u7684\u8bb2\u8ff0\u3002\u5982\u679c\u60f3\u6df1\u5165\u4e86\u89e3mkdocs\u6587\u6863\u7cfb\u7edf\uff0c\u53ef\u4ee5\u70b9\u51fb\u6587\u672b\u53c2\u8003\u8d44\u6599\u91cc\u9762\u7684\u5185\u5bb9\u3002\n\n\n\n\n\n\nNote\n\n\n\u4ee5\u540e\u5c06\u4f1a\u91c7\u7528\u81ea\u52a8\u4e0a\u4f20\u7684\u65b9\u5f0f\uff0c\u5185\u5bb9\u79fb\u690d\u5f97\u5dee\u4e0d\u591a\u540e\uff0c\u5c31\u4f1a\u8ba9INT\u7684\u540c\u4e8b\u8fdb\u884c\u8f6f\u4ef6\u7684\u7f16\u5199\uff0c\u4ee5\u53ca\u524d\u7aef\u5de5\u7a0b\u5e08\u4e5f\u4f1a\u9002\u5f53\u7684\u4fee\u6539\u4e3b\u9898\u3002\n\n\n\n\n\u914d\u7f6e\u5de5\u4f5c\u73af\u5883\n\uf0c1\n\n\n\u9700\u8981\u5728Linux\u73af\u5883\u4e0b\u8fdb\u884c\u64cd\u4f5c\u3002\n\n\n\u5b89\u88c5python-pip\n\n\nsudo apt-get install python-pip\n\n\n\n\u5b89\u88c5mkdocs\n\n\nsudo pip install mkdocs\n\n\n\n\u5b89\u88c5git\n\n\nsudo apt-get install git\n\n\n\n\n\nWarning\n\n\n\u6211\u4f7f\u7528\u7684\u662fubuntu14.0.x\u7684\u7248\u672c\uff0c\u53ef\u80fd\u4e0d\u540c\u7248\u672c\u7684linux\u4f1a\u6709\u6240\u4e0d\u540c\u3002\n\n\n\n\nGithub\n\uf0c1\n\n\n\u6211\u4eec\u5728github\u5efa\u7acb\u4e86\u4e00\u4e2a\n\u4ed3\u5e93\n\uff0c\u7528\u6765\u5b58\u653e\u6240\u6709\u7684\u6587\u6863\u3002\n\n\n\u8be5\u4ed3\u5e93\u6709\u4e00\u4e2adocs\u7684\u6587\u4ef6\u5939\uff0c\u6211\u4eec\u6240\u5199\u7684\u6587\u6863\u4f1a\u5b58\u653e\u5728\u8fd9\u91cc\u9762\u3002\n\n\n\u5176\u4e2d\uff1a\n\n\n\n\nindex.md\n\u662f\u9996\u9875\u7684\u5185\u5bb9\n\n\nabout.md\n\u662f\u9875\u9762About\u91cc\u9762\u7684\u5185\u5bb9\n\n\n\n\n\u4ea7\u54c1\u7684\u6587\u6863\u4f1a\u653e\u5728\u5269\u4e0b\u7684\u51e0\u4e2a\u6587\u4ef6\u5939\u91cc\u9762\uff0c\u6839\u636e\u4e0d\u540c\u7684\u5206\u7c7b\u653e\u5230\u4e0d\u540c\u7684\u5730\u65b9\uff0c\u76ee\u524d\uff0c\u8ba1\u5212\u7684\u5206\u7c7b\u662f\u8fd9\u6837\u7684\uff1a\n\n\n\n\nPlatform\n\n\nArduino\n\n\nRaspberry Pi\n\n\nLinkIt\n\n\nLaunchPad\n\n\nBeagleBone\n\n\nIntel Edison\n\n\nmbed\n\n\nRePhone\n\n\nWio\n\n\n\n\n\n\nGrove\n\n\nSensor\n\n\nActuator\n\n\nDisplay\n\n\nCommunication\n\n\n\n\n\n\nIoT\n\n\nShield\n\n\nRobot\n\n\n\n\n\n\nNote\n\n\n\u4e0a\u9762\u7684\u5206\u7c7b\u6307\u6570\u4e00\u4e2a\u53c2\u8003\uff0c\u540e\u9762\u53ef\u4ee5\u7ee7\u7eed\u8ba8\u8bba\u66f4\u52a0\u5408\u7406\u7684\u5206\u7c7b\u65b9\u5f0f\n\n\n\n\n\u6211\u4eec\u628a\u8be5\u4ed3\u5e93clone\u5230\u672c\u5730\u3002\u7136\u540e\u4e0b\u9762\u6211\u4eec\u4ecb\u7ecd\u6dfb\u52a0\u4e00\u4e2a\u6587\u6863\u3002\n\n\n\u6dfb\u52a0\u4e00\u4e2a\u6587\u6863\n\uf0c1\n\n\n\u6211\u4eec\u4e00\u6dfb\u52a0\u4e00\u4e2aGrove - LED\u4e3a\u4f8b\u3002\n\n\nGrove - LED\u5c5e\u4e8eGrove\u91cc\u9762\u7684Actuator\u5206\u7c7b\uff0c\u4e8e\u662f\u6211\u4eec\u5728\nGrove/Actuator\n\u91cc\u9762\u6dfb\u52a0\u4e00\u4e2aGrove_LED.md\u7684\u6587\u4ef6\uff0c\u5e76\u4e14\u968f\u4fbf\u6dfb\u52a0\u4e00\u4e9b\u5185\u5bb9\uff0c\u4f8b\u5982\uff1a\n\n\n#Grove - LED\n-------\nTest how to add a document\n\n\n\n\u5e76\u4e14\u6253\u5f00\nmkdocs.yml\n\uff08\u7528\u6587\u672c\u6216\u8005notepad++\u90fd\u53ef\u4ee5\uff09\u3002\n\n\n\u5728Grove, Actuator\u7684\u4f4d\u7f6e\u6dfb\u52a0\u5982\u4e0b\u4fe1\u606f\uff1a\n\n\n\n\n\u7136\u540e\uff0c\u628a\u8be5\u672c\u5730\u4ed3\u5e93\u5408\u5e76\u5230master\u5e76\u4e14push\u5230\u8fdc\u7a0b\u4ed3\u5e93\u3002\n\n\ngit add .\ngit commit -m \"test\"\ngit push origin master\n\n\n\n\u66f4\u65b0\u7f51\u7ad9\n\uf0c1\n\n\n\u4e0a\u9762\u6211\u4eec\u5df2\u7ecf\u5728github\u6dfb\u52a0\u4e86\u4e00\u7bc7\u6587\u6863\u3002\u63a5\u4e0b\u6765\u628a\u8be5\u6587\u6863\u7f16\u8bd1\u540e\u5448\u73b0\u5728wiki.seeed.cc\u4e0a\u3002\n\n\n\u56de\u5230linux\u90a3\u8fb9\uff0c\u540c\u6837\u7684\uff0c\u628a\u4e0a\u9762\u63d0\u5230\u7684\u4ed3\u5e93clone\u5230\u672c\u5730\u3002\u5982\u679c\u5df2\u7ecfclone\u5230\u672c\u5730\uff0c\u90a3\u4e48git pull\u8ba9\u672c\u5730\u7684\u4ed3\u5e93\u8ddf\u8fdc\u7a0b\u7684\u4ed3\u5e93\u540c\u6b65\u4e00\u4e0b\u3002\n\n\n\u7136\u540e\u6267\u884c\u4e0b\u9762\u7684\u547d\u4ee4\u53ef\u4ee5\u6253\u5f00\u672c\u5730\u9884\u89c8\n\n\nmkdocs serve\n\n\n\n\u6267\u884c\u4e0a\u9762\u7684\u547d\u4ee4\u540e\uff0c\u67e5\u770b\u662f\u5426\u6709\u9519\u8bef\uff0c\u5982\u679c\u6709\u9519\u8bef\uff0c\u6839\u636e\u9519\u8bef\u7684\u7c7b\u578b\u5bf9\u6e90\u6587\u4ef6\u8fdb\u884c\u4fee\u6539\u3002\u5982\u679c\u6ca1\u6709\u9519\u8bef\uff0c\u90a3\u4e48\u5c31\u53ef\u4ee5\u5728linux\u6253\u5f00\u6d4f\u89c8\u5668\uff0c\u8f93\u5165\uff1a\n\n\nlocalhost:8000\n\n\n\n\u5c31\u53ef\u4ee5\u770b\u5230\u7f16\u8bd1\u540e\u7684\u6587\u6863\u4e86\uff0c\u4e0d\u8fc7\u8fd9\u53ea\u662f\u672c\u5730\u670d\u52a1\u5668\u7684\u6587\u6863\u3002\u8fd8\u9700\u8981\u4e00\u4e9b\u6b65\u9aa4\u624d\u80fd\u66f4\u65b0\u5230\u670d\u52a1\u5668\u3002\n\n\n\u6267\u884c\u4e0b\u9762\u7684\u547d\u4ee4\u628amarkdown\u7f16\u8bd1\u6210html\uff1a\n\n\nmkdocs build\n\n\n\n\u7136\u540e\u7f16\u8bd1\u597d\u7684\u6587\u4ef6\u5c31\u5b58\u5230\u4e86site\u6587\u4ef6\u5939\u91cc\u9762\uff08\u5728\u6211\u4eec\u521a\u624d\u4e0b\u8f7d\u7684\u4ed3\u5e93\u91cc\uff09\n\n\n\u63a5\u4e0b\u6765\uff0c\u628a\u7f16\u8bd1\u597d\u7684\u6587\u4ef6\u4e0a\u4f20\u5230\nAWS S3\n\uff0c\u9700\u8981\u8f93\u5165\u8d26\u53f7\u5bc6\u7801\uff0c\u8d26\u53f7\u5bc6\u7801\u6211\u5df2\u7ecf\u653e\u5230\u4e86AE\u7684trello\u91cc\u9762\u3002\n\n\n\u8f93\u5165\u8d26\u53f7\u5bc6\u7801\u540e\uff0c\u6765\u5230aws\u7684\u63a7\u5236\u53f0\uff0c\u70b9S3\u7684\u5165\u53e3\uff0c\u53ef\u4ee5\u770b\u5230\u4e24\u4e2a\u7ad9\u70b9\u7684\u6570\u636e\uff0c\u4e00\u4e2a\u662fstatic.seeed.cc\u4e00\u4e2a\u662fwiki.seeed.cc\uff0c\u6211\u4eec\u9700\u8981\u8fdb\u5165wiki\u8fd9\u4e2a\u3002\n\n\n\u8fdb\u53bb\u540e\uff0c\u5de6\u4e0a\u89d2\u6709\u4e2aUpload\u6309\u94ae\uff0c\u70b9\u51fb\u5b83\uff0c\u7136\u540e\uff1a\n\n\n\n\n\u7136\u540e\u7b49\u6240\u6709\u7684\u6587\u4ef6\u4e0a\u4f20\u5b8c\uff0c\u7f51\u9875\u6253\u5f00\nwiki.seeed.cc\n\uff0c \u5c31\u53ef\u4ee5\u770b\u5230\u66f4\u65b0\u7684\u5185\u5bb9\u4e86\u3002\n\n\n\u53c2\u8003\u8d44\u6599\n\uf0c1\n\n\n\n\nhttp://www.mkdocs.org/\n\n\nhttps://github.com/mkdocs/mkdocs/", 
+            "title": "\u5982\u4f55\u6dfb\u52a0\u4e00\u7bc7\u6587\u6863"
+        }, 
+        {
+            "location": "/Tutorial/update_wiki/#_1", 
+            "text": "", 
+            "title": "\u5982\u4f55\u6dfb\u52a0\u4e00\u7bc7\u6587\u6863"
+        }, 
+        {
+            "location": "/Tutorial/update_wiki/#_2", 
+            "text": "\u672c\u6587\u6863\u610f\u5728\u8bf4\u660e\u65b0\u6587\u6863\u7cfb\u7edf\u7684\u64cd\u4f5c\u65b9\u5f0f\u3002\u76ee\u524d\u7684\u4e0a\u4f20\u662f\u901a\u8fc7\u624b\u52a8\u7684\u65b9\u5f0f\u7684\uff0c\u5373\u6bcf\u6b21\u66f4\u65b0\u4e0a\u4f20\u6587\u6863\u90fd\u9700\u8981\u624b\u52a8\u7684\u628a\u66f4\u65b0\u540e\u7684\u6587\u4ef6\u4e0a\u4f20\u5230aws s3.    Note  \u672c\u6559\u7a0b\u4e3b\u8981\u8bb2\u8ff0\u64cd\u4f5c\u7684\u6b65\u9aa4\uff0c\u5bf9\u539f\u7406\u53ca\u6587\u6863\u7684\u6280\u672f\u70b9\u6ca1\u6709\u6df1\u5165\u7684\u8bb2\u8ff0\u3002\u5982\u679c\u60f3\u6df1\u5165\u4e86\u89e3mkdocs\u6587\u6863\u7cfb\u7edf\uff0c\u53ef\u4ee5\u70b9\u51fb\u6587\u672b\u53c2\u8003\u8d44\u6599\u91cc\u9762\u7684\u5185\u5bb9\u3002    Note  \u4ee5\u540e\u5c06\u4f1a\u91c7\u7528\u81ea\u52a8\u4e0a\u4f20\u7684\u65b9\u5f0f\uff0c\u5185\u5bb9\u79fb\u690d\u5f97\u5dee\u4e0d\u591a\u540e\uff0c\u5c31\u4f1a\u8ba9INT\u7684\u540c\u4e8b\u8fdb\u884c\u8f6f\u4ef6\u7684\u7f16\u5199\uff0c\u4ee5\u53ca\u524d\u7aef\u5de5\u7a0b\u5e08\u4e5f\u4f1a\u9002\u5f53\u7684\u4fee\u6539\u4e3b\u9898\u3002", 
+            "title": "\u8bf4\u660e"
+        }, 
+        {
+            "location": "/Tutorial/update_wiki/#_3", 
+            "text": "\u9700\u8981\u5728Linux\u73af\u5883\u4e0b\u8fdb\u884c\u64cd\u4f5c\u3002  \u5b89\u88c5python-pip  sudo apt-get install python-pip  \u5b89\u88c5mkdocs  sudo pip install mkdocs  \u5b89\u88c5git  sudo apt-get install git   Warning  \u6211\u4f7f\u7528\u7684\u662fubuntu14.0.x\u7684\u7248\u672c\uff0c\u53ef\u80fd\u4e0d\u540c\u7248\u672c\u7684linux\u4f1a\u6709\u6240\u4e0d\u540c\u3002", 
+            "title": "\u914d\u7f6e\u5de5\u4f5c\u73af\u5883"
+        }, 
+        {
+            "location": "/Tutorial/update_wiki/#github", 
+            "text": "\u6211\u4eec\u5728github\u5efa\u7acb\u4e86\u4e00\u4e2a \u4ed3\u5e93 \uff0c\u7528\u6765\u5b58\u653e\u6240\u6709\u7684\u6587\u6863\u3002  \u8be5\u4ed3\u5e93\u6709\u4e00\u4e2adocs\u7684\u6587\u4ef6\u5939\uff0c\u6211\u4eec\u6240\u5199\u7684\u6587\u6863\u4f1a\u5b58\u653e\u5728\u8fd9\u91cc\u9762\u3002  \u5176\u4e2d\uff1a   index.md \u662f\u9996\u9875\u7684\u5185\u5bb9  about.md \u662f\u9875\u9762About\u91cc\u9762\u7684\u5185\u5bb9   \u4ea7\u54c1\u7684\u6587\u6863\u4f1a\u653e\u5728\u5269\u4e0b\u7684\u51e0\u4e2a\u6587\u4ef6\u5939\u91cc\u9762\uff0c\u6839\u636e\u4e0d\u540c\u7684\u5206\u7c7b\u653e\u5230\u4e0d\u540c\u7684\u5730\u65b9\uff0c\u76ee\u524d\uff0c\u8ba1\u5212\u7684\u5206\u7c7b\u662f\u8fd9\u6837\u7684\uff1a   Platform  Arduino  Raspberry Pi  LinkIt  LaunchPad  BeagleBone  Intel Edison  mbed  RePhone  Wio    Grove  Sensor  Actuator  Display  Communication    IoT  Shield  Robot    Note  \u4e0a\u9762\u7684\u5206\u7c7b\u6307\u6570\u4e00\u4e2a\u53c2\u8003\uff0c\u540e\u9762\u53ef\u4ee5\u7ee7\u7eed\u8ba8\u8bba\u66f4\u52a0\u5408\u7406\u7684\u5206\u7c7b\u65b9\u5f0f   \u6211\u4eec\u628a\u8be5\u4ed3\u5e93clone\u5230\u672c\u5730\u3002\u7136\u540e\u4e0b\u9762\u6211\u4eec\u4ecb\u7ecd\u6dfb\u52a0\u4e00\u4e2a\u6587\u6863\u3002", 
+            "title": "Github"
+        }, 
+        {
+            "location": "/Tutorial/update_wiki/#_4", 
+            "text": "\u6211\u4eec\u4e00\u6dfb\u52a0\u4e00\u4e2aGrove - LED\u4e3a\u4f8b\u3002  Grove - LED\u5c5e\u4e8eGrove\u91cc\u9762\u7684Actuator\u5206\u7c7b\uff0c\u4e8e\u662f\u6211\u4eec\u5728 Grove/Actuator \u91cc\u9762\u6dfb\u52a0\u4e00\u4e2aGrove_LED.md\u7684\u6587\u4ef6\uff0c\u5e76\u4e14\u968f\u4fbf\u6dfb\u52a0\u4e00\u4e9b\u5185\u5bb9\uff0c\u4f8b\u5982\uff1a  #Grove - LED\n-------\nTest how to add a document  \u5e76\u4e14\u6253\u5f00 mkdocs.yml \uff08\u7528\u6587\u672c\u6216\u8005notepad++\u90fd\u53ef\u4ee5\uff09\u3002  \u5728Grove, Actuator\u7684\u4f4d\u7f6e\u6dfb\u52a0\u5982\u4e0b\u4fe1\u606f\uff1a   \u7136\u540e\uff0c\u628a\u8be5\u672c\u5730\u4ed3\u5e93\u5408\u5e76\u5230master\u5e76\u4e14push\u5230\u8fdc\u7a0b\u4ed3\u5e93\u3002  git add .\ngit commit -m \"test\"\ngit push origin master", 
+            "title": "\u6dfb\u52a0\u4e00\u4e2a\u6587\u6863"
+        }, 
+        {
+            "location": "/Tutorial/update_wiki/#_5", 
+            "text": "\u4e0a\u9762\u6211\u4eec\u5df2\u7ecf\u5728github\u6dfb\u52a0\u4e86\u4e00\u7bc7\u6587\u6863\u3002\u63a5\u4e0b\u6765\u628a\u8be5\u6587\u6863\u7f16\u8bd1\u540e\u5448\u73b0\u5728wiki.seeed.cc\u4e0a\u3002  \u56de\u5230linux\u90a3\u8fb9\uff0c\u540c\u6837\u7684\uff0c\u628a\u4e0a\u9762\u63d0\u5230\u7684\u4ed3\u5e93clone\u5230\u672c\u5730\u3002\u5982\u679c\u5df2\u7ecfclone\u5230\u672c\u5730\uff0c\u90a3\u4e48git pull\u8ba9\u672c\u5730\u7684\u4ed3\u5e93\u8ddf\u8fdc\u7a0b\u7684\u4ed3\u5e93\u540c\u6b65\u4e00\u4e0b\u3002  \u7136\u540e\u6267\u884c\u4e0b\u9762\u7684\u547d\u4ee4\u53ef\u4ee5\u6253\u5f00\u672c\u5730\u9884\u89c8  mkdocs serve  \u6267\u884c\u4e0a\u9762\u7684\u547d\u4ee4\u540e\uff0c\u67e5\u770b\u662f\u5426\u6709\u9519\u8bef\uff0c\u5982\u679c\u6709\u9519\u8bef\uff0c\u6839\u636e\u9519\u8bef\u7684\u7c7b\u578b\u5bf9\u6e90\u6587\u4ef6\u8fdb\u884c\u4fee\u6539\u3002\u5982\u679c\u6ca1\u6709\u9519\u8bef\uff0c\u90a3\u4e48\u5c31\u53ef\u4ee5\u5728linux\u6253\u5f00\u6d4f\u89c8\u5668\uff0c\u8f93\u5165\uff1a  localhost:8000  \u5c31\u53ef\u4ee5\u770b\u5230\u7f16\u8bd1\u540e\u7684\u6587\u6863\u4e86\uff0c\u4e0d\u8fc7\u8fd9\u53ea\u662f\u672c\u5730\u670d\u52a1\u5668\u7684\u6587\u6863\u3002\u8fd8\u9700\u8981\u4e00\u4e9b\u6b65\u9aa4\u624d\u80fd\u66f4\u65b0\u5230\u670d\u52a1\u5668\u3002  \u6267\u884c\u4e0b\u9762\u7684\u547d\u4ee4\u628amarkdown\u7f16\u8bd1\u6210html\uff1a  mkdocs build  \u7136\u540e\u7f16\u8bd1\u597d\u7684\u6587\u4ef6\u5c31\u5b58\u5230\u4e86site\u6587\u4ef6\u5939\u91cc\u9762\uff08\u5728\u6211\u4eec\u521a\u624d\u4e0b\u8f7d\u7684\u4ed3\u5e93\u91cc\uff09  \u63a5\u4e0b\u6765\uff0c\u628a\u7f16\u8bd1\u597d\u7684\u6587\u4ef6\u4e0a\u4f20\u5230 AWS S3 \uff0c\u9700\u8981\u8f93\u5165\u8d26\u53f7\u5bc6\u7801\uff0c\u8d26\u53f7\u5bc6\u7801\u6211\u5df2\u7ecf\u653e\u5230\u4e86AE\u7684trello\u91cc\u9762\u3002  \u8f93\u5165\u8d26\u53f7\u5bc6\u7801\u540e\uff0c\u6765\u5230aws\u7684\u63a7\u5236\u53f0\uff0c\u70b9S3\u7684\u5165\u53e3\uff0c\u53ef\u4ee5\u770b\u5230\u4e24\u4e2a\u7ad9\u70b9\u7684\u6570\u636e\uff0c\u4e00\u4e2a\u662fstatic.seeed.cc\u4e00\u4e2a\u662fwiki.seeed.cc\uff0c\u6211\u4eec\u9700\u8981\u8fdb\u5165wiki\u8fd9\u4e2a\u3002  \u8fdb\u53bb\u540e\uff0c\u5de6\u4e0a\u89d2\u6709\u4e2aUpload\u6309\u94ae\uff0c\u70b9\u51fb\u5b83\uff0c\u7136\u540e\uff1a   \u7136\u540e\u7b49\u6240\u6709\u7684\u6587\u4ef6\u4e0a\u4f20\u5b8c\uff0c\u7f51\u9875\u6253\u5f00 wiki.seeed.cc \uff0c \u5c31\u53ef\u4ee5\u770b\u5230\u66f4\u65b0\u7684\u5185\u5bb9\u4e86\u3002", 
+            "title": "\u66f4\u65b0\u7f51\u7ad9"
+        }, 
+        {
+            "location": "/Tutorial/update_wiki/#_6", 
+            "text": "http://www.mkdocs.org/  https://github.com/mkdocs/mkdocs/", 
+            "title": "\u53c2\u8003\u8d44\u6599"
+        }, 
+        {
+            "location": "/Port/port_main/", 
+            "text": "\u9700\u8981\u505a\u7684\u5de5\u4f5c\n\uf0c1\n\n\n\n\n\u6bcf\u5468\u4e94\u4e0b\u73ed\u524d\u6211\u4f1a\u7ed9\u5927\u5bb6\u53d1\u4e00\u4e2a\u8868\u683c\uff0c\u91cc\u9762\u5305\u62ec\u4e0b\u5468\u9700\u8981\u5b8c\u6210\u7684\u5185\u5bb9\u3002\n\n\n\u5927\u5bb6\u9700\u8981\u5728\u5468\u4e94\u4e0b\u73ed\u524d\u628a\u586b\u5199\u597d\u7684\u8868\u683c\u53d1\u56de\u7ed9\u6211\u3002\n\n\n\u5bf9\u4e8e\u5177\u4f53\u7684\u4e00\u4e2a\u4ea7\u54c1\u6587\u6863\u7684\u79fb\u690d\uff0c\u901a\u5e38\u6709\u4ee5\u4e0b\u51e0\u4e2a\u6b65\u9aa4\n\n\n\n\n\u6587\u6863\u5ba1\u6838\n\n\n\u6587\u6863\u79fb\u690d\uff08\u64b0\u5199\uff09\n\n\n\u4e0a\u4f20Github\n\n\n\u4e00\u4e2a\u4f8b\u5b50\n\n\n\n\n\n\nNote\n\n\n\u4e00\u7bc7\u4f18\u7f8e\u7684\u6587\u6863\u4f1a\u7ed9\u8bfb\u8005\u5e26\u6765\u6109\u60a6\u611f\uff0c\u6240\u4ee5\u5728\u6587\u6863\u79fb\u690d\u7684\u8fc7\u7a0b\u4e2d\uff0c\u81ea\u5df1\u8981\u5148\u770b\u770b\u89c9\u5f97\u597d\u4e0d\u597d\u770b\uff0c\u7136\u540e\u8fdb\u884c\u9002\u5f53\u7684\u683c\u5f0f\u8c03\u6574\u3002", 
+            "title": "\u9700\u8981\u505a\u4ec0\u4e48"
+        }, 
+        {
+            "location": "/Port/port_main/#_1", 
+            "text": "\u6bcf\u5468\u4e94\u4e0b\u73ed\u524d\u6211\u4f1a\u7ed9\u5927\u5bb6\u53d1\u4e00\u4e2a\u8868\u683c\uff0c\u91cc\u9762\u5305\u62ec\u4e0b\u5468\u9700\u8981\u5b8c\u6210\u7684\u5185\u5bb9\u3002  \u5927\u5bb6\u9700\u8981\u5728\u5468\u4e94\u4e0b\u73ed\u524d\u628a\u586b\u5199\u597d\u7684\u8868\u683c\u53d1\u56de\u7ed9\u6211\u3002  \u5bf9\u4e8e\u5177\u4f53\u7684\u4e00\u4e2a\u4ea7\u54c1\u6587\u6863\u7684\u79fb\u690d\uff0c\u901a\u5e38\u6709\u4ee5\u4e0b\u51e0\u4e2a\u6b65\u9aa4   \u6587\u6863\u5ba1\u6838  \u6587\u6863\u79fb\u690d\uff08\u64b0\u5199\uff09  \u4e0a\u4f20Github  \u4e00\u4e2a\u4f8b\u5b50    Note  \u4e00\u7bc7\u4f18\u7f8e\u7684\u6587\u6863\u4f1a\u7ed9\u8bfb\u8005\u5e26\u6765\u6109\u60a6\u611f\uff0c\u6240\u4ee5\u5728\u6587\u6863\u79fb\u690d\u7684\u8fc7\u7a0b\u4e2d\uff0c\u81ea\u5df1\u8981\u5148\u770b\u770b\u89c9\u5f97\u597d\u4e0d\u597d\u770b\uff0c\u7136\u540e\u8fdb\u884c\u9002\u5f53\u7684\u683c\u5f0f\u8c03\u6574\u3002", 
+            "title": "\u9700\u8981\u505a\u7684\u5de5\u4f5c"
+        }, 
+        {
+            "location": "/Port/port_review/", 
+            "text": "\u6587\u6863\u5ba1\u6838\n\uf0c1\n\n\n\n\n\u9700\u8981\u5ba1\u6838\u7684\u5185\u5bb9\n\uf0c1\n\n\n\u6709\u4e00\u4e0b\u5185\u5bb9\u9700\u8981\u5ba1\u6838\uff0c\u540e\u9762\u4f1a\u8be6\u7ec6\u7684\u8bb2\u89e3\u6bcf\u4e2a\u5185\u5bb9\u7684\u6ce8\u610f\u4e8b\u9879\u3002\n\n\n\n\n\u56fe\u7247\n\n\n\u8d85\u94fe\u63a5\n\n\n\u662f\u5426\u6dfb\u52a0\u8c03\u67e5\u95ee\u5377\n\n\n\u662f\u5426\u6709\u591a\u4f59\u7684\u5185\u5bb9\n\n\n\n\n\u56fe\u7247\n\uf0c1\n\n\n\u76ee\u524d\u7684\u56fe\u7247\u4e3b\u8981\u5b58\u5728\u4e00\u4e0b\u7684\u95ee\u9898\uff1a\n\n\n\n\n\u56fe\u7247\u4e2d\u7684\u4ea7\u54c1\u4e0e\u5b9e\u9645\u4ea7\u54c1\u4e0d\u7b26\n\n\n\u56fe\u7247\u4e2d\u7684\u4ea7\u54c1\u4e0d\u662f\u6700\u65b0\u7248\u7684\uff0c\u53ef\u80fd\u662f\u6837\u677f\uff08\u7eff\u8272\u7684\uff09\n\n\n\u56fe\u7247\u592a\u632b\uff0c\u4e0d\u6e05\u6670\u7b49\n\n\n\n\n\u5982\u679c\u53d1\u73b0\u6709\u8fd9\u6837\u7684\u56fe\u7247\uff0c\u9700\u8981\u9886\u51fa\u76f8\u5173\u7684\u4ea7\u54c1\u91cd\u65b0\u62cd\u6444\uff0c\u5982\u679c\u6709\u4efb\u4f55\u7591\u95ee\uff0c\u53ef\u4ee5\u627eloovee\u786e\u8ba4\u3002\n\n\n\n\nNote\n\n\n\u597d\u770b\u7684\u56fe\u7247\u662f\u4e00\u7bc7\u6587\u6863\u662f\u5426\u4f18\u7f8e\u7684\u5173\u952e\u4e4b\u4e00\uff0c\u6240\u4ee5\u5927\u5bb6\u9700\u8981\u91cd\u89c6\uff01\n\n\n\n\n\u8d85\u94fe\u63a5\n\uf0c1\n\n\nwiki\u4e2d\u5b58\u5728\u5927\u91cf\u7684\u5df2\u7ecf\u5931\u6548\u7684\u8d85\u94fe\u63a5\uff0c\u9700\u8981\u70b9\u5f00\u6bcf\u4e00\u4e2a\u8d85\u94fe\u63a5\uff0c\u770b\u770b\u662f\u5426\u8fd8\u6709\u6548\u3002\u5982\u679c\u65e0\u6548\u7684\uff0c\u628a\u6b63\u786e\u7684\u6dfb\u52a0\u4e0a\uff0c\u5982\u679c\u6709\u4efb\u4f55\u7591\u95ee\uff0c\u53ef\u4ee5\u627eloovee\u786e\u8ba4\n\n\n\u662f\u5426\u6dfb\u52a0\u8c03\u67e5\u95ee\u5377\n\uf0c1\n\n\n\u67e5\u770b\u6700\u540e\u662f\u5426\u6709\u6dfb\u52a0\u8c03\u67e5\u95ee\u5377\uff0c\u5982\u679c\u6ca1\u6709\uff0c\u6309\u7167\u4ee5\u4e0b\u6b65\u9aa4\u6dfb\u52a0\uff1a\n\n\nstep1:\n \u767b\u9646\nhttps://www.surveymonkey.com/\n\uff0c\u8d26\u53f7\u5bc6\u7801\u53ef\u4ee5\u5728trello\u770b\u5230\u3002\n\n\nstep2:\n \u70b9\u51fb\u53f3\u4e0a\u89d2\u7684\ncreate Survey\n (\u4e00\u4e2a\u7eff\u8272\u7684\u6309\u94ae)\n\n\nstep3:\n \u9009\u62e9\nEdit a Copy of an Existing Survey\n\uff0c\u5728\nWhich survey\n\u968f\u4fbf\u9009\u62e9\u4e00\u4e2a\u5df2\u7ecf\u5b58\u5728\u7684\u6807\u9898\u3002\n\n\nstep4:\n \u70b9\nLet\ns Go\n\n\nstep5:\n \u4fee\u6539\u6807\u9898\u4ee5\u53ca\u5e95\u4e0b\u7684\u5185\u5bb9\uff08\u53cc\u51fb\u9700\u8981\u4fee\u6539\u7684\u5730\u65b9\u5373\u53ef\uff09\uff0c\u4fee\u6539\u5b8c\u540e\uff0c\u70b9\u51fb\u53f3\u4e0a\u89d2\u7684\nNext\n\n\nstep6:\n \u9009\u62e9\nGet Web Link\n\uff0c\u4ea7\u751f\u4e00\u4e2a\u94fe\u63a5\n\n\n\u63a5\u7740\u5728\u6587\u6863\u7684\u6700\u540e\u63d2\u5165\u4e00\u4e0b\u7684\u4ee3\u7801\n\n\n##Is this page helpful\n\niframe style=\"height: 600px; width: 500px; margin: 10px 0 10px;\" allowTransparency=\"true\" src=\"\u8fd9\u91cc\u63d2\u5165\u4f60\u521a\u624d\u4ea7\u751f\u7684\u90a3\u4e2a\u94fe\u63a5\" frameborder=\"0\"\n/iframe\n\n\n\n\n\u5c31\u628a\u8c03\u67e5\u95ee\u5377\u7684\u8d85\u94fe\u63a5\u63d2\u5165\u8fdb\u53bb\u4e86\u3002\n\n\n\u662f\u5426\u6709\u591a\u4f59\u7684\u5185\u5bb9\n\uf0c1\n\n\n\u901a\u5e38\u4e00\u4e9b\u7279\u522b\u65e7\u7684wik\u4f1a\u6709\u5f88\u591a\u591a\u4f59\u7684\u5185\u5bb9\uff0c\u5305\u62ec\uff1a\n\n\n\n\nSupport\n\n\nBut Tracker\n\n\nAdditional Idea\n\n\nSee Also\n\n\nHow to Buy\n\n\nLicensing\n\n\nExternal Links\n\n\n\n\n\n\nNote\n\n\n\u53ef\u4ee5\u5220\u6389\u4efb\u4f55\u4f60\u8ba4\u4e3a\u6ca1\u6709\u7528\u7684\u4e1c\u897f\uff0c\u5982\u679c\u4e0d\u786e\u5b9a\uff0c\u53ef\u4ee5\u5411loovee\u54a8\u8be2\u3002", 
+            "title": "\u6587\u6863\u5ba1\u6838"
+        }, 
+        {
+            "location": "/Port/port_review/#_1", 
+            "text": "", 
+            "title": "\u6587\u6863\u5ba1\u6838"
+        }, 
+        {
+            "location": "/Port/port_review/#_2", 
+            "text": "\u6709\u4e00\u4e0b\u5185\u5bb9\u9700\u8981\u5ba1\u6838\uff0c\u540e\u9762\u4f1a\u8be6\u7ec6\u7684\u8bb2\u89e3\u6bcf\u4e2a\u5185\u5bb9\u7684\u6ce8\u610f\u4e8b\u9879\u3002   \u56fe\u7247  \u8d85\u94fe\u63a5  \u662f\u5426\u6dfb\u52a0\u8c03\u67e5\u95ee\u5377  \u662f\u5426\u6709\u591a\u4f59\u7684\u5185\u5bb9", 
+            "title": "\u9700\u8981\u5ba1\u6838\u7684\u5185\u5bb9"
+        }, 
+        {
+            "location": "/Port/port_review/#_3", 
+            "text": "\u76ee\u524d\u7684\u56fe\u7247\u4e3b\u8981\u5b58\u5728\u4e00\u4e0b\u7684\u95ee\u9898\uff1a   \u56fe\u7247\u4e2d\u7684\u4ea7\u54c1\u4e0e\u5b9e\u9645\u4ea7\u54c1\u4e0d\u7b26  \u56fe\u7247\u4e2d\u7684\u4ea7\u54c1\u4e0d\u662f\u6700\u65b0\u7248\u7684\uff0c\u53ef\u80fd\u662f\u6837\u677f\uff08\u7eff\u8272\u7684\uff09  \u56fe\u7247\u592a\u632b\uff0c\u4e0d\u6e05\u6670\u7b49   \u5982\u679c\u53d1\u73b0\u6709\u8fd9\u6837\u7684\u56fe\u7247\uff0c\u9700\u8981\u9886\u51fa\u76f8\u5173\u7684\u4ea7\u54c1\u91cd\u65b0\u62cd\u6444\uff0c\u5982\u679c\u6709\u4efb\u4f55\u7591\u95ee\uff0c\u53ef\u4ee5\u627eloovee\u786e\u8ba4\u3002   Note  \u597d\u770b\u7684\u56fe\u7247\u662f\u4e00\u7bc7\u6587\u6863\u662f\u5426\u4f18\u7f8e\u7684\u5173\u952e\u4e4b\u4e00\uff0c\u6240\u4ee5\u5927\u5bb6\u9700\u8981\u91cd\u89c6\uff01", 
+            "title": "\u56fe\u7247"
+        }, 
+        {
+            "location": "/Port/port_review/#_4", 
+            "text": "wiki\u4e2d\u5b58\u5728\u5927\u91cf\u7684\u5df2\u7ecf\u5931\u6548\u7684\u8d85\u94fe\u63a5\uff0c\u9700\u8981\u70b9\u5f00\u6bcf\u4e00\u4e2a\u8d85\u94fe\u63a5\uff0c\u770b\u770b\u662f\u5426\u8fd8\u6709\u6548\u3002\u5982\u679c\u65e0\u6548\u7684\uff0c\u628a\u6b63\u786e\u7684\u6dfb\u52a0\u4e0a\uff0c\u5982\u679c\u6709\u4efb\u4f55\u7591\u95ee\uff0c\u53ef\u4ee5\u627eloovee\u786e\u8ba4", 
+            "title": "\u8d85\u94fe\u63a5"
+        }, 
+        {
+            "location": "/Port/port_review/#_5", 
+            "text": "\u67e5\u770b\u6700\u540e\u662f\u5426\u6709\u6dfb\u52a0\u8c03\u67e5\u95ee\u5377\uff0c\u5982\u679c\u6ca1\u6709\uff0c\u6309\u7167\u4ee5\u4e0b\u6b65\u9aa4\u6dfb\u52a0\uff1a  step1:  \u767b\u9646 https://www.surveymonkey.com/ \uff0c\u8d26\u53f7\u5bc6\u7801\u53ef\u4ee5\u5728trello\u770b\u5230\u3002  step2:  \u70b9\u51fb\u53f3\u4e0a\u89d2\u7684 create Survey  (\u4e00\u4e2a\u7eff\u8272\u7684\u6309\u94ae)  step3:  \u9009\u62e9 Edit a Copy of an Existing Survey \uff0c\u5728 Which survey \u968f\u4fbf\u9009\u62e9\u4e00\u4e2a\u5df2\u7ecf\u5b58\u5728\u7684\u6807\u9898\u3002  step4:  \u70b9 Let s Go  step5:  \u4fee\u6539\u6807\u9898\u4ee5\u53ca\u5e95\u4e0b\u7684\u5185\u5bb9\uff08\u53cc\u51fb\u9700\u8981\u4fee\u6539\u7684\u5730\u65b9\u5373\u53ef\uff09\uff0c\u4fee\u6539\u5b8c\u540e\uff0c\u70b9\u51fb\u53f3\u4e0a\u89d2\u7684 Next  step6:  \u9009\u62e9 Get Web Link \uff0c\u4ea7\u751f\u4e00\u4e2a\u94fe\u63a5  \u63a5\u7740\u5728\u6587\u6863\u7684\u6700\u540e\u63d2\u5165\u4e00\u4e0b\u7684\u4ee3\u7801  ##Is this page helpful iframe style=\"height: 600px; width: 500px; margin: 10px 0 10px;\" allowTransparency=\"true\" src=\"\u8fd9\u91cc\u63d2\u5165\u4f60\u521a\u624d\u4ea7\u751f\u7684\u90a3\u4e2a\u94fe\u63a5\" frameborder=\"0\" /iframe   \u5c31\u628a\u8c03\u67e5\u95ee\u5377\u7684\u8d85\u94fe\u63a5\u63d2\u5165\u8fdb\u53bb\u4e86\u3002", 
+            "title": "\u662f\u5426\u6dfb\u52a0\u8c03\u67e5\u95ee\u5377"
+        }, 
+        {
+            "location": "/Port/port_review/#_6", 
+            "text": "\u901a\u5e38\u4e00\u4e9b\u7279\u522b\u65e7\u7684wik\u4f1a\u6709\u5f88\u591a\u591a\u4f59\u7684\u5185\u5bb9\uff0c\u5305\u62ec\uff1a   Support  But Tracker  Additional Idea  See Also  How to Buy  Licensing  External Links    Note  \u53ef\u4ee5\u5220\u6389\u4efb\u4f55\u4f60\u8ba4\u4e3a\u6ca1\u6709\u7528\u7684\u4e1c\u897f\uff0c\u5982\u679c\u4e0d\u786e\u5b9a\uff0c\u53ef\u4ee5\u5411loovee\u54a8\u8be2\u3002", 
+            "title": "\u662f\u5426\u6709\u591a\u4f59\u7684\u5185\u5bb9"
+        }, 
+        {
+            "location": "/Port/port_github/", 
+            "text": "Github\u7684\u4f7f\u7528\n\uf0c1\n\n\n\n\n\u5199\u5728\u524d\u9762\n\uf0c1\n\n\nGit\u662f\u4e00\u4e2a\u5206\u5e03\u5f0f\u7684\u7248\u672c\u63a7\u5236\u7cfb\u7edf\uff0c\u6700\u521d\u7531\nLinus Torvalds\n\u7f16\u5199\uff0c\u7528\u4f5c\nLinux\u5185\u6838\n\u4ee3\u7801\u7684\u7ba1\u7406\u3002\u5728\u63a8\u51fa\u540e\uff0cGit\u5728\u5176\u5b83\u9879\u76ee\u4e2d\u4e5f\u53d6\u5f97\u4e86\u5f88\u5927\u6210\u529f\uff0c\u5c24\u5176\u662f\u5728\nRuby\u793e\u533a\n\u4e2d\u3002\u76ee\u524d\uff0c\u5305\u62ecRubinius\u3001Merb\u548cBitcoin\u5728\u5185\u7684\u5f88\u591a\u77e5\u540d\u9879\u76ee\u90fd\u4f7f\u7528\u4e86Git\u3002Git\u540c\u6837\u53ef\u4ee5\u88ab\u8bf8\u5982Capistrano\u548cVlad the Deployer\u8fd9\u6837\u7684\u90e8\u7f72\u5de5\u5177\u6240\u4f7f\u7528\u3002\n\n\n\u4f5c\u4e3a\u5f00\u6e90\u4ee3\u7801\u5e93\u4ee5\u53ca\u7248\u672c\u63a7\u5236\u7cfb\u7edf\uff0cGithub\u62e5\u6709140\u591a\u4e07\u5f00\u53d1\u8005\u7528\u6237\u3002\u968f\u7740\u8d8a\u6765\u8d8a\u591a\u7684\u5e94\u7528\u7a0b\u5e8f\u8f6c\u79fb\u5230\u4e86\u4e91\u4e0a\uff0cGithub\u5df2\u7ecf\u6210\u4e3a\u4e86\u7ba1\u7406\u8f6f\u4ef6\u5f00\u53d1\u4ee5\u53ca\u53d1\u73b0\u5df2\u6709\u4ee3\u7801\u7684\u9996\u9009\u65b9\u6cd5\u3002\n\n\n\u5982\u524d\u6240\u8ff0\uff0c\u4f5c\u4e3a\u4e00\u4e2a\u5206\u5e03\u5f0f\u7684\u7248\u672c\u63a7\u5236\u7cfb\u7edf\uff0c\u5728Git\u4e2d\u5e76\u4e0d\u5b58\u5728\u4e3b\u5e93\u8fd9\u6837\u7684\u6982\u5ff5\uff0c\u6bcf\u4e00\u4efd\u590d\u5236\u51fa\u7684\u5e93\u90fd\u53ef\u4ee5\u72ec\u7acb\u4f7f\u7528\uff0c\u4efb\u4f55\u4e24\u4e2a\u5e93\u4e4b\u95f4\u7684\u4e0d\u4e00\u81f4\u4e4b\u5904\u90fd\u53ef\u4ee5\u8fdb\u884c\u5408\u5e76\u3002\n\n\nGitHub\u53ef\u4ee5\u6258\u7ba1\u5404\u79cdgit\u5e93\uff0c\u5e76\u63d0\u4f9b\u4e00\u4e2aweb\u754c\u9762\uff0c\u4f46\u4e0e\u5176\u5b83\u50cf SourceForge\u6216Google Code\u8fd9\u6837\u7684\u670d\u52a1\u4e0d\u540c\uff0cGitHub\u7684\u72ec\u7279\u5356\u70b9\u5728\u4e8e\u4ece\u53e6\u5916\u4e00\u4e2a\u9879\u76ee\u8fdb\u884c\u5206\u652f\u7684\u7b80\u6613\u6027\u3002\u4e3a\u4e00\u4e2a\u9879\u76ee\u8d21\u732e\u4ee3\u7801\u975e\u5e38\u7b80\u5355\uff1a\u9996\u5148\u70b9\u51fb\u9879\u76ee\u7ad9\u70b9\u7684\u201cfork\u201d\u7684\u6309\u94ae\uff0c\u7136\u540e\u5c06\u4ee3\u7801\u68c0\u51fa\u5e76\u5c06\u4fee\u6539\u52a0\u5165\u5230\u521a\u624d\u5206\u51fa\u7684\u4ee3\u7801\u5e93\u4e2d\uff0c\u6700\u540e\u901a\u8fc7\u5185\u5efa\u7684\u201cpull request\u201d\u673a\u5236\u5411\u9879\u76ee\u8d1f\u8d23\u4eba\u7533\u8bf7\u4ee3\u7801\u5408\u5e76\u3002\u5df2\u7ecf\u6709\u4eba\u5c06GitHub\u79f0\u4e3a\u4ee3\u7801\u73a9\u5bb6\u7684MySpace\u3002\n\n\n\u5728GitHub\u8fdb\u884c\u5206\u652f\u5c31\u50cf\u5728Myspace\uff08\u6216Facebook\u2026\uff09\u8fdb\u884c\u4ea4\u53cb\u4e00\u6837\uff0c\u5728\u793e\u4f1a\u5173\u7cfb\u56fe\u7684\u8282\u70b9\u4e2d\u4e0d\u65ad\u7684\u8fde\u7ebf\u3002\nGitHub\u9879\u76ee\u672c\u8eab\u81ea\u7136\u800c\u7136\u7684\u4e5f\u5728GitHub\u4e0a\u8fdb\u884c\u6258\u7ba1\uff0c\u53ea\u4e0d\u8fc7\u5728\u4e00\u4e2a\u79c1\u6709\u7684\uff0c\u516c\u5171\u89c6\u56fe\u4e0d\u53ef\u89c1\u7684\u5e93\u4e2d\u3002\u5f00\u6e90\u9879\u76ee\u53ef\u4ee5\u514d\u8d39\u6258\u7ba1\uff0c\u4f46\u79c1\u6709\u5e93\u5219\u5e76\u4e0d\u5982\u6b64\u3002Chris Wanstrath\uff0cGitHub\u7684\u5f00\u53d1\u8005\u4e4b\u4e00\uff0c\u80af\u5b9a\u4e86\u901a\u8fc7\u4ed8\u8d39\u7684\u79c1\u6709\u5e93\u6765\u5728\u8d22\u52a1\u4e0a\u652f\u6301\u514d\u8d39\u5e93\u7684\u6258\u7ba1\u8fd9\u4e00\u8ba1\u5212\u3002\n\n\n\n\nNote\n\n\n\u4e0a\u9762\u7684\u5185\u5bb9\u6458\u81ea\u767e\u5ea6\u767e\u79d1\uff0c\u968f\u4fbf\u770b\u4e00\u4e0b\u5c31\u597d\uff0c\u4f60\u9700\u8981\u8bb0\u4f4f\u7684\u662f\uff1agit\u662f\u4e00\u4e2a\u5f88\u5c4c\u7684\u5de5\u5177\uff0cgithub\u662f\u4e00\u4e2a\u5f88\u725bx\u7684\u7f51\u7ad9\u3002\u6211\u4eec\u7684\u6240\u6709\u6587\u6863\u90fd\u4f1a\u5b58\u653e\u5728github\u4e0a\u9762\n\n\n\n\n\n\nWarning\n\n\n\u8fd9\u7bc7\u6587\u6863\u5e76\u4e0d\u6253\u7b97\u8bb2\u8ff0\u592a\u591a\u539f\u7406\u6027\u7684\u5185\u5bb9\uff0c\u53ea\u4f1a\u8bb2\u4e00\u4e9b\u80fd\u591f\u7528\u5230\u7684\u9700\u8981\u64cd\u4f5c\u7684\u4e1c\u897f\u3002\u6240\u4ee5\u5982\u679c\u4f60\u5e0c\u671b\u6df1\u5165\u7684\u4e86\u89e3github\u4ee5\u53cagit\u7684\u7528\u6cd5\uff0c\u53ef\u4ee5\u5229\u7528\u7a7a\u4f59\u65f6\u95f4\u5229\u7528\n\u641c\u7d22\u5f15\u64ce\n\u641c\u7d22\u76f8\u5173\u5185\u5bb9\u8fdb\u884c\u5b66\u4e60\u3002\n\n\n\n\n\u6ce8\u518c\u8d26\u53f7\n\uf0c1\n\n\n\u9996\u5148\u767b\u9646\nGithub\n\uff0c\u7528\u516c\u53f8\u90ae\u7bb1\u6ce8\u518c\u4e00\u4e2a\u8d26\u53f7\uff0c\u5e76\u4e14\u7533\u8bf7\u52a0\u5165\nSeeed\u6587\u6863\u7ec4\u7ec7\n\u3002\n\n\n\u5b89\u88c5git base\n\uf0c1\n\n\n\u4e0b\u8f7d\u5e76\u5b89\u88c5\u4e00\u4e2a\u5c0f\u5de5\u5177\nGit Base\n\u3002\n\n\n\u6253\u5f00git base\uff0c\u53ef\u4ee5\u770b\u5230\u4e00\u4e2a\u547d\u4ee4\u884c\u7684\u754c\u9762\uff1a\n\n\n\n\n\u8f93\u5165\u547d\u4ee4\u8fdb\u884c\u4e00\u4e9b\u914d\u7f6e(\u8fd9\u662f\u4e24\u6761\u547d\u4ee4\uff0c\u6bcf\u8f93\u5165\u4e00\u6761\u6309\u4e00\u6b21Enter)\n\n\ngit config --global user.name \"your username\"\ngit config --global user.email \"your email\"\n\n\n\n\u521b\u5efa\u4e00\u4e2a\u4ed3\u5e93\n\uf0c1\n\n\n\u6bcf\u4e00\u4e2a\u4ea7\u54c1\u6587\u6863\u90fd\u7528\u4e00\u4e2a\u4ed3\u5e93\u6765\u7ba1\u7406\u3002\n\n\n\u6253\u5f00\n\u7ec4\u7ec7\u7684Github\u9875\u9762\n,\u5728\u53f3\u4e0b\u89d2\u627e\u5230\u4e00\u4e2aNew Repository\u7684\u7eff\u8272\u7684\u6309\u94ae\uff1a\n\n\n\n\n\u7136\u540e\u8df3\u8f6c\u5230\uff1a\n\n\n\n\n\n\n\u5728Ower\u9009\u62e9SeeedDocument(\u524d\u63d0\u662f\u4f60\u7684\u8d26\u53f7\u5df2\u7ecf\u52a0\u5165\u4e86\u7ec4\u7ec7)\n\n\n\u5728Repository name\u586b\u4e0a\u4ea7\u54c1\u7684\u540d\u79f0\n\n\n\u4ea7\u54c1\u540d\u79f0\u5982\u679c\u6709\u7a7a\u683c\u6216\u8005\u2018.\u2019\uff0c\u7528\u4e0b\u5212\u7ebf\u66ff\u4ee3\n\n\n\u4f8b\u5982Grove_LED\uff0cBreakout_for_LinkIt_Smart_7688_2_0\n\n\n\n\n\n\n\n\n\u7136\u540e\u5c31\u53ef\u4ee5\u5728\u7ec4\u7ec7\u7684\u9875\u9762\u770b\u5230\u4f60\u521b\u5efa\u7684\u4ed3\u5e93\u4e86\u3002\n\n\n\u4e00\u4e2a\u4ed3\u5e93\u5e94\u8be5\u5305\u542b\u7684\u5185\u5bb9\n\uf0c1\n\n\n\u4e00\u4e2a\u5e38\u89c4\u7684\u4ed3\u5e93\u5e94\u8be5\u5305\u542b\uff1a\n\n\n\n\nimage\u6587\u4ef6\u5939 - \u7528\u4ee5\u5b58\u653e\u8be5\u4ea7\u54c1\u6587\u6863\u7528\u5230\u7684\u56fe\u7247\n\n\nresource\u6587\u4ef6\u5939 - \u7528\u4ee5\u5b58\u653e\u8be5\u4ea7\u54c1\u6587\u6863\u9700\u8981\u4e0b\u8f7d\u7684\u8d44\u6599\uff0c\u4f8b\u5982\u539f\u7406\u56fe\uff0c\u538b\u7f29\u5305\n\n\nreadme.md\u6587\u4ef6\uff0c\u7528\u4ee5\u8bb0\u5f55\u8be5\u6587\u6863\u7684\u66f4\u65b0\u8bb0\u5f55\n\n\nproduct_name.md\uff0c\u6587\u6863\u7684\u5b9e\u4f53\u5185\u5bb9\uff0c\u5177\u4f53\u7684\u7f16\u5199\u4f1a\u5728\u53e6\u5916\u4e00\u7bc7\u6587\u6863\u8bf4\u660e\n\n\n\n\n\u5176\u4e2d\uff0creadme.md\u9700\u8981\u5305\u542b\u4ee5\u4e0b\u5185\u5bb9\uff1a\n\n\nBreakout for Linkit Smart 7688 V2\n---\n\n**SKU**: [103100022](https://www.seeedstudio.com/item_detail.html?p_id=2641)\n\n**Wiki Link**: [wiki.seeed.cc](http://wiki.seeed.cc)\n\n\n###Change Log:\n\n**2016-7-4:** create repos by loovee (loovee@seeed.cc)\n\n\n--------\nThis document is written by Seeed Studio and is licensed under MIT License.\n\nContributing to this document is warmly welcomed. You can do this basically by\n[forking](https://help.github.com/articles/fork-a-repo), committing modifications and then [pulling requests](https://help.github.com/articles/using-pull-requests) (follow the links above\nfor operating guide). Adding change log and your contact into file header is encouraged.\nThanks for your contribution.\n\nSeeed is a hardware innovation platform for makers to grow inspirations into differentiating products. By working closely with technology providers of all scale, Seeed provides accessible technologies with quality, speed and supply chain knowledge. When prototypes are ready to iterate, Seeed helps productize 1 to 1,000 pcs using in-house engineering, supply chain management and agile manufacture forces. Seeed also team up with incubators, Chinese tech ecosystem, investors and distribution channels to portal Maker startups beyond.\n\n\n\n\u4f60\u53ef\u4ee5\u67e5\u770b\nBreakout for LinkIt Smart 7688 V2.0\u7684\u4ed3\u5e93\n\u4ee5\u589e\u8fdb\u7406\u89e3\u3002\n\n\n\u5e38\u7528\u547d\u4ee4\n\uf0c1\n\n\n\u8fd9\u91cc\u4ecb\u7ecd\u5230\u7684\u547d\u4ee4\u90fd\u662f\u80fd\u591f\u88ab\u7528\u5230\u7684\u3002\n\n\n\u6253\u5f00git base\uff0c\u7136\u540e\u5c31\u53ef\u4ee5\u8f93\u5165\u8fd9\u4e9b\u547d\u4ee4\u4e86\u3002\n\n\n\u590d\u5236\u4ed3\u5e93\u5230\u672c\u5730\n\uf0c1\n\n\ngit clone link_to_repository\n\n\n\n\u5176\u4e2d\uff0clink_to_repository\u662f\u67d0\u4e2a\u4ed3\u5e93\u7684\u94fe\u63a5\u3002\n\n\n\n\nNote\n\n\n\u5b9e\u9645\u4e0a\u4f60\u4e0d\u9700\u8981\u628a\u5197\u957f\u7684\u94fe\u63a5\u4e00\u4e2a\u4e00\u4e2a\u8f93\u5165\uff0c\u5982\u679c\u4f60\u662f\u4f7f\u7528windows\u64cd\u4f5c\u7cfb\u7edf\uff0c\u4f60\u53ef\u4ee5\u590d\u5236\u94fe\u63a5\uff0c\u7136\u540e\u5728git base\u6309\u4e0b\nInsert\u952e\n\uff0c\u5c31\u53ef\u4ee5\u7c98\u8d34\u5230git base\u4e86\u3002git base\u91cc\u9762\u662f\u4e0d\u80fd\u7528ctrl+v\u7684\u3002\n\n\n\n\n\u628a\u4e00\u4e2a\u4ed3\u5e93\u590d\u5236\u5230\u672c\u5730\u540e\uff0c\u4f60\u5c31\u53ef\u4ee5\u770b\u5230\u591a\u4e86\u4e00\u4e2a\u6587\u4ef6\u5939\u3002\n\n\n\u6dfb\u52a0\u5185\u5bb9\n\uf0c1\n\n\n\u5f53\u4f60\u6dfb\u52a0\u4e86\u4efb\u4f55\u5185\u5bb9\uff0c\u9700\u8981\u7528\u4ee5\u4e0b\u547d\u4ee4\uff0c\u628a\u5185\u5bb9\u6dfb\u52a0\u5230\u672c\u5730\u4ed3\u5e93\uff1a\n\n\ngit add .\n\n\n\n\n\nNote\n\n\n\u4e0a\u9762\u7684\u547d\u4ee4\u6700\u540e\u6709\u4e2a\u70b9\uff0c\u90a3\u4e5f\u662f\u9700\u8981\u7684\uff0c\u70b9\u8868\u793a\u771f\u4e2a\u6587\u4ef6\u5939\n\n\n\n\n\u5982\u679c\u4f60\u5220\u9664\u4e86\u5199\u6587\u4ef6/\u6587\u4ef6\u5939\uff0c\u5c31\u9700\u8981\u7528\u4ee5\u4e0b\u547d\u4ee4\uff1a\n\n\ngit add -u\n\n\n\n\u6dfb\u52a0\u63d0\u4ea4\u8bf4\u660e\n\uf0c1\n\n\n\u4f60\u9700\u8981\u4e9b\u4e00\u4e9b\u4f60\u4fee\u6539\u5185\u5bb9\u7684\u8bf4\u660e\uff0c\u7528\u4ee5\u4e0b\u547d\u4ee4\uff1a\n\n\ngit commit -m \"\u8fd9\u91cc\u662f\u5177\u4f53\u7684\u5185\u5bb9\"\n\n\n\n\u63d0\u4ea4\u5230\u8fdc\u7a0b\u4ed3\u5e93\n\uf0c1\n\n\n\u8fdc\u7a0b\u4ed3\u5e93\u5c31\u662f\u6307github\u7684\u9875\u9762\u4e0a\u7684\u90a3\u4e2a\u4ed3\u5e93\u4e86\u3002\n\n\ngit push origin master\n\n\n\n\u4f1a\u63d0\u793a\u8f93\u5165\u7528\u6237\u540d\u4ee5\u53ca\u5bc6\u7801\u3002\n\n\n\n\nNote\n\n\n\u8f93\u5165\u5bc6\u7801\u65f6\u662f\u6ca1\u6709\u663e\u793a\u7684\uff0c\u4e60\u60ef\u5c31\u597d\u3002\n\n\n\n\n\u52a8\u624b\u8bd5\u4e00\u8bd5\n\uf0c1\n\n\n\u4e0a\u9762\u4e86\u90a3\u4e48\u591a\uff0c\u52a8\u624b\u8bd5\u4e00\u4e0b\u521b\u5efa\u4e00\u4e2a\u4ed3\u5e93\uff0c\u4ed3\u5e93\u540d\u5b57\u968f\u4fbf\uff0c\u4f8b\u5982Test_Jemery.\n\n\n\u521b\u5efa\u597d\u540e\uff0c\u6253\u5f00git bash. \u53ef\u4ee5\u4efb\u4f55\u65f6\u5019\u9f20\u6807\u53f3\u952e\u6709\u4e2agit bash\u7684\u6309\u94ae\uff0c\u7136\u540e\uff1a\n\n\n\n\n\u901a\u8fc7git clone\u547d\u4ee4\u628a\u8be5\u4ed3\u5e93\u62f7\u8d1d\u5230\u672c\u5730\n\n\n\u5728\u4ed3\u5e93\u91cc\u9762\u5efa\u7acb\u4e00\u4e2areadme.md\u7684\u6587\u4ef6\n\n\n\u7f16\u8f91readme.md\uff0c\u968f\u4fbf\u5199\u5165\u4e00\u4e9b\u5185\u5bb9\n\n\n\u628agit bash\u5173\u6389\uff0c\u8fdb\u5165\u4ed3\u5e93\u7684\u7b2c\u4e00\u6b21\u6587\u4ef6\u5939\uff0c\u518d\u628agit bash\u6253\u5f00\n\n\n\u8f93\u5165git add .\n\n\n\u8f93\u5165git commit -m \ntest\n\n\n\u8f93\u5165git push origin master, \u6309\u7167\u63d0\u793a\u8f93\u5165\u7528\u6237\u540d\u548c\u5bc6\u7801\n\n\n\n\n\u7136\u540e\uff0c\u6253\u5f00github\u4e0a\u4f60\u521a\u624d\u5efa\u7684\u90a3\u4e2a\u6d4b\u8bd5\u7528\u7684\u4ed3\u5e93\uff0c\u5237\u65b0\u4e00\u4e0b\uff0c\u5c31\u53ef\u4ee5\u770b\u5230\u4f60\u4e0a\u4f20\u7684\u5185\u5bb9\u4e86\u3002", 
+            "title": "Github\u7684\u4f7f\u7528"
+        }, 
+        {
+            "location": "/Port/port_github/#github", 
+            "text": "", 
+            "title": "Github\u7684\u4f7f\u7528"
+        }, 
+        {
+            "location": "/Port/port_github/#_1", 
+            "text": "Git\u662f\u4e00\u4e2a\u5206\u5e03\u5f0f\u7684\u7248\u672c\u63a7\u5236\u7cfb\u7edf\uff0c\u6700\u521d\u7531 Linus Torvalds \u7f16\u5199\uff0c\u7528\u4f5c Linux\u5185\u6838 \u4ee3\u7801\u7684\u7ba1\u7406\u3002\u5728\u63a8\u51fa\u540e\uff0cGit\u5728\u5176\u5b83\u9879\u76ee\u4e2d\u4e5f\u53d6\u5f97\u4e86\u5f88\u5927\u6210\u529f\uff0c\u5c24\u5176\u662f\u5728 Ruby\u793e\u533a \u4e2d\u3002\u76ee\u524d\uff0c\u5305\u62ecRubinius\u3001Merb\u548cBitcoin\u5728\u5185\u7684\u5f88\u591a\u77e5\u540d\u9879\u76ee\u90fd\u4f7f\u7528\u4e86Git\u3002Git\u540c\u6837\u53ef\u4ee5\u88ab\u8bf8\u5982Capistrano\u548cVlad the Deployer\u8fd9\u6837\u7684\u90e8\u7f72\u5de5\u5177\u6240\u4f7f\u7528\u3002  \u4f5c\u4e3a\u5f00\u6e90\u4ee3\u7801\u5e93\u4ee5\u53ca\u7248\u672c\u63a7\u5236\u7cfb\u7edf\uff0cGithub\u62e5\u6709140\u591a\u4e07\u5f00\u53d1\u8005\u7528\u6237\u3002\u968f\u7740\u8d8a\u6765\u8d8a\u591a\u7684\u5e94\u7528\u7a0b\u5e8f\u8f6c\u79fb\u5230\u4e86\u4e91\u4e0a\uff0cGithub\u5df2\u7ecf\u6210\u4e3a\u4e86\u7ba1\u7406\u8f6f\u4ef6\u5f00\u53d1\u4ee5\u53ca\u53d1\u73b0\u5df2\u6709\u4ee3\u7801\u7684\u9996\u9009\u65b9\u6cd5\u3002  \u5982\u524d\u6240\u8ff0\uff0c\u4f5c\u4e3a\u4e00\u4e2a\u5206\u5e03\u5f0f\u7684\u7248\u672c\u63a7\u5236\u7cfb\u7edf\uff0c\u5728Git\u4e2d\u5e76\u4e0d\u5b58\u5728\u4e3b\u5e93\u8fd9\u6837\u7684\u6982\u5ff5\uff0c\u6bcf\u4e00\u4efd\u590d\u5236\u51fa\u7684\u5e93\u90fd\u53ef\u4ee5\u72ec\u7acb\u4f7f\u7528\uff0c\u4efb\u4f55\u4e24\u4e2a\u5e93\u4e4b\u95f4\u7684\u4e0d\u4e00\u81f4\u4e4b\u5904\u90fd\u53ef\u4ee5\u8fdb\u884c\u5408\u5e76\u3002  GitHub\u53ef\u4ee5\u6258\u7ba1\u5404\u79cdgit\u5e93\uff0c\u5e76\u63d0\u4f9b\u4e00\u4e2aweb\u754c\u9762\uff0c\u4f46\u4e0e\u5176\u5b83\u50cf SourceForge\u6216Google Code\u8fd9\u6837\u7684\u670d\u52a1\u4e0d\u540c\uff0cGitHub\u7684\u72ec\u7279\u5356\u70b9\u5728\u4e8e\u4ece\u53e6\u5916\u4e00\u4e2a\u9879\u76ee\u8fdb\u884c\u5206\u652f\u7684\u7b80\u6613\u6027\u3002\u4e3a\u4e00\u4e2a\u9879\u76ee\u8d21\u732e\u4ee3\u7801\u975e\u5e38\u7b80\u5355\uff1a\u9996\u5148\u70b9\u51fb\u9879\u76ee\u7ad9\u70b9\u7684\u201cfork\u201d\u7684\u6309\u94ae\uff0c\u7136\u540e\u5c06\u4ee3\u7801\u68c0\u51fa\u5e76\u5c06\u4fee\u6539\u52a0\u5165\u5230\u521a\u624d\u5206\u51fa\u7684\u4ee3\u7801\u5e93\u4e2d\uff0c\u6700\u540e\u901a\u8fc7\u5185\u5efa\u7684\u201cpull request\u201d\u673a\u5236\u5411\u9879\u76ee\u8d1f\u8d23\u4eba\u7533\u8bf7\u4ee3\u7801\u5408\u5e76\u3002\u5df2\u7ecf\u6709\u4eba\u5c06GitHub\u79f0\u4e3a\u4ee3\u7801\u73a9\u5bb6\u7684MySpace\u3002  \u5728GitHub\u8fdb\u884c\u5206\u652f\u5c31\u50cf\u5728Myspace\uff08\u6216Facebook\u2026\uff09\u8fdb\u884c\u4ea4\u53cb\u4e00\u6837\uff0c\u5728\u793e\u4f1a\u5173\u7cfb\u56fe\u7684\u8282\u70b9\u4e2d\u4e0d\u65ad\u7684\u8fde\u7ebf\u3002\nGitHub\u9879\u76ee\u672c\u8eab\u81ea\u7136\u800c\u7136\u7684\u4e5f\u5728GitHub\u4e0a\u8fdb\u884c\u6258\u7ba1\uff0c\u53ea\u4e0d\u8fc7\u5728\u4e00\u4e2a\u79c1\u6709\u7684\uff0c\u516c\u5171\u89c6\u56fe\u4e0d\u53ef\u89c1\u7684\u5e93\u4e2d\u3002\u5f00\u6e90\u9879\u76ee\u53ef\u4ee5\u514d\u8d39\u6258\u7ba1\uff0c\u4f46\u79c1\u6709\u5e93\u5219\u5e76\u4e0d\u5982\u6b64\u3002Chris Wanstrath\uff0cGitHub\u7684\u5f00\u53d1\u8005\u4e4b\u4e00\uff0c\u80af\u5b9a\u4e86\u901a\u8fc7\u4ed8\u8d39\u7684\u79c1\u6709\u5e93\u6765\u5728\u8d22\u52a1\u4e0a\u652f\u6301\u514d\u8d39\u5e93\u7684\u6258\u7ba1\u8fd9\u4e00\u8ba1\u5212\u3002   Note  \u4e0a\u9762\u7684\u5185\u5bb9\u6458\u81ea\u767e\u5ea6\u767e\u79d1\uff0c\u968f\u4fbf\u770b\u4e00\u4e0b\u5c31\u597d\uff0c\u4f60\u9700\u8981\u8bb0\u4f4f\u7684\u662f\uff1agit\u662f\u4e00\u4e2a\u5f88\u5c4c\u7684\u5de5\u5177\uff0cgithub\u662f\u4e00\u4e2a\u5f88\u725bx\u7684\u7f51\u7ad9\u3002\u6211\u4eec\u7684\u6240\u6709\u6587\u6863\u90fd\u4f1a\u5b58\u653e\u5728github\u4e0a\u9762    Warning  \u8fd9\u7bc7\u6587\u6863\u5e76\u4e0d\u6253\u7b97\u8bb2\u8ff0\u592a\u591a\u539f\u7406\u6027\u7684\u5185\u5bb9\uff0c\u53ea\u4f1a\u8bb2\u4e00\u4e9b\u80fd\u591f\u7528\u5230\u7684\u9700\u8981\u64cd\u4f5c\u7684\u4e1c\u897f\u3002\u6240\u4ee5\u5982\u679c\u4f60\u5e0c\u671b\u6df1\u5165\u7684\u4e86\u89e3github\u4ee5\u53cagit\u7684\u7528\u6cd5\uff0c\u53ef\u4ee5\u5229\u7528\u7a7a\u4f59\u65f6\u95f4\u5229\u7528 \u641c\u7d22\u5f15\u64ce \u641c\u7d22\u76f8\u5173\u5185\u5bb9\u8fdb\u884c\u5b66\u4e60\u3002", 
+            "title": "\u5199\u5728\u524d\u9762"
+        }, 
+        {
+            "location": "/Port/port_github/#_2", 
+            "text": "\u9996\u5148\u767b\u9646 Github \uff0c\u7528\u516c\u53f8\u90ae\u7bb1\u6ce8\u518c\u4e00\u4e2a\u8d26\u53f7\uff0c\u5e76\u4e14\u7533\u8bf7\u52a0\u5165 Seeed\u6587\u6863\u7ec4\u7ec7 \u3002", 
+            "title": "\u6ce8\u518c\u8d26\u53f7"
+        }, 
+        {
+            "location": "/Port/port_github/#git-base", 
+            "text": "\u4e0b\u8f7d\u5e76\u5b89\u88c5\u4e00\u4e2a\u5c0f\u5de5\u5177 Git Base \u3002  \u6253\u5f00git base\uff0c\u53ef\u4ee5\u770b\u5230\u4e00\u4e2a\u547d\u4ee4\u884c\u7684\u754c\u9762\uff1a   \u8f93\u5165\u547d\u4ee4\u8fdb\u884c\u4e00\u4e9b\u914d\u7f6e(\u8fd9\u662f\u4e24\u6761\u547d\u4ee4\uff0c\u6bcf\u8f93\u5165\u4e00\u6761\u6309\u4e00\u6b21Enter)  git config --global user.name \"your username\"\ngit config --global user.email \"your email\"", 
+            "title": "\u5b89\u88c5git base"
+        }, 
+        {
+            "location": "/Port/port_github/#_3", 
+            "text": "\u6bcf\u4e00\u4e2a\u4ea7\u54c1\u6587\u6863\u90fd\u7528\u4e00\u4e2a\u4ed3\u5e93\u6765\u7ba1\u7406\u3002  \u6253\u5f00 \u7ec4\u7ec7\u7684Github\u9875\u9762 ,\u5728\u53f3\u4e0b\u89d2\u627e\u5230\u4e00\u4e2aNew Repository\u7684\u7eff\u8272\u7684\u6309\u94ae\uff1a   \u7136\u540e\u8df3\u8f6c\u5230\uff1a    \u5728Ower\u9009\u62e9SeeedDocument(\u524d\u63d0\u662f\u4f60\u7684\u8d26\u53f7\u5df2\u7ecf\u52a0\u5165\u4e86\u7ec4\u7ec7)  \u5728Repository name\u586b\u4e0a\u4ea7\u54c1\u7684\u540d\u79f0  \u4ea7\u54c1\u540d\u79f0\u5982\u679c\u6709\u7a7a\u683c\u6216\u8005\u2018.\u2019\uff0c\u7528\u4e0b\u5212\u7ebf\u66ff\u4ee3  \u4f8b\u5982Grove_LED\uff0cBreakout_for_LinkIt_Smart_7688_2_0     \u7136\u540e\u5c31\u53ef\u4ee5\u5728\u7ec4\u7ec7\u7684\u9875\u9762\u770b\u5230\u4f60\u521b\u5efa\u7684\u4ed3\u5e93\u4e86\u3002", 
+            "title": "\u521b\u5efa\u4e00\u4e2a\u4ed3\u5e93"
+        }, 
+        {
+            "location": "/Port/port_github/#_4", 
+            "text": "\u4e00\u4e2a\u5e38\u89c4\u7684\u4ed3\u5e93\u5e94\u8be5\u5305\u542b\uff1a   image\u6587\u4ef6\u5939 - \u7528\u4ee5\u5b58\u653e\u8be5\u4ea7\u54c1\u6587\u6863\u7528\u5230\u7684\u56fe\u7247  resource\u6587\u4ef6\u5939 - \u7528\u4ee5\u5b58\u653e\u8be5\u4ea7\u54c1\u6587\u6863\u9700\u8981\u4e0b\u8f7d\u7684\u8d44\u6599\uff0c\u4f8b\u5982\u539f\u7406\u56fe\uff0c\u538b\u7f29\u5305  readme.md\u6587\u4ef6\uff0c\u7528\u4ee5\u8bb0\u5f55\u8be5\u6587\u6863\u7684\u66f4\u65b0\u8bb0\u5f55  product_name.md\uff0c\u6587\u6863\u7684\u5b9e\u4f53\u5185\u5bb9\uff0c\u5177\u4f53\u7684\u7f16\u5199\u4f1a\u5728\u53e6\u5916\u4e00\u7bc7\u6587\u6863\u8bf4\u660e   \u5176\u4e2d\uff0creadme.md\u9700\u8981\u5305\u542b\u4ee5\u4e0b\u5185\u5bb9\uff1a  Breakout for Linkit Smart 7688 V2\n---\n\n**SKU**: [103100022](https://www.seeedstudio.com/item_detail.html?p_id=2641)\n\n**Wiki Link**: [wiki.seeed.cc](http://wiki.seeed.cc)\n\n\n###Change Log:\n\n**2016-7-4:** create repos by loovee (loovee@seeed.cc)\n\n\n--------\nThis document is written by Seeed Studio and is licensed under MIT License.\n\nContributing to this document is warmly welcomed. You can do this basically by\n[forking](https://help.github.com/articles/fork-a-repo), committing modifications and then [pulling requests](https://help.github.com/articles/using-pull-requests) (follow the links above\nfor operating guide). Adding change log and your contact into file header is encouraged.\nThanks for your contribution.\n\nSeeed is a hardware innovation platform for makers to grow inspirations into differentiating products. By working closely with technology providers of all scale, Seeed provides accessible technologies with quality, speed and supply chain knowledge. When prototypes are ready to iterate, Seeed helps productize 1 to 1,000 pcs using in-house engineering, supply chain management and agile manufacture forces. Seeed also team up with incubators, Chinese tech ecosystem, investors and distribution channels to portal Maker startups beyond.  \u4f60\u53ef\u4ee5\u67e5\u770b Breakout for LinkIt Smart 7688 V2.0\u7684\u4ed3\u5e93 \u4ee5\u589e\u8fdb\u7406\u89e3\u3002", 
+            "title": "\u4e00\u4e2a\u4ed3\u5e93\u5e94\u8be5\u5305\u542b\u7684\u5185\u5bb9"
+        }, 
+        {
+            "location": "/Port/port_github/#_5", 
+            "text": "\u8fd9\u91cc\u4ecb\u7ecd\u5230\u7684\u547d\u4ee4\u90fd\u662f\u80fd\u591f\u88ab\u7528\u5230\u7684\u3002  \u6253\u5f00git base\uff0c\u7136\u540e\u5c31\u53ef\u4ee5\u8f93\u5165\u8fd9\u4e9b\u547d\u4ee4\u4e86\u3002", 
+            "title": "\u5e38\u7528\u547d\u4ee4"
+        }, 
+        {
+            "location": "/Port/port_github/#_6", 
+            "text": "git clone link_to_repository  \u5176\u4e2d\uff0clink_to_repository\u662f\u67d0\u4e2a\u4ed3\u5e93\u7684\u94fe\u63a5\u3002   Note  \u5b9e\u9645\u4e0a\u4f60\u4e0d\u9700\u8981\u628a\u5197\u957f\u7684\u94fe\u63a5\u4e00\u4e2a\u4e00\u4e2a\u8f93\u5165\uff0c\u5982\u679c\u4f60\u662f\u4f7f\u7528windows\u64cd\u4f5c\u7cfb\u7edf\uff0c\u4f60\u53ef\u4ee5\u590d\u5236\u94fe\u63a5\uff0c\u7136\u540e\u5728git base\u6309\u4e0b Insert\u952e \uff0c\u5c31\u53ef\u4ee5\u7c98\u8d34\u5230git base\u4e86\u3002git base\u91cc\u9762\u662f\u4e0d\u80fd\u7528ctrl+v\u7684\u3002   \u628a\u4e00\u4e2a\u4ed3\u5e93\u590d\u5236\u5230\u672c\u5730\u540e\uff0c\u4f60\u5c31\u53ef\u4ee5\u770b\u5230\u591a\u4e86\u4e00\u4e2a\u6587\u4ef6\u5939\u3002", 
+            "title": "\u590d\u5236\u4ed3\u5e93\u5230\u672c\u5730"
+        }, 
+        {
+            "location": "/Port/port_github/#_7", 
+            "text": "\u5f53\u4f60\u6dfb\u52a0\u4e86\u4efb\u4f55\u5185\u5bb9\uff0c\u9700\u8981\u7528\u4ee5\u4e0b\u547d\u4ee4\uff0c\u628a\u5185\u5bb9\u6dfb\u52a0\u5230\u672c\u5730\u4ed3\u5e93\uff1a  git add .   Note  \u4e0a\u9762\u7684\u547d\u4ee4\u6700\u540e\u6709\u4e2a\u70b9\uff0c\u90a3\u4e5f\u662f\u9700\u8981\u7684\uff0c\u70b9\u8868\u793a\u771f\u4e2a\u6587\u4ef6\u5939   \u5982\u679c\u4f60\u5220\u9664\u4e86\u5199\u6587\u4ef6/\u6587\u4ef6\u5939\uff0c\u5c31\u9700\u8981\u7528\u4ee5\u4e0b\u547d\u4ee4\uff1a  git add -u", 
+            "title": "\u6dfb\u52a0\u5185\u5bb9"
+        }, 
+        {
+            "location": "/Port/port_github/#_8", 
+            "text": "\u4f60\u9700\u8981\u4e9b\u4e00\u4e9b\u4f60\u4fee\u6539\u5185\u5bb9\u7684\u8bf4\u660e\uff0c\u7528\u4ee5\u4e0b\u547d\u4ee4\uff1a  git commit -m \"\u8fd9\u91cc\u662f\u5177\u4f53\u7684\u5185\u5bb9\"", 
+            "title": "\u6dfb\u52a0\u63d0\u4ea4\u8bf4\u660e"
+        }, 
+        {
+            "location": "/Port/port_github/#_9", 
+            "text": "\u8fdc\u7a0b\u4ed3\u5e93\u5c31\u662f\u6307github\u7684\u9875\u9762\u4e0a\u7684\u90a3\u4e2a\u4ed3\u5e93\u4e86\u3002  git push origin master  \u4f1a\u63d0\u793a\u8f93\u5165\u7528\u6237\u540d\u4ee5\u53ca\u5bc6\u7801\u3002   Note  \u8f93\u5165\u5bc6\u7801\u65f6\u662f\u6ca1\u6709\u663e\u793a\u7684\uff0c\u4e60\u60ef\u5c31\u597d\u3002", 
+            "title": "\u63d0\u4ea4\u5230\u8fdc\u7a0b\u4ed3\u5e93"
+        }, 
+        {
+            "location": "/Port/port_github/#_10", 
+            "text": "\u4e0a\u9762\u4e86\u90a3\u4e48\u591a\uff0c\u52a8\u624b\u8bd5\u4e00\u4e0b\u521b\u5efa\u4e00\u4e2a\u4ed3\u5e93\uff0c\u4ed3\u5e93\u540d\u5b57\u968f\u4fbf\uff0c\u4f8b\u5982Test_Jemery.  \u521b\u5efa\u597d\u540e\uff0c\u6253\u5f00git bash. \u53ef\u4ee5\u4efb\u4f55\u65f6\u5019\u9f20\u6807\u53f3\u952e\u6709\u4e2agit bash\u7684\u6309\u94ae\uff0c\u7136\u540e\uff1a   \u901a\u8fc7git clone\u547d\u4ee4\u628a\u8be5\u4ed3\u5e93\u62f7\u8d1d\u5230\u672c\u5730  \u5728\u4ed3\u5e93\u91cc\u9762\u5efa\u7acb\u4e00\u4e2areadme.md\u7684\u6587\u4ef6  \u7f16\u8f91readme.md\uff0c\u968f\u4fbf\u5199\u5165\u4e00\u4e9b\u5185\u5bb9  \u628agit bash\u5173\u6389\uff0c\u8fdb\u5165\u4ed3\u5e93\u7684\u7b2c\u4e00\u6b21\u6587\u4ef6\u5939\uff0c\u518d\u628agit bash\u6253\u5f00  \u8f93\u5165git add .  \u8f93\u5165git commit -m  test  \u8f93\u5165git push origin master, \u6309\u7167\u63d0\u793a\u8f93\u5165\u7528\u6237\u540d\u548c\u5bc6\u7801   \u7136\u540e\uff0c\u6253\u5f00github\u4e0a\u4f60\u521a\u624d\u5efa\u7684\u90a3\u4e2a\u6d4b\u8bd5\u7528\u7684\u4ed3\u5e93\uff0c\u5237\u65b0\u4e00\u4e0b\uff0c\u5c31\u53ef\u4ee5\u770b\u5230\u4f60\u4e0a\u4f20\u7684\u5185\u5bb9\u4e86\u3002", 
+            "title": "\u52a8\u624b\u8bd5\u4e00\u8bd5"
+        }, 
+        {
+            "location": "/Port/port_markdown/", 
+            "text": "Markdown\n\uf0c1\n\n\n\n\n\u5199\u5728\u524d\u9762\n\uf0c1\n\n\nMarkdown\n\u662f\u4e00\u79cd\u53ef\u4ee5\u4f7f\u7528\u666e\u901a\u6587\u672c\u7f16\u8f91\u5668\u7f16\u5199\u7684\u6807\u8bb0\u8bed\u8a00\uff0c\u901a\u8fc7\u7b80\u5355\u7684\u6807\u8bb0\u8bed\u6cd5\uff0c\u5b83\u53ef\u4ee5\u4f7f\u666e\u901a\u6587\u672c\u5185\u5bb9\u5177\u6709\u4e00\u5b9a\u7684\u683c\u5f0f\u3002\n\n\n\u65b0\u6587\u6863\u7cfb\u7edf\u7684\u6587\u6863\u662f\u7528Markdown\u8fdb\u884c\u64b0\u5199\u7684\uff0c\u6240\u6709\u5728\u8fd9\u91cc\u4f1a\u7b80\u5355\u7684\u4ecb\u7ecd\u4e00\u4e9b\u9700\u8981\u7528\u5230\u7684\u5185\u5bb9\n\n\n\u8f6f\u4ef6\n\uf0c1\n\n\n\u63a8\u8350\u4f7f\u7528\u4e00\u4e2a\u53eb\nMarkdownPad2\n\u7684\u8f6f\u4ef6\uff0c\u6709\u514d\u8d39\u4f7f\u7528\u7248\u672c\u3002\n\n\n\u8bed\u6cd5\n\uf0c1\n\n\n\u5173\u4e8eMarkdown\u8bed\u6cd5\uff0c\u63a8\u8350\u9605\u8bfb\u8fd9\u7bc7\u6587\u7ae0\u300a\nMarkdown\u2014\u2014\u5165\u95e8\u6307\u5357\n\u300b\n\n\n\u4e00\u4e9b\u79fb\u690d\u65f6\u9700\u8981\u7528\u5230\u7684\u683c\u5f0f\n\uf0c1\n\n\n\u4e00\u7ea7\u6807\u9898\n\uf0c1\n\n\n\u4e00\u7ea7\u6807\u9898\u7528##\n\n\n\u4e8c\u7ea7\u6807\u9898\u7528###\n\n\n\u4ee5\u6b64\u7c7b\u63a8\u3002\n\n\n\u63d2\u5165\u56fe\u7247\n\uf0c1\n\n\n\u63d2\u5165\u56fe\u7247\u53ef\u4ee5\u7528\u5feb\u6377\u952e\nctrl+G\n\uff0c\u7136\u540e\u63d2\u5165\u56fe\u7247\u7684\u5730\u5740\u94fe\u63a5\u3002\u5728\u300a\nGithub\u7684\u4f7f\u7528\n\u300b\u4e2d\u6211\u4eec\u63d0\u5230\u9700\u8981\u628a\u6240\u6709\u7684\u56fe\u7247\u653e\u5230image\u6587\u4ef6\u5939\u91cc\u9762\u3002\u5f53\u6211\u4eec\u628a\u56fe\u7247\u4f20\u5230github\u540e\uff0c\u53ef\u4ee5\u83b7\u5f97\u56fe\u7247\u7684\u5730\u5740\u3002\n\n\nNote\nWarning\n\uf0c1\n\n\n\u6709\u4e9bNote\u6216\u8005Warning\u4fe1\u606f\uff0c\u53ef\u4ee5\u7528\u4ee5\u4e0b\u7684\u683c\u5f0f\uff1a\n\n\n!!!note\n    \u8fd9\u91cc\u5199\u5165note\u7684\u5185\u5bb9\n\n\n\n\u5c31\u4f1a\u53d8\u6210\u4e0b\u9762\u7684\u683c\u5f0f\uff1a\n\n\n\n\nNote\n\n\n\u8fd9\u91cc\u5199\u5165note\u7684\u5185\u5bb9\n\n\n\n\nWarning\u4e5f\u662f\u4e00\u6837\u7684\uff0c\u4e0d\u8fc7\u662f\u628anote\u6362\u6210warning\u3002\n\n\n\n\nWarning\n\n\n\u8fd9\u4e2a\u683c\u5f0f\u5728MarkdownPad2\u8f6f\u4ef6\u91cc\u9762\u5e76\u4e0d\u80fd\u9884\u89c8\uff0c\u56e0\u4e3a\u8be5\u8f6f\u4ef6\u4e0d\u652f\u6301\u8fd9\u4e2a\u683c\u5f0f\uff0c\u4e0d\u8fc7\u6211\u4eec\u7684\u6587\u6863\u7cfb\u7edf\u662f\u652f\u6301\u7684\u3002\n\n\n\n\n\u63d2\u5165\u8d85\u94fe\u63a5\n\uf0c1\n\n\n\u9009\u4e2d\u6587\u5b57\uff0c\u4f7f\u7528\u5feb\u6377\u952e\nctrl+L\n\u5373\u53ef\u63d2\u5165\u8d85\u94fe\u63a5\u3002\n\n\n\u8868\u683c\n\uf0c1\n\n\n\u8868\u683c\u4f7f\u7528\u4e00\u4e0b\u7684\u8bed\u6cd5\uff1a\n\n\n|Product reversion | Release date |Support status |Notes                  |\n|------------------|--------------|---------------|-----------------------|\n|Version 1.0       |November 2015 |Supported      | None                  |\n|Version 2.0       |April 2016    |Supported      | Refer to New Features |\n\n\n\n\u663e\u793a\u7684\u5185\u5bb9\u5982\u4e0b\uff1a\n\n\n\n\n\n\n\n\nProduct reversion\n\n\nRelease date\n\n\nSupport status\n\n\nNotes\n\n\n\n\n\n\n\n\n\n\nVersion 1.0\n\n\nNovember 2015\n\n\nSupported\n\n\nNone\n\n\n\n\n\n\nVersion 2.0\n\n\nApril 2016\n\n\nSupported\n\n\nRefer to New Features\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\u8fd9\u4e2a\u683c\u5f0f\u5728MarkdownPad2\u8f6f\u4ef6\u91cc\u9762\u5e76\u4e0d\u80fd\u9884\u89c8\uff0c\u56e0\u4e3a\u8be5\u8f6f\u4ef6\u4e0d\u652f\u6301\u8fd9\u4e2a\u683c\u5f0f\uff0c\u4e0d\u8fc7\u6211\u4eec\u7684\u6587\u6863\u7cfb\u7edf\u662f\u652f\u6301\u7684\u3002\n\n\n\n\n\u65e0\u5e8f\u5217\u8868\n\uf0c1\n\n\n\u901a\u5e38\u6211\u4eec\u559c\u6b22\u7528\u65e0\u5e8f\u5217\u8868\u6765\u8868\u793a\u4e00\u4e9b\u5e76\u5217\u7684\u9879\u76ee\uff0c\u683c\u5f0f\u5982\u4e0b\uff1a\n\n\n* Grove interface makes wiring easier and allows expansions with Grove modules.\n* USB host\n* Audio Output\n* Ethernet port\n* Cost-effective\n\n\n\n\n\nNote\n\n\n\u5b9e\u9645\u4e0a\uff0c\u4e0a\u9762\u7684*\u53f7\u53ef\u4ee5\u6362\u6210-\u53f7\n\n\n\n\n\u663e\u793a\u7684\u5185\u5bb9\u5982\u4e0b\uff1a\n\n\n\n\nGrove interface makes wiring easier and allows expansions with Grove modules.\n\n\nUSB host\n\n\nAudio Output\n\n\nEthernet port\n\n\nCost-effective\n\n\n\n\n\u5982\u679c\u9700\u8981\u4e8c\u7ea7\u65e0\u5e8f\u5217\u8868\uff0c\u53ef\u4ee5\u8fd9\u6837\uff1a\n\n\n* \u4e00\u7ea7\u5217\u88681\n    * \u4e8c\u7ea7\u5217\u88681\n    * \u4e8c\u7ea7\u5217\u88682\n* \u4e00\u7ea7\u5217\u88682\n* \u4e00\u7ea7\u5217\u88683\n\n\n\n\u663e\u793a\u7684\u5185\u5bb9\u5982\u4e0b\uff1a\n\n\n\n\n\u4e00\u7ea7\u5217\u88681\n\n\n\u4e8c\u7ea7\u5217\u88681\n\n\n\u4e8c\u7ea7\u5217\u88682\n\n\n\n\n\n\n\u4e00\u7ea7\u5217\u88682\n\n\n\u4e00\u7ea7\u5217\u88683\n\n\n\n\n\u63d2\u5165\u4ee3\u7801\n\uf0c1\n\n\n\u63d2\u5165\u4ee3\u7801\u53ea\u9700\u8981\u5728\u4ee3\u7801\u7684\u6bcf\u4e00\u884c\u524d\u63d2\u51654\u4e2a\u7a7a\u683c,\u5c31\u4f1a\u53d8\u6210\u4ee5\u4e0b\u8fd9\u6837\u3002\n\n\nvoid setup()\n{\n    Serial.begin(115200);\n    Serial.println(\"hello world\");\n}\n\nvoid loop()\n{\n\n}", 
+            "title": "Markdown"
+        }, 
+        {
+            "location": "/Port/port_markdown/#markdown", 
+            "text": "", 
+            "title": "Markdown"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_1", 
+            "text": "Markdown \u662f\u4e00\u79cd\u53ef\u4ee5\u4f7f\u7528\u666e\u901a\u6587\u672c\u7f16\u8f91\u5668\u7f16\u5199\u7684\u6807\u8bb0\u8bed\u8a00\uff0c\u901a\u8fc7\u7b80\u5355\u7684\u6807\u8bb0\u8bed\u6cd5\uff0c\u5b83\u53ef\u4ee5\u4f7f\u666e\u901a\u6587\u672c\u5185\u5bb9\u5177\u6709\u4e00\u5b9a\u7684\u683c\u5f0f\u3002  \u65b0\u6587\u6863\u7cfb\u7edf\u7684\u6587\u6863\u662f\u7528Markdown\u8fdb\u884c\u64b0\u5199\u7684\uff0c\u6240\u6709\u5728\u8fd9\u91cc\u4f1a\u7b80\u5355\u7684\u4ecb\u7ecd\u4e00\u4e9b\u9700\u8981\u7528\u5230\u7684\u5185\u5bb9", 
+            "title": "\u5199\u5728\u524d\u9762"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_2", 
+            "text": "\u63a8\u8350\u4f7f\u7528\u4e00\u4e2a\u53eb MarkdownPad2 \u7684\u8f6f\u4ef6\uff0c\u6709\u514d\u8d39\u4f7f\u7528\u7248\u672c\u3002", 
+            "title": "\u8f6f\u4ef6"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_3", 
+            "text": "\u5173\u4e8eMarkdown\u8bed\u6cd5\uff0c\u63a8\u8350\u9605\u8bfb\u8fd9\u7bc7\u6587\u7ae0\u300a Markdown\u2014\u2014\u5165\u95e8\u6307\u5357 \u300b", 
+            "title": "\u8bed\u6cd5"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_4", 
+            "text": "", 
+            "title": "\u4e00\u4e9b\u79fb\u690d\u65f6\u9700\u8981\u7528\u5230\u7684\u683c\u5f0f"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_5", 
+            "text": "\u4e00\u7ea7\u6807\u9898\u7528##  \u4e8c\u7ea7\u6807\u9898\u7528###  \u4ee5\u6b64\u7c7b\u63a8\u3002", 
+            "title": "\u4e00\u7ea7\u6807\u9898"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_6", 
+            "text": "\u63d2\u5165\u56fe\u7247\u53ef\u4ee5\u7528\u5feb\u6377\u952e ctrl+G \uff0c\u7136\u540e\u63d2\u5165\u56fe\u7247\u7684\u5730\u5740\u94fe\u63a5\u3002\u5728\u300a Github\u7684\u4f7f\u7528 \u300b\u4e2d\u6211\u4eec\u63d0\u5230\u9700\u8981\u628a\u6240\u6709\u7684\u56fe\u7247\u653e\u5230image\u6587\u4ef6\u5939\u91cc\u9762\u3002\u5f53\u6211\u4eec\u628a\u56fe\u7247\u4f20\u5230github\u540e\uff0c\u53ef\u4ee5\u83b7\u5f97\u56fe\u7247\u7684\u5730\u5740\u3002", 
+            "title": "\u63d2\u5165\u56fe\u7247"
+        }, 
+        {
+            "location": "/Port/port_markdown/#notewarning", 
+            "text": "\u6709\u4e9bNote\u6216\u8005Warning\u4fe1\u606f\uff0c\u53ef\u4ee5\u7528\u4ee5\u4e0b\u7684\u683c\u5f0f\uff1a  !!!note\n    \u8fd9\u91cc\u5199\u5165note\u7684\u5185\u5bb9  \u5c31\u4f1a\u53d8\u6210\u4e0b\u9762\u7684\u683c\u5f0f\uff1a   Note  \u8fd9\u91cc\u5199\u5165note\u7684\u5185\u5bb9   Warning\u4e5f\u662f\u4e00\u6837\u7684\uff0c\u4e0d\u8fc7\u662f\u628anote\u6362\u6210warning\u3002   Warning  \u8fd9\u4e2a\u683c\u5f0f\u5728MarkdownPad2\u8f6f\u4ef6\u91cc\u9762\u5e76\u4e0d\u80fd\u9884\u89c8\uff0c\u56e0\u4e3a\u8be5\u8f6f\u4ef6\u4e0d\u652f\u6301\u8fd9\u4e2a\u683c\u5f0f\uff0c\u4e0d\u8fc7\u6211\u4eec\u7684\u6587\u6863\u7cfb\u7edf\u662f\u652f\u6301\u7684\u3002", 
+            "title": "Note&amp;Warning"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_7", 
+            "text": "\u9009\u4e2d\u6587\u5b57\uff0c\u4f7f\u7528\u5feb\u6377\u952e ctrl+L \u5373\u53ef\u63d2\u5165\u8d85\u94fe\u63a5\u3002", 
+            "title": "\u63d2\u5165\u8d85\u94fe\u63a5"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_8", 
+            "text": "\u8868\u683c\u4f7f\u7528\u4e00\u4e0b\u7684\u8bed\u6cd5\uff1a  |Product reversion | Release date |Support status |Notes                  |\n|------------------|--------------|---------------|-----------------------|\n|Version 1.0       |November 2015 |Supported      | None                  |\n|Version 2.0       |April 2016    |Supported      | Refer to New Features |  \u663e\u793a\u7684\u5185\u5bb9\u5982\u4e0b\uff1a     Product reversion  Release date  Support status  Notes      Version 1.0  November 2015  Supported  None    Version 2.0  April 2016  Supported  Refer to New Features      Note  \u8fd9\u4e2a\u683c\u5f0f\u5728MarkdownPad2\u8f6f\u4ef6\u91cc\u9762\u5e76\u4e0d\u80fd\u9884\u89c8\uff0c\u56e0\u4e3a\u8be5\u8f6f\u4ef6\u4e0d\u652f\u6301\u8fd9\u4e2a\u683c\u5f0f\uff0c\u4e0d\u8fc7\u6211\u4eec\u7684\u6587\u6863\u7cfb\u7edf\u662f\u652f\u6301\u7684\u3002", 
+            "title": "\u8868\u683c"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_9", 
+            "text": "\u901a\u5e38\u6211\u4eec\u559c\u6b22\u7528\u65e0\u5e8f\u5217\u8868\u6765\u8868\u793a\u4e00\u4e9b\u5e76\u5217\u7684\u9879\u76ee\uff0c\u683c\u5f0f\u5982\u4e0b\uff1a  * Grove interface makes wiring easier and allows expansions with Grove modules.\n* USB host\n* Audio Output\n* Ethernet port\n* Cost-effective   Note  \u5b9e\u9645\u4e0a\uff0c\u4e0a\u9762\u7684*\u53f7\u53ef\u4ee5\u6362\u6210-\u53f7   \u663e\u793a\u7684\u5185\u5bb9\u5982\u4e0b\uff1a   Grove interface makes wiring easier and allows expansions with Grove modules.  USB host  Audio Output  Ethernet port  Cost-effective   \u5982\u679c\u9700\u8981\u4e8c\u7ea7\u65e0\u5e8f\u5217\u8868\uff0c\u53ef\u4ee5\u8fd9\u6837\uff1a  * \u4e00\u7ea7\u5217\u88681\n    * \u4e8c\u7ea7\u5217\u88681\n    * \u4e8c\u7ea7\u5217\u88682\n* \u4e00\u7ea7\u5217\u88682\n* \u4e00\u7ea7\u5217\u88683  \u663e\u793a\u7684\u5185\u5bb9\u5982\u4e0b\uff1a   \u4e00\u7ea7\u5217\u88681  \u4e8c\u7ea7\u5217\u88681  \u4e8c\u7ea7\u5217\u88682    \u4e00\u7ea7\u5217\u88682  \u4e00\u7ea7\u5217\u88683", 
+            "title": "\u65e0\u5e8f\u5217\u8868"
+        }, 
+        {
+            "location": "/Port/port_markdown/#_10", 
+            "text": "\u63d2\u5165\u4ee3\u7801\u53ea\u9700\u8981\u5728\u4ee3\u7801\u7684\u6bcf\u4e00\u884c\u524d\u63d2\u51654\u4e2a\u7a7a\u683c,\u5c31\u4f1a\u53d8\u6210\u4ee5\u4e0b\u8fd9\u6837\u3002  void setup()\n{\n    Serial.begin(115200);\n    Serial.println(\"hello world\");\n}\n\nvoid loop()\n{\n\n}", 
+            "title": "\u63d2\u5165\u4ee3\u7801"
+        }, 
+        {
+            "location": "/Port/port_example/", 
+            "text": "\u4e00\u4e2a\u4f8b\u5b50\n\uf0c1\n\n\n\n\n\u4e0b\u9762\u662f\u6211\u79fb\u690d\u4e00\u4e2a\u6587\u6863\u65f6\u505a\u7684\u6b65\u9aa4\uff0c\u5927\u6982\u4e00\u4e2a\u6587\u6863\u9700\u898130-90\u5206\u949f\u3002\u4ec5\u4f9b\u53c2\u8003\uff0c\u5982\u679c\u4f60\u6709\u6548\u7387\u66f4\u9ad8\u7684\u65b9\u6cd5\uff0c\u53ef\u4ee5\u5206\u4eab\u7ed9\u5927\u5bb6\uff01\n\n\nSTEP1\n\uf0c1\n\n\n\u5728github\u5efa\u7acb\u4e00\u4e2a\u4ed3\u5e93\uff0c\u7136\u540e\ngit clone\n\u5230\u672c\u5730\uff0c\u5728\u672c\u5730\u4ed3\u5e93\u521b\u5efa\u4ee5\u4e0b\u5185\u5bb9\uff1a\n\n\n\n\nimage\u6587\u4ef6\u5939\n\n\nresource\u6587\u4ef6\u5939\n\n\nproduct_name.md\n\n\nreadme.md (\u901a\u5e38\u6211\u56de\u53bb\u590d\u5236\u4e00\u4e2a\u73b0\u6210\u7684\uff0c\u7136\u540e\u4fee\u6539\u4e00\u4e9b\u5185\u5bb9)\n\n\n\n\nSTEP2\n\uf0c1\n\n\n\u6253\u5f00\u4ea7\u54c1wiki\u7684\u9875\u9762\uff0c\u6309\u7167\n\u6587\u6863\u5ba1\u6838\n\u7684\u5185\u5bb9\u5ba1\u6838\u6587\u6863\u3002\u5982\u679c\u8fd0\u6c14\u8db3\u591f\u597d\u6ca1\u6709\u4efb\u4f55\u95ee\u9898\uff0c\u5c31\u53ef\u4ee5\u8c03\u5230\nstep3\n,\u5426\u5219\u5c31\u9700\u8981\u628a\u9519\u8bef\u7684\u8bb0\u4e0b\u6765\uff0c\u5728\u5199\u6587\u6863\u7684\u65f6\u5019\u4fee\u6b63\u3002\n\n\nSTEP3\n\uf0c1\n\n\n\u7528MarkdownPad2\u8f6f\u4ef6\u6253\u5f00\nproduct_name.md\n\u6587\u6863\uff0c\u5f00\u59cb\u6309\u7167markdown\u7684\u683c\u5f0f\u628awiki\u7684\u5185\u5bb9\u7c98\u8d34\u8fc7\u6765\u3002\n\n\n\u5982\u679c\u9047\u5230\u56fe\u7247\uff0c\u8fd8\u9700\u8981\u628a\u56fe\u7247\u4e0b\u8f7d\u4e0b\u6765\uff0c\u7136\u540e\u4e0a\u4f20\u5230github\u4ee5\u83b7\u53d6\u65b0\u7684\u56fe\u7247\u5730\u5740\u3002\n\n\n\n\nWarning\n\n\n\u5982\u679c\u76f4\u63a5\u5728wiki\u4e0a\u5bf9\u56fe\u7247\u53f3\u952e\u53e6\u5b58\u4e3a\uff0c\u53ef\u80fd\u4f1a\u4fdd\u5b58\u5230\u4e0d\u662f\u6700\u5927\u5c3a\u5bf8\u7684\u56fe\u7247\uff0c\u6240\u4ee5\u9700\u8981\u70b9\u8fdb\u53bb\uff0c\u770b\u5230\u5927\u56fe\u540e\u518d\u53e6\u5b58\u4e3a\u3002\n\n\n\n\nSTEP4\n\uf0c1\n\n\n\u7f16\u8f91\u5b8c\u6210\u540e\uff0c\u4fee\u6539\u4e00\u4e0breadme.md\u7684\u5185\u5bb9\uff0c\u7136\u540e\u628a\u6574\u4e2a\u4ed3\u5e93\u63a8\u9001\u5230github\u3002\u5173\u4e8e\u8fd9\u4e2a\u6b65\u9aa4\u53c2\u89c1\nGithub\u7684\u4f7f\u7528\n\n\nSTEP5\n\uf0c1\n\n\n\u5728github\u4e0a\u70b9\u5f00product_name.md\u6587\u4ef6\uff0c\u53ef\u4ee5\u9884\u89c8\u5185\u5bb9\u662f\u5426\u6b63\u786e\uff0c\u5982\u679c\u4e0d\u6b63\u786e\u7684\uff0c\n\u8fd4\u56deSTEP3\n\uff0c\u91cd\u65b0\u7f16\u8f91\u3002\n\n\n\u5982\u679c\u9884\u89c8\u6ca1\u6709\u95ee\u9898\uff0c\u90a3\u4e48\u8fd9\u4e2a\u6587\u6863\u79fb\u690d\u5b8c\u6210\u3002\n\n\n\n\nNote\n\n\n\u4e0a\u9762\u7684\u6b65\u9aa4\u53ea\u662f\u5927\u6982\u7684\u6b65\u9aa4\uff0c\u5e76\u4e0d\u6db5\u76d6\u6240\u6709\u7684\u64cd\u4f5c\u7ec6\u8282\u3002\u5b9e\u9645\u64cd\u4f5c\u4e2d\u4f1a\u9047\u5230\u4e00\u4e9b\u56f0\u96be\uff0c\u4e0d\u8fc7\u5f04\u4e86\u4e00\u4e24\u7bc7\u719f\u6089\u540e\uff0c\u5c31\u4e0d\u662f\u95ee\u9898\u4e86\u3002", 
+            "title": "\u4e00\u4e2a\u4f8b\u5b50"
+        }, 
+        {
+            "location": "/Port/port_example/#_1", 
+            "text": "\u4e0b\u9762\u662f\u6211\u79fb\u690d\u4e00\u4e2a\u6587\u6863\u65f6\u505a\u7684\u6b65\u9aa4\uff0c\u5927\u6982\u4e00\u4e2a\u6587\u6863\u9700\u898130-90\u5206\u949f\u3002\u4ec5\u4f9b\u53c2\u8003\uff0c\u5982\u679c\u4f60\u6709\u6548\u7387\u66f4\u9ad8\u7684\u65b9\u6cd5\uff0c\u53ef\u4ee5\u5206\u4eab\u7ed9\u5927\u5bb6\uff01", 
+            "title": "\u4e00\u4e2a\u4f8b\u5b50"
+        }, 
+        {
+            "location": "/Port/port_example/#step1", 
+            "text": "\u5728github\u5efa\u7acb\u4e00\u4e2a\u4ed3\u5e93\uff0c\u7136\u540e git clone \u5230\u672c\u5730\uff0c\u5728\u672c\u5730\u4ed3\u5e93\u521b\u5efa\u4ee5\u4e0b\u5185\u5bb9\uff1a   image\u6587\u4ef6\u5939  resource\u6587\u4ef6\u5939  product_name.md  readme.md (\u901a\u5e38\u6211\u56de\u53bb\u590d\u5236\u4e00\u4e2a\u73b0\u6210\u7684\uff0c\u7136\u540e\u4fee\u6539\u4e00\u4e9b\u5185\u5bb9)", 
+            "title": "STEP1"
+        }, 
+        {
+            "location": "/Port/port_example/#step2", 
+            "text": "\u6253\u5f00\u4ea7\u54c1wiki\u7684\u9875\u9762\uff0c\u6309\u7167 \u6587\u6863\u5ba1\u6838 \u7684\u5185\u5bb9\u5ba1\u6838\u6587\u6863\u3002\u5982\u679c\u8fd0\u6c14\u8db3\u591f\u597d\u6ca1\u6709\u4efb\u4f55\u95ee\u9898\uff0c\u5c31\u53ef\u4ee5\u8c03\u5230 step3 ,\u5426\u5219\u5c31\u9700\u8981\u628a\u9519\u8bef\u7684\u8bb0\u4e0b\u6765\uff0c\u5728\u5199\u6587\u6863\u7684\u65f6\u5019\u4fee\u6b63\u3002", 
+            "title": "STEP2"
+        }, 
+        {
+            "location": "/Port/port_example/#step3", 
+            "text": "\u7528MarkdownPad2\u8f6f\u4ef6\u6253\u5f00 product_name.md \u6587\u6863\uff0c\u5f00\u59cb\u6309\u7167markdown\u7684\u683c\u5f0f\u628awiki\u7684\u5185\u5bb9\u7c98\u8d34\u8fc7\u6765\u3002  \u5982\u679c\u9047\u5230\u56fe\u7247\uff0c\u8fd8\u9700\u8981\u628a\u56fe\u7247\u4e0b\u8f7d\u4e0b\u6765\uff0c\u7136\u540e\u4e0a\u4f20\u5230github\u4ee5\u83b7\u53d6\u65b0\u7684\u56fe\u7247\u5730\u5740\u3002   Warning  \u5982\u679c\u76f4\u63a5\u5728wiki\u4e0a\u5bf9\u56fe\u7247\u53f3\u952e\u53e6\u5b58\u4e3a\uff0c\u53ef\u80fd\u4f1a\u4fdd\u5b58\u5230\u4e0d\u662f\u6700\u5927\u5c3a\u5bf8\u7684\u56fe\u7247\uff0c\u6240\u4ee5\u9700\u8981\u70b9\u8fdb\u53bb\uff0c\u770b\u5230\u5927\u56fe\u540e\u518d\u53e6\u5b58\u4e3a\u3002", 
+            "title": "STEP3"
+        }, 
+        {
+            "location": "/Port/port_example/#step4", 
+            "text": "\u7f16\u8f91\u5b8c\u6210\u540e\uff0c\u4fee\u6539\u4e00\u4e0breadme.md\u7684\u5185\u5bb9\uff0c\u7136\u540e\u628a\u6574\u4e2a\u4ed3\u5e93\u63a8\u9001\u5230github\u3002\u5173\u4e8e\u8fd9\u4e2a\u6b65\u9aa4\u53c2\u89c1 Github\u7684\u4f7f\u7528", 
+            "title": "STEP4"
+        }, 
+        {
+            "location": "/Port/port_example/#step5", 
+            "text": "\u5728github\u4e0a\u70b9\u5f00product_name.md\u6587\u4ef6\uff0c\u53ef\u4ee5\u9884\u89c8\u5185\u5bb9\u662f\u5426\u6b63\u786e\uff0c\u5982\u679c\u4e0d\u6b63\u786e\u7684\uff0c \u8fd4\u56deSTEP3 \uff0c\u91cd\u65b0\u7f16\u8f91\u3002  \u5982\u679c\u9884\u89c8\u6ca1\u6709\u95ee\u9898\uff0c\u90a3\u4e48\u8fd9\u4e2a\u6587\u6863\u79fb\u690d\u5b8c\u6210\u3002   Note  \u4e0a\u9762\u7684\u6b65\u9aa4\u53ea\u662f\u5927\u6982\u7684\u6b65\u9aa4\uff0c\u5e76\u4e0d\u6db5\u76d6\u6240\u6709\u7684\u64cd\u4f5c\u7ec6\u8282\u3002\u5b9e\u9645\u64cd\u4f5c\u4e2d\u4f1a\u9047\u5230\u4e00\u4e9b\u56f0\u96be\uff0c\u4e0d\u8fc7\u5f04\u4e86\u4e00\u4e24\u7bc7\u719f\u6089\u540e\uff0c\u5c31\u4e0d\u662f\u95ee\u9898\u4e86\u3002", 
+            "title": "STEP5"
+        }, 
+        {
+            "location": "/Port/port_normal/", 
+            "text": "\u5e38\u7528\u683c\u5f0f\u4ee3\u7801\n\uf0c1\n\n\n\n\n\u63d2\u5165Get ONE Now\u6309\u94ae\n\uf0c1\n\n\n\n\n\u628a\u4e0b\u9762\u4ee3\u7801\u7684\ntarget_page\n\u66ff\u6362\u6210\u8df3\u8f6c\u7684\u7f51\u9875\u3002\n[![](https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/get_one_now.png)](_target_page_)\n\n\n\n\n\n\n\n\u63d2\u5165Make it Now\u6309\u94ae\n\uf0c1\n\n\n\n\n\u628a\u4e0b\u9762\u4ee3\u7801\u7684\ntarget_page\n\u66ff\u6362\u6210\u8df3\u8f6c\u7684\u7f51\u9875\u3002\n[![](https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/make_it_now.png)](_target_page_)\n\n\n\n\n\n\n\n\u63d2\u5165\u5e26\u8d85\u94fe\u63a5\u7684\u56fe\u7247\n\uf0c1\n\n\n\n\n\u628a\u4e0b\u9762\u4ee3\u7801\u7684\nimage_link\n\u66ff\u6362\u6210\u56fe\u7247\u7684\u94fe\u63a5\n\n\n\u628a\u4e0b\u9762\u4ee3\u7801\u7684\ntarget_page\n\u66ff\u6362\u6210\u8df3\u8f6c\u7684\u7f51\u9875\u3002\n[![](image_link)](_target_page_)\n\n\n\n\n\n\n\n\u63d2\u5165\u95ee\u5377\u8c03\u67e5\n\uf0c1\n\n\n\n\n\u628a\u4e0b\u9762\u4ee3\u7801\u7684\nlink_to_sruvey\n\u66ff\u6362\u6210\u4ea7\u54c1\u95ee\u5377\u8c03\u67e5\u94fe\u63a5\n##Is this page helpful\n\niframe style=\"height: 600px; width: 500px; margin: 10px 0 10px;\" allowTransparency=\"true\" src=\"link_to_survey\" frameborder=\"0\"\n/iframe\n\n\n\n\n\n\n\n\n\u63d2\u5165\u8868\u683c\n\uf0c1\n\n\n|Parts name                         |Quantity |\n|-----------------------------------|---------|\n|Grove - Barometer Sensor (BMP280)  |1 piece  |\n|Grove cable                        |1 piece  |\n\n\n\n\u63d2\u5165codebender\n\uf0c1\n\n\n\n\n\u628a\u4e0b\u9762\u4ee3\u7801\u7684\nlink_to_codebender\n\u66ff\u6362\u6210codebender\u5bf9\u5e94\u4ee3\u7801\u7684\u94fe\u63a5\niframe style=\"height: 510px; width: 100%; margin: 10px 0 10px;\" allowTransparency=\"true\" src=\"link_to_codebender\" frameborder=\"0\"\n/iframe", 
+            "title": "\u5e38\u7528\u683c\u5f0f\u4ee3\u7801"
+        }, 
+        {
+            "location": "/Port/port_normal/#_1", 
+            "text": "", 
+            "title": "\u5e38\u7528\u683c\u5f0f\u4ee3\u7801"
+        }, 
+        {
+            "location": "/Port/port_normal/#get-one-now", 
+            "text": "\u628a\u4e0b\u9762\u4ee3\u7801\u7684 target_page \u66ff\u6362\u6210\u8df3\u8f6c\u7684\u7f51\u9875\u3002 [![](https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/get_one_now.png)](_target_page_)", 
+            "title": "\u63d2\u5165Get ONE Now\u6309\u94ae"
+        }, 
+        {
+            "location": "/Port/port_normal/#make-it-now", 
+            "text": "\u628a\u4e0b\u9762\u4ee3\u7801\u7684 target_page \u66ff\u6362\u6210\u8df3\u8f6c\u7684\u7f51\u9875\u3002 [![](https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/make_it_now.png)](_target_page_)", 
+            "title": "\u63d2\u5165Make it Now\u6309\u94ae"
+        }, 
+        {
+            "location": "/Port/port_normal/#_2", 
+            "text": "\u628a\u4e0b\u9762\u4ee3\u7801\u7684 image_link \u66ff\u6362\u6210\u56fe\u7247\u7684\u94fe\u63a5  \u628a\u4e0b\u9762\u4ee3\u7801\u7684 target_page \u66ff\u6362\u6210\u8df3\u8f6c\u7684\u7f51\u9875\u3002 [![](image_link)](_target_page_)", 
+            "title": "\u63d2\u5165\u5e26\u8d85\u94fe\u63a5\u7684\u56fe\u7247"
+        }, 
+        {
+            "location": "/Port/port_normal/#_3", 
+            "text": "\u628a\u4e0b\u9762\u4ee3\u7801\u7684 link_to_sruvey \u66ff\u6362\u6210\u4ea7\u54c1\u95ee\u5377\u8c03\u67e5\u94fe\u63a5 ##Is this page helpful iframe style=\"height: 600px; width: 500px; margin: 10px 0 10px;\" allowTransparency=\"true\" src=\"link_to_survey\" frameborder=\"0\" /iframe", 
+            "title": "\u63d2\u5165\u95ee\u5377\u8c03\u67e5"
+        }, 
+        {
+            "location": "/Port/port_normal/#_4", 
+            "text": "|Parts name                         |Quantity |\n|-----------------------------------|---------|\n|Grove - Barometer Sensor (BMP280)  |1 piece  |\n|Grove cable                        |1 piece  |", 
+            "title": "\u63d2\u5165\u8868\u683c"
+        }, 
+        {
+            "location": "/Port/port_normal/#codebender", 
+            "text": "\u628a\u4e0b\u9762\u4ee3\u7801\u7684 link_to_codebender \u66ff\u6362\u6210codebender\u5bf9\u5e94\u4ee3\u7801\u7684\u94fe\u63a5 iframe style=\"height: 510px; width: 100%; margin: 10px 0 10px;\" allowTransparency=\"true\" src=\"link_to_codebender\" frameborder=\"0\" /iframe", 
+            "title": "\u63d2\u5165codebender"
+        }
+    ]
+}

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>Breakout for LinkIt Smart 7688 V2.0 - Seeed Wiki</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Seeed Wiki</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Arduino</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../Arduino/SeeeduinoV4.2/">Seeeduino V4.2</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../Arduino/CAN_BUS_Shield/">CAN-BUS Shield</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Raspberry Pi</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../RaspberryPi/RaspberryPi/">Raspberry Pi</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Edison</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../Edison/Edison/">Intel Edison</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">LaunchPad</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../LaunchPad/LaunchPad/">TI LaunchPad</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">LinkIt</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../LinkIt_ONE/">LinkIt ONE</a>
+</li>
+
+        
+            
+<li >
+    <a href="./">Breakout for LinkIt Smart 7688 V2.0</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">mbed</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../mbed/mbed/">mbed</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../mbed/Arch_BLE/">Arch BLE</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">RePhone</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../RePhone/RePhone/">RePhone</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Wio</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../Wio/Wio/">Wio</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grove <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Sensor</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Grove/Sensor/Grove_Barometer_Sensor_BMP280/">Grove - Barometer Sensor(BMP280)</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Actuator</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Grove/Actuator/Actuator/">Actuator</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Display</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Grove/Display/Display/">Display</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Communication</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Grove/Communication/Communication/">Communication</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">IoT <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../IoT/IoT/">IoT</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../IoT/Microsoft_IoT_Grove_Kit/">Microsoft IoT Grove Kit</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Breakout for LinkIt Smart 7688 V2.0</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../Tutorial/Tutorial/">Tutorial</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SZ2U <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../SZ2U/SZ2U/">SZ2U</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../about/">About</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../Tutorial/update_wiki/">如何添加一篇文档</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">文档移植</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../../Port/port_main/">需要做什么</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Port/port_review/">文档审核</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Port/port_github/">Github的使用</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Port/port_markdown/">Markdown</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Port/port_example/">一个例子</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../../Port/port_normal/">常用格式代码</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../../../IoT/Microsoft_IoT_Grove_Kit/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../../Tutorial/Tutorial/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#breakout-for-linkit-smart-7688-v20">Breakout for LinkIt Smart 7688 v2.0</a></li>
+        
+            <li><a href="#introduction">Introduction</a></li>
+        
+            <li><a href="#features">Features</a></li>
+        
+            <li><a href="#application-ideas">Application ideas</a></li>
+        
+            <li><a href="#specification">Specification</a></li>
+        
+            <li><a href="#hardware-overview">Hardware Overview</a></li>
+        
+            <li><a href="#get-started">Get started</a></li>
+        
+            <li><a href="#resources">Resources</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="breakout-for-linkit-smart-7688-v20">Breakout for LinkIt Smart 7688 v2.0<a class="headerlink" href="#breakout-for-linkit-smart-7688-v20" title="Permanent link"></a></h1>
+<hr />
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"></a></h2>
+<p><strong>Breakout for LinkIt Smart 7688 v2.0</strong> is a Grove port integrated expansion board for LinkItTM Smart 7688 development board. This breakout board will save a lot of work and makes prototyping easier through simplified wiring. It will assist a beginner to get started fast. It supports serial buses like I2C, UART. It comes with USB, Ethernet, and 3.5mm Audio ports.</p>
+<p><img alt="" src="https://github.com/SeeedDocument/Breakout_for_LinkIt_Smart_7688_v2_0/blob/master/image/Breakout_for_LinkIt_Smart_7688_v2.0_product_view_700.jpg?raw=true" /></p>
+<h3 id="version-tracker">Version Tracker<a class="headerlink" href="#version-tracker" title="Permanent link"></a></h3>
+<table>
+<thead>
+<tr>
+<th>Product reversion</th>
+<th>Release date</th>
+<th>Support status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Version 1.0</td>
+<td>November 2015</td>
+<td>Supported</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Version 2.0</td>
+<td>April 2016</td>
+<td>Supported</td>
+<td>Refer to New Features</td>
+</tr>
+</tbody>
+</table>
+<h3 id="new-features">New features:<a class="headerlink" href="#new-features" title="Permanent link"></a></h3>
+<ul>
+<li>Support recording functionality</li>
+<li>For 3.5 mm phone connector (audio jack), it supports the protocol OMTP and CTIA. You can use either protocol by switching a switch. About how to switch protocol, we will describe it later.
+Get One Now Banner.png</li>
+</ul>
+<p><a href="http://www.seeedstudio.com/depot/Breakout-for-LinkIt-Smart-7688-v20-p-2641.html"><img alt="enter image description here" src="http://www.seeedstudio.com/wiki/images/thumb/d/d0/Get_One_Now_Banner.png/150px-Get_One_Now_Banner.png" /></a></p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link"></a></h2>
+<ul>
+<li>Grove interface makes wiring easier and allows expansions with Grove modules.</li>
+<li>USB host</li>
+<li>Audio Output</li>
+<li>Ethernet port</li>
+<li>Cost-effective</li>
+</ul>
+<h2 id="application-ideas">Application ideas<a class="headerlink" href="#application-ideas" title="Permanent link"></a></h2>
+<ul>
+<li>IoT/Gateway Device.</li>
+<li>Robotics</li>
+<li>Smart multimedia devices</li>
+<li>Teaching and learning</li>
+</ul>
+<h2 id="specification">Specification<a class="headerlink" href="#specification" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Input voltage</th>
+<th>5.0V(With USB Power port)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operating voltage</td>
+<td>3.3V</td>
+</tr>
+<tr>
+<td>Debug port</td>
+<td>1(Quantity)</td>
+</tr>
+<tr>
+<td>Ethernet port</td>
+<td>1(Quantity)</td>
+</tr>
+<tr>
+<td>USB type-A</td>
+<td>1(Quantity)</td>
+</tr>
+<tr>
+<td>Headset port</td>
+<td>1(Quantity)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Debug pins, Ethernet pins and USB type-A host pins connect with MT7688, other pins connect with ATmega32U4.</p>
+</div>
+<h2 id="hardware-overview">Hardware Overview<a class="headerlink" href="#hardware-overview" title="Permanent link"></a></h2>
+<p><img alt="" src="https://github.com/SeeedDocument/Breakout_for_LinkIt_Smart_7688_v2_0/blob/master/image/Breakout_for_LinkIt_Smart_7688_v2.0_hardware_connections_1200_s.jpg?raw=true" /></p>
+<h3 id="grove-interface">Grove interface<a class="headerlink" href="#grove-interface" title="Permanent link"></a></h3>
+<p>Connect rich <a href="http://www.seeedstudio.com/wiki/Grove_System">Grove</a> interfaced functional modules. With this kind of ports, you never need jumper wire or soldering work, and you can make more powerful applications with those functional modules.</p>
+<p><strong>To switch phone connector protocol between OMTP and CTIA</strong></p>
+<p><img alt="" src="https://github.com/SeeedDocument/Breakout_for_LinkIt_Smart_7688_v2_0/blob/master/image/Breakout_for_LinkIt_Smart_7688_v2.0_switch_procotol_1200_.jpg?raw=true" /></p>
+<p>In preceded figure, you can notice that there are six pins and two jumper caps on bottom-right corner. These pins are used to switch phone connector protocol. As you set tiny jumper(both) to left-four pin, protocol OMTP is used. As you set tiny jumper(both) to right-four pin (as preceded figure shows), protocol CTIA is used. As following figures show:
+Breakout for LinkIt Smart 7688 v2.0 CTIA OMTP Switch Manner.JPG
+Note that to use the recording functionality, you need to update on-board firmware to Breakout for LinkIt Smart 7688 firmware(above version v0.9.2).</p>
+<p><img alt="" src="https://github.com/SeeedDocument/Breakout_for_LinkIt_Smart_7688_v2_0/blob/master/image/Breakout_for_LinkIt_Smart_7688_v2.0_CTIA_OMTP_Switch_Manner.JPG?raw=true" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We recommend you use external storage device, because the Write/Read speed of on-board flash memory is limited.</p>
+</div>
+<h3 id="parts-list">Parts list<a class="headerlink" href="#parts-list" title="Permanent link"></a></h3>
+<table>
+<thead>
+<tr>
+<th>Parts name</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Breakout for LinkIt Smart 7688 v2.0</td>
+<td>1PCS</td>
+</tr>
+</tbody>
+</table>
+<h2 id="get-started">Get started<a class="headerlink" href="#get-started" title="Permanent link"></a></h2>
+<h3 id="material-required">Material required<a class="headerlink" href="#material-required" title="Permanent link"></a></h3>
+<ul>
+<li>LinkIt Smart 7688 × 1</li>
+<li>USB cable (type A to micro type-B) × 2</li>
+<li>USB to Serial adapter × 1</li>
+<li>Jumper wires × 3</li>
+<li>Stereo (with 3.5 mm audio cable) × 1</li>
+<li>USB flash driver (with audio file of MP3 format inside) × 1</li>
+</ul>
+<h3 id="play-music">Play music<a class="headerlink" href="#play-music" title="Permanent link"></a></h3>
+<p><strong>Step1:</strong> Refer <a href="http://www.seeedstudio.com/wiki/LinkIt_Smart_7688#Getting_Started">here</a> to connect your LinkIt Smart 7688 to Internet.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can plug jumper wires to MT7688 UART2 port instead soldering them to Pin 8, Pin 9 and Pin GND.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In rare cases, you might not connect to Internet successfully, reboot the embedded OS.</p>
+</div>
+<p><strong>Step2:</strong> Open a console with USB to Serial adapter.</p>
+<p><strong>Step3:</strong> Connect all parts like follows:</p>
+<p><img alt="" src="https://github.com/SeeedDocument/Breakout_for_LinkIt_Smart_7688_v2_0/blob/master/image/Breakout_for_LinkIt_Smart_7688_demo_connection_1200.jpg?raw=true" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a figure of Breakout for LinkIt Smart 7688(v1.0).</p>
+</div>
+<p><strong>Step4:</strong> Enter folder of USB by type <strong>cd /Media/USB-A1</strong> in console.</p>
+<p><strong>Step5:</strong> Play music with utility <strong>Madplay</strong>(installed on OpenWRT) by typing <strong>madplay filename.mp3</strong> into console.</p>
+<p><strong>Step6:</strong> Now you will hear the music.</p>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link"></a></h2>
+<ul>
+<li><a href="https://github.com/SeeedDocument/Breakout_for_LinkIt_Smart_7688_v2_0/blob/master/resource/Breakout_for_LinkIt_Smart_7688_v2.0_schematic_files.zip?raw=true">Schematic files</a></li>
+<li><a href="http://www.seeedstudio.com/wiki/LinkIt_Smart_7688">LinkIt smart 7688</a></li>
+<li><a href="http://wiki.openwrt.org/doc/howto/user.beginner">OpenWrt</a></li>
+<li><a href="http://www.seeedstudio.com/depot/LinkIt-Smart-7688-p-2573.html?cPath=122_142">Link to buy a LinkIt Smart 7688</a></li>
+</ul></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
